@@ -235,6 +235,27 @@ const projectsSchema = {
         });
       });
 
+      // Mobile menu toggle
+      const navToggle = document.querySelector<HTMLButtonElement>('.nav-toggle');
+      const navContainer = document.querySelector('.navbar .container');
+
+      if (navToggle && navContainer) {
+        navToggle.addEventListener('click', () => {
+          const open = navContainer.classList.toggle('nav-open');
+          navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+          navToggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+        });
+
+        // Close the menu after tapping a link
+        navContainer.querySelectorAll<HTMLAnchorElement>('.nav-link').forEach((link) => {
+          link.addEventListener('click', () => {
+            navContainer.classList.remove('nav-open');
+            navToggle.setAttribute('aria-expanded', 'false');
+            navToggle.setAttribute('aria-label', 'Open menu');
+          });
+        });
+      }
+
       // Active navigation link
       window.addEventListener('scroll', () => {
         let current = '';

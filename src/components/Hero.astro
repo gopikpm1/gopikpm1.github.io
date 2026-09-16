@@ -5,6 +5,15 @@ import { hero } from '../data/site';
 <!-- Hero Section -->
 <header id="home" class="hero">
   <div class="hero-content">
+    <img
+      src="/images/profile.jpg"
+      alt="Gopi M — Senior Cross-Platform Mobile & Web Developer"
+      class="hero-avatar"
+      width="140"
+      height="140"
+      loading="eager"
+      onerror="var d=document.createElement('div');d.className='hero-avatar hero-avatar--missing';d.setAttribute('aria-hidden','true');d.textContent='G';this.replaceWith(d)"
+    />
     <div class="hero-text">
       <h1 class="hero-title">{hero.name}</h1>
       <p class="hero-subtitle">{hero.subtitle}</p>
