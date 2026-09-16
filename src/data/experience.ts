@@ -1,5 +1,7 @@
 export interface ExperienceItem {
-  icon: string;
+  icon?: string;
+  /** Optional company/product logo shown in the timeline dot instead of the icon */
+  logo?: { src: string; alt: string };
   title: string;
   company: string;
   duration: string;
@@ -11,7 +13,10 @@ export interface ExperienceItem {
 
 export const experience: ExperienceItem[] = [
   {
-    icon: 'fas fa-briefcase',
+    logo: {
+      src: '/images/mservice-icon.png',
+      alt: 'mservice.ai logo',
+    },
     title: 'Programmer Analyst - Product Engineering',
     company: 'Selfservit Solutions Pvt Ltd (mservice.ai) | Chennai, Tamil Nadu',
     duration: 'May 2012 – June 2016 (4 Years 1 Month)',
@@ -29,7 +34,10 @@ export const experience: ExperienceItem[] = [
     keyProjects: [{ label: 'MService Enterprise FSM App', href: '#proj-mservice' }],
   },
   {
-    icon: 'fas fa-star',
+    logo: {
+      src: '/images/astroved-icon.png',
+      alt: 'AstroVed logo',
+    },
     title: 'Team Lead - Cross-Platform Mobile Applications',
     company: 'AstroVed | Chennai, Tamil Nadu',
     duration: 'Dec 2016 – Mar 2026 (9+ years)',

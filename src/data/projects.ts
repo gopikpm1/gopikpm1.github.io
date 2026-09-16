@@ -4,6 +4,9 @@ export interface Project {
   badge: string;
   /** 'org' renders the blue badge variant (organization project) */
   badgeClass?: 'org';
+  /** Optional company/product logo shown at the top of the card.
+   *  theme 'light' renders the logo on a white chip (for logos made for light backgrounds). */
+  logo?: { src: string; alt: string; theme?: 'light' };
   title: string;
   tech: string;
   /** May contain HTML entities */
@@ -17,6 +20,11 @@ export const projects: Project[] = [
     icon: 'fas fa-briefcase',
     badge: 'Selfservit (mservice.ai)',
     badgeClass: 'org',
+    logo: {
+      src: '/images/mservice-logo.png',
+      alt: 'mservice.ai logo',
+      theme: 'light',
+    },
     title: 'MService Enterprise FSM App',
     tech: 'Cordova • jQuery Mobile • Kendo UI • Custom Java Plugins',
     description:
@@ -32,6 +40,11 @@ export const projects: Project[] = [
     icon: 'fas fa-star',
     badge: 'AstroVed',
     badgeClass: 'org',
+    logo: {
+      src: '/images/astroved-logo.svg',
+      alt: 'AstroVed logo',
+      theme: 'light',
+    },
     title: 'AstroVed Consumer Mobile App',
     tech: 'React Native • ZegoCall • TeleCMI • Exotel • Node.js • MongoDB',
     description:
@@ -47,6 +60,11 @@ export const projects: Project[] = [
     icon: 'fas fa-comments',
     badge: 'AstroVed',
     badgeClass: 'org',
+    logo: {
+      src: '/images/astroved-logo.svg',
+      alt: 'AstroVed logo',
+      theme: 'light',
+    },
     title: 'AstroVedSpeaks — Consultation Platform',
     tech: 'Node.js • Express.js • PHP • MongoDB • ZegoCloud • TeleCMI • Exotel',
     description:
@@ -63,6 +81,11 @@ export const projects: Project[] = [
     icon: 'fas fa-brain',
     badge: 'AstroVed',
     badgeClass: 'org',
+    logo: {
+      src: '/images/astroved-logo.svg',
+      alt: 'AstroVed logo',
+      theme: 'light',
+    },
     title: 'QuantumGPT — AI Spiritual & Life Guidance Platform',
     tech: 'React.js • React Native • Node.js • Express.js • MongoDB • JWT • OpenAI API',
     description:
@@ -78,6 +101,10 @@ export const projects: Project[] = [
     id: 'proj-planets360',
     icon: 'fas fa-meteor',
     badge: 'Freelance Project',
+    logo: {
+      src: '/images/planets360-logo.svg',
+      alt: 'Planets360 logo',
+    },
     title: 'Planets360 — Vedic Astrology Platform',
     tech: 'Astro • React • TypeScript • Zod v4 • Netlify • SEO (JSON-LD)',
     description:
@@ -94,6 +121,10 @@ export const projects: Project[] = [
     id: 'proj-commodity-quant',
     icon: 'fas fa-chart-line',
     badge: 'Freelance Project',
+    logo: {
+      src: '/images/commodity-quant-logo.png',
+      alt: 'Commodity Quant logo',
+    },
     title: 'Commodity Quant — MCX Signals App',
     tech: 'Expo SDK • Expo Router • React Native • TypeScript • OneSignal • TanStack Query • Zustand • Msg91',
     description:

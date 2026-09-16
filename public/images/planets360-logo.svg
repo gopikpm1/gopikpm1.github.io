@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+    <defs>
+        <linearGradient id="planetGold" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#fcd34d" />
+            <stop offset="50%" stop-color="#f59e0b" />
+            <stop offset="100%" stop-color="#b45309" />
+        </linearGradient>
+    </defs>
+    <circle cx="64" cy="20" r="4" fill="#f59e0b" opacity="0.85" />
+    <circle cx="112" cy="46" r="2.5" fill="#a855f7" opacity="0.85" />
+    <circle cx="18" cy="90" r="3" fill="#a855f7" opacity="0.7" />
+    <circle cx="64" cy="66" r="26" fill="url(#planetGold)" />
+    <ellipse cx="64" cy="66" rx="48" ry="13" fill="none" stroke="#fcd34d" stroke-width="4" opacity="0.9" />
+    <ellipse cx="64" cy="66" rx="48" ry="13" fill="none" stroke="#7c3aed" stroke-width="1.5" opacity="0.5" />
+</svg>

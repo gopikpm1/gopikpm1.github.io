@@ -14,9 +14,20 @@ import { projects } from '../data/projects';
       {
         projects.map((project) => (
           <div class="project-card" id={project.id}>
-            <div class="project-icon">
-              <i class={project.icon} />
-            </div>
+            {
+              project.logo ? (
+                <img
+                  class:list={['project-logo', project.logo.theme === 'light' && 'project-logo--light']}
+                  src={project.logo.src}
+                  alt={project.logo.alt}
+                  loading="lazy"
+                />
+              ) : (
+                <div class="project-icon">
+                  <i class={project.icon} />
+                </div>
+              )
+            }
             <span class:list={['project-badge', project.badgeClass]}>{project.badge}</span>
             <h3>{project.title}</h3>
             <p class="project-tech" set:html={project.tech} />

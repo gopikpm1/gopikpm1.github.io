@@ -12,7 +12,18 @@ import { experience } from '../data/experience';
         experience.map((job) => (
           <div class="timeline-item">
             <div class="timeline-dot">
-              <i class={job.icon} />
+              {
+                job.logo ? (
+                  <img
+                    class="timeline-logo"
+                    src={job.logo.src}
+                    alt={job.logo.alt}
+                    loading="lazy"
+                  />
+                ) : (
+                  <i class={job.icon} />
+                )
+              }
             </div>
             <div class="timeline-content">
               <h3 class="company-title">{job.title}</h3>

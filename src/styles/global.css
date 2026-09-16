@@ -446,6 +446,35 @@ body {
     color: white;
 }
 
+/* Company/product logo replacing the icon in a project card */
+.project-logo {
+    display: block;
+    height: 48px;
+    width: auto;
+    max-width: 80%;
+    margin: 0 auto 1.5rem;
+    object-fit: contain;
+}
+/* Light-background logos need a white chip to be visible on the dark card */
+.project-logo--light {
+    background: #ffffff;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+
+
+/* Company logo shown inside an experience timeline dot */
+.timeline-logo {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 50%;
+    background: #ffffff;
+    object-fit: contain;
+}
+
+
 .project-card h3 {
     font-size: 1.4rem;
     margin-bottom: 0.5rem;
