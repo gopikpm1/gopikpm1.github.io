@@ -24,6 +24,8 @@ export const about = {
   ],
   info: [
     { icon: 'fas fa-map-marker-alt', text: 'Chennai, Tamil Nadu, India' },
+    { icon: 'fas fa-graduation-cap', text: 'BCA (2011) — University of Madras' },
+    { icon: 'fas fa-certificate', text: 'Diploma in .NET Technologies (2012) — NIIT, Chennai' },
     { icon: 'fas fa-phone', text: '+91-9952104427' },
     { icon: 'fas fa-envelope', text: 'gopikpm1@gmail.com' },
   ],

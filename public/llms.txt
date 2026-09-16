@@ -31,6 +31,7 @@
 
 ## Track record
 
+- Education: BCA (2011) — University of Madras; Diploma in .NET Technologies (2012) — NIIT, Chennai.
 - 13+ years experience · 52+ mobile apps delivered · 2M+ active users served · 99.5% availability
 - Product engineering at Selfservit (mservice.ai), 2012–2016; Mobile Team Lead at AstroVed, 2016–2026; independent freelance developer since 2026.
 
