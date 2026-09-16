@@ -1,0 +1,19 @@
+---
+import { stats } from '../data/site';
+---
+
+<!-- Stats Section -->
+<section class="stats">
+  <div class="container">
+    <div class="stats-grid">
+      {
+        stats.map((stat) => (
+          <div class="stat-card">
+            <h3 class="stat-number">{stat.number}</h3>
+            <p class="stat-label">{stat.label}</p>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

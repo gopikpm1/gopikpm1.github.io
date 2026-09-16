@@ -1,0 +1,44 @@
+---
+import { experience } from '../data/experience';
+---
+
+<!-- Experience Section -->
+<section id="experience" class="experience">
+  <div class="container">
+    <h2 class="section-title">Professional Experience</h2>
+
+    <div class="experience-timeline">
+      {
+        experience.map((job) => (
+          <div class="timeline-item">
+            <div class="timeline-dot">
+              <i class={job.icon} />
+            </div>
+            <div class="timeline-content">
+              <h3 class="company-title">{job.title}</h3>
+              <p class="company-name">{job.company}</p>
+              <p class="duration">{job.duration}</p>
+
+              <ul class="achievements">
+                {job.achievements.map((achievement) => (
+                  <li set:html={achievement} />
+                ))}
+              </ul>
+
+              <div class="experience-projects">
+                <p class="exp-projects-label">
+                  <i class="fas fa-folder-open" /> {job.keyProjectsLabel}
+                </p>
+                {job.keyProjects.map((project) => (
+                  <a href={project.href} class="chip-link">
+                    {project.label}
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

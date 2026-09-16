@@ -1,0 +1,288 @@
+export interface AppliedIn {
+  label: string;
+  href: string;
+}
+
+export interface SkillCategory {
+  icon: string;
+  category: string;
+  tags: string[];
+  appliedIn?: AppliedIn[];
+}
+
+const skillCategories: SkillCategory[] = [
+  {
+    icon: 'fas fa-mobile-alt',
+    category: 'Cross-Platform Mobile Development',
+    tags: [
+      'React Native',
+      'Expo SDK',
+      'Expo Router',
+      'EAS Build',
+      'EAS Submit',
+      'Ionic Framework',
+      'Ionic Capacitor',
+      'Cordova',
+      'PhoneGap',
+      'Progressive Web Apps',
+    ],
+    appliedIn: [
+      { label: 'Commodity Quant', href: '#proj-commodity-quant' },
+      { label: 'MService FSM App', href: '#proj-mservice' },
+    ],
+  },
+  {
+    icon: 'fas fa-video',
+    category: 'Real-Time Communication (RTC)',
+    tags: [
+      'WebRTC',
+      'Real-Time Audio/Video',
+      'Live Streaming',
+      'ZegoCall',
+      'ZegoExpress SDK',
+      'TeleCMI',
+      'Exotel',
+    ],
+    appliedIn: [
+      { label: 'AstroVed Consumer App', href: '#proj-astroved-consumer' },
+      { label: 'AstroVedSpeaks', href: '#proj-astrovedspeaks' },
+    ],
+  },
+  {
+    icon: 'fas fa-code',
+    category: 'Web & Frontend Development',
+    tags: [
+      'JavaScript (ES6+)',
+      'TypeScript',
+      'React',
+      'Angular',
+      'Astro',
+      'HTML5',
+      'CSS3',
+      'SASS',
+      'jQuery Mobile',
+      'Kendo UI',
+      'Responsive Design',
+      'Semantic HTML',
+    ],
+    appliedIn: [
+      { label: 'Planets360', href: '#proj-planets360' },
+      { label: 'QuantumGPT', href: '#proj-quantumgpt' },
+      { label: 'MService FSM App', href: '#proj-mservice' },
+    ],
+  },
+  {
+    icon: 'fas fa-database',
+    category: 'State Management & Storage',
+    tags: ['Redux', 'Zustand', 'TanStack React Query', 'SQLite'],
+    appliedIn: [
+      { label: 'Commodity Quant', href: '#proj-commodity-quant' },
+      { label: 'QuantumGPT', href: '#proj-quantumgpt' },
+    ],
+  },
+  {
+    icon: 'fas fa-bell',
+    category: 'Push Notifications & Services',
+    tags: [
+      'OneSignal',
+      'FCM / APNs',
+      'Msg91 (OTP / SMS / Voice)',
+      'Deep Linking',
+      'Custom URL Schemes',
+    ],
+    appliedIn: [
+      { label: 'Commodity Quant', href: '#proj-commodity-quant' },
+      { label: 'AstroVed Consumer App', href: '#proj-astroved-consumer' },
+    ],
+  },
+  {
+    icon: 'fas fa-fire',
+    category: 'Firebase Platform',
+    tags: [
+      'Firebase Analytics',
+      'Crashlytics',
+      'Performance Monitoring',
+      'Remote Config',
+      'Cloud Messaging (FCM)',
+      'Firebase Auth',
+      'Firestore',
+      'Realtime Database',
+      'Cloud Storage',
+      'Cloud Functions',
+      'Firebase Hosting',
+      'App Check',
+    ],
+  },
+  {
+    icon: 'fas fa-shield-alt',
+    category: 'Authentication & Security',
+    tags: [
+      'OAuth 2.0',
+      'SSO (Single Sign-On)',
+      'Google / Apple / Facebook Sign-In',
+      'JWT',
+      'Token-based Auth',
+      'Biometric Auth',
+      'Secure Storage (Keychain / Keystore)',
+    ],
+    appliedIn: [
+      { label: 'QuantumGPT', href: '#proj-quantumgpt' },
+      { label: 'Commodity Quant', href: '#proj-commodity-quant' },
+    ],
+  },
+  {
+    icon: 'fas fa-credit-card',
+    category: 'Payment Integration',
+    tags: [
+      'Stripe',
+      'Cosmofeed',
+      'In-App Purchases',
+      'Subscription Billing',
+      'WebView Payments',
+      'Payment Gateway Integration',
+    ],
+    appliedIn: [
+      { label: 'Commodity Quant', href: '#proj-commodity-quant' },
+      { label: 'QuantumGPT', href: '#proj-quantumgpt' },
+      { label: 'AstroVed Consumer App', href: '#proj-astroved-consumer' },
+    ],
+  },
+  {
+    icon: 'fas fa-chart-line',
+    category: 'SEO & Web Performance',
+    tags: [
+      'SEO Optimization',
+      'JSON-LD',
+      'Structured Data',
+      'Meta Tags',
+      'SSG / SSR',
+      'Netlify',
+      'Google Search Console',
+      'SEMrush',
+      'Google Analytics',
+      'Keyword Research',
+      'Site Audit',
+      'Rank Tracking',
+    ],
+    appliedIn: [{ label: 'Planets360', href: '#proj-planets360' }],
+  },
+  {
+    icon: 'fas fa-database',
+    category: 'Backend APIs & Databases',
+    tags: [
+      'Node.js',
+      'Express.js',
+      'PHP',
+      'REST API Design',
+      'MySQL',
+      'PostgreSQL',
+      'SQL Server',
+      'MongoDB',
+      'SQLite',
+      'Data Modeling',
+      'Query Optimization',
+    ],
+    appliedIn: [
+      { label: 'AstroVedSpeaks', href: '#proj-astrovedspeaks' },
+      { label: 'QuantumGPT', href: '#proj-quantumgpt' },
+      { label: 'AstroVed Consumer App', href: '#proj-astroved-consumer' },
+    ],
+  },
+  {
+    icon: 'fas fa-brain',
+    category: 'Generative AI',
+    tags: [
+      'OpenAI (GPT-4 / GPT-3.5)',
+      'Google Gemini',
+      'LLM Integration',
+      'Prompt Engineering',
+      'AI Chatbots',
+      'AI-Powered Features',
+    ],
+    appliedIn: [{ label: 'QuantumGPT', href: '#proj-quantumgpt' }],
+  },
+  {
+    icon: 'fas fa-wrench',
+    category: 'DevOps, CI/CD & Store Deployment',
+    tags: [
+      'EAS Build / Submit / Update',
+      'CodeMagic',
+      'OTA Updates',
+      'Google Play Console',
+      'App Store Connect',
+      'App Store Deployment',
+      'Play Store Deployment',
+      'Xcode',
+      'Android Studio',
+      'Git',
+      'CI/CD',
+    ],
+    appliedIn: [
+      { label: 'Commodity Quant', href: '#proj-commodity-quant' },
+      { label: 'AstroVed Consumer App', href: '#proj-astroved-consumer' },
+    ],
+  },
+  {
+    icon: 'fas fa-chart-bar',
+    category: 'Monitoring & Observability',
+    tags: [
+      'Sentry',
+      'Error Tracking',
+      'Crash Reporting',
+      'Performance Monitoring',
+      'Elasticsearch',
+      'Elastic Logging',
+      'Log Analytics',
+      'ELK Stack',
+      'Kibana',
+      'Application Monitoring',
+    ],
+  },
+  {
+    icon: 'fas fa-server',
+    category: 'Infrastructure & Cloud',
+    tags: [
+      'Linux Servers',
+      'Ubuntu',
+      'CentOS',
+      'Virtual Machines (VMs)',
+      'AWS EC2',
+      'Google Cloud VMs',
+      'Serverless API',
+      'AWS Lambda',
+      'Cloudflare',
+      'CDN',
+      'Cloudflare Workers',
+      'Edge Computing',
+      'Cloud Infrastructure',
+    ],
+  },
+  {
+    icon: 'fas fa-globe',
+    category: 'Domain, DNS & SSL Management',
+    tags: [
+      'GoDaddy',
+      'Cloudflare',
+      'DNS Management',
+      'Nameserver Configuration',
+      'SSL Certificates',
+      'HTTPS Setup',
+      "Let's Encrypt",
+      'Subdomain Configuration',
+    ],
+  },
+  {
+    icon: 'fas fa-sitemap',
+    category: 'Architecture & Methods',
+    tags: [
+      'Offline-First Architecture',
+      'MVVM',
+      'Clean Architecture',
+      'Agile / Scrum',
+      'Performance Optimization',
+    ],
+    appliedIn: [{ label: 'MService FSM App', href: '#proj-mservice' }],
+  },
+];
+
+export const skills = skillCategories;

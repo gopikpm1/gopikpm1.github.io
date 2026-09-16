@@ -1,0 +1,18 @@
+---
+import { hero } from '../data/site';
+---
+
+<!-- Hero Section -->
+<header id="home" class="hero">
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1 class="hero-title">{hero.name}</h1>
+      <p class="hero-subtitle">{hero.subtitle}</p>
+      <p class="hero-description">{hero.description}</p>
+      <div class="hero-buttons">
+        <a href={hero.primaryCta.href} class="btn btn-primary">{hero.primaryCta.label}</a>
+        <a href={hero.secondaryCta.href} class="btn btn-secondary">{hero.secondaryCta.label}</a>
+      </div>
+    </div>
+  </div>
+</header>

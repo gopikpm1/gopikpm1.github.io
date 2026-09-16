@@ -1,0 +1,34 @@
+---
+import { projects } from '../data/projects';
+---
+
+<!-- Key Projects Section -->
+<section id="projects" class="projects">
+  <div class="container">
+    <h2 class="section-title">Key Projects</h2>
+    <p class="section-description">
+      Each project is linked to the role it was delivered in — freelance builds are clearly badged.
+    </p>
+
+    <div class="projects-grid">
+      {
+        projects.map((project) => (
+          <div class="project-card" id={project.id}>
+            <div class="project-icon">
+              <i class={project.icon} />
+            </div>
+            <span class:list={['project-badge', project.badgeClass]}>{project.badge}</span>
+            <h3>{project.title}</h3>
+            <p class="project-tech" set:html={project.tech} />
+            <p class="project-description" set:html={project.description} />
+            <ul class="project-highlights">
+              {project.highlights.map((highlight) => (
+                <li set:html={highlight} />
+              ))}
+            </ul>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

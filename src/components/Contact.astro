@@ -1,0 +1,31 @@
+---
+import { contacts } from '../data/site';
+---
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+  <div class="container">
+    <h2 class="section-title">Let's Connect</h2>
+    <p class="section-description">
+      I'm open to discussing new projects, innovative ideas, and opportunities to be part of your
+      vision.
+    </p>
+
+    <div class="contact-methods">
+      {
+        contacts.map((contact) => (
+          <a
+            href={contact.href}
+            class="contact-card"
+            target={contact.external ? '_blank' : undefined}
+            rel={contact.external ? 'noopener noreferrer' : undefined}
+          >
+            <i class={contact.icon} />
+            <h3>{contact.title}</h3>
+            <p>{contact.detail}</p>
+          </a>
+        ))
+      }
+    </div>
+  </div>
+</section>

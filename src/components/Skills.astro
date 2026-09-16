@@ -1,0 +1,41 @@
+---
+import { skills } from '../data/skills';
+---
+
+<!-- Skills Section -->
+<section id="skills" class="skills">
+  <div class="container">
+    <h2 class="section-title">Technical Skills</h2>
+    <p class="section-description">
+      Every skill below is applied in a real, shipped product — tap a project chip to see it in
+      action.
+    </p>
+
+    <div class="skills-grid">
+      {
+        skills.map((skill) => (
+          <div class="skill-card">
+            <h3 class="skill-category">
+              <i class={skill.icon} /> {skill.category}
+            </h3>
+            <div class="skill-tags">
+              {skill.tags.map((tag) => (
+                <span class="tag">{tag}</span>
+              ))}
+            </div>
+            {skill.appliedIn && (
+              <div class="applied-in">
+                <span class="applied-in-label">Applied in:</span>
+                {skill.appliedIn.map((project) => (
+                  <a href={project.href} class="chip-link">
+                    {project.label}
+                  </a>
+                ))}
+              </div>
+            )}
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
