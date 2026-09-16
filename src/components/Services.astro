@@ -1,0 +1,196 @@
+---
+import { services } from '../data/services';
+---
+
+<!-- Services slider — customer attraction carousel -->
+<section id="services" class="services">
+  <div class="container">
+    <h2 class="section-title">What Can I Build For You?</h2>
+    <p class="section-description">
+      From AI chatbots to full brand apps — pick your goal and let&apos;s ship it.
+    </p>
+
+    <div class="slider" id="services-slider">
+      <div class="slides">
+        {
+          services.map((service, index) => (
+            <article
+              class:list={['slide', index === 0 && 'active']}
+              style={`--slide-grad: ${service.gradient}`}
+              aria-hidden={index === 0 ? 'false' : 'true'}
+            >
+              <span class="slide-tag">{service.tag}</span>
+              <div class="slide-icon">
+                <i class={service.icon} aria-hidden="true" />
+              </div>
+              <h3>{service.title}</h3>
+              <p class="slide-text">{service.description}</p>
+              <ul class="slide-points">
+                {service.points.map((point) => (
+                  <li>{point}</li>
+                ))}
+              </ul>
+              <a href={service.cta.href} class="btn btn-slide" tabindex={index === 0 ? undefined : -1}>
+                {service.cta.label}
+              </a>
+            </article>
+          ))
+        }
+      </div>
+
+      <button class="slider-arrow slider-prev" type="button" aria-label="Previous slide">
+        &#8249;
+      </button>
+      <button class="slider-arrow slider-next" type="button" aria-label="Next slide">
+        &#8250;
+      </button>
+
+      <div class="slider-dots" role="tablist" aria-label="Choose slide">
+        {
+          services.map((service, index) => (
+            <button
+              class:list={['slider-dot', index === 0 && 'active']}
+              type="button"
+              role="tab"
+              aria-selected={index === 0 ? 'true' : 'false'}
+              aria-label={service.title}
+            />
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const slider = document.getElementById('services-slider');
+
+  if (slider) {
+    const slides = Array.from(slider.querySelectorAll('.slide'));
+    const dots = Array.from(slider.querySelectorAll('.slider-dot'));
+    const prevBtn = slider.querySelector('.slider-prev');
+    const nextBtn = slider.querySelector('.slider-next');
+    let current = 0;
+    let timer: number | undefined;
+    // Once the user clicks or touches the slider, autoplay stays off
+    let userStopped = false;
+
+    function show(index: number) {
+      current = (index + slides.length) % slides.length;
+      slides.forEach((slide, i) => {
+        const active = i === current;
+        slide.classList.toggle('active', active);
+        slide.setAttribute('aria-hidden', active ? 'false' : 'true');
+        const cta = slide.querySelector('a');
+        if (cta) cta.setAttribute('tabindex', active ? '0' : '-1');
+      });
+      dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === current);
+        dot.setAttribute('aria-selected', i === current ? 'true' : 'false');
+      });
+    }
+
+    function play() {
+      if (userStopped) return;
+      stop();
+      timer = window.setInterval(() => show(current + 1), 5000);
+    }
+
+    function stop() {
+      if (timer !== undefined) window.clearInterval(timer);
+    }
+
+    function stopAutoplay() {
+      userStopped = true;
+      stop();
+    }
+
+    prevBtn?.addEventListener('click', () => {
+      show(current - 1);
+      stopAutoplay();
+    });
+    nextBtn?.addEventListener('click', () => {
+      show(current + 1);
+      stopAutoplay();
+    });
+    dots.forEach((dot, i) => {
+      dot.addEventListener('click', () => {
+        show(i);
+        stopAutoplay();
+      });
+    });
+
+    slider.addEventListener('mouseenter', stop);
+    slider.addEventListener('mouseleave', play);
+
+    // Drag / swipe with finger-follow (touch + mouse).
+    // The active slide tracks the pointer live; release snaps to next/prev.
+    const slidesEl = slider.querySelector('.slides') as HTMLElement;
+    let startX: number | null = null;
+    let dragX = 0;
+
+    function applyDrag(dx: number) {
+      const w = slidesEl.offsetWidth || 1;
+      slider.classList.add('dragging');
+      const dir = dx < 0 ? 1 : -1;
+      const incomingIndex = (current + dir + slides.length) % slides.length;
+      slides.forEach((s, i) => {
+        const el = s as HTMLElement;
+        if (i === current) {
+          el.style.opacity = '1';
+          el.style.transform = `translateX(${dx}px)`;
+        } else if (i === incomingIndex) {
+          el.style.opacity = '1';
+          el.style.transform = `translateX(${dx + dir * w}px)`;
+        } else {
+          el.style.opacity = '0';
+        }
+      });
+    }
+
+    function endDrag() {
+      if (startX === null) return;
+      const w = slidesEl.offsetWidth || 1;
+      const threshold = Math.min(120, w * 0.25);
+      const movedFar = Math.abs(dragX) > threshold;
+      const target = movedFar ? current + (dragX < 0 ? 1 : -1) : current;
+      startX = null;
+      dragX = 0;
+      // Suppress the click that follows a real drag (e.g. landing on the CTA)
+      if (movedFar) {
+        const kill = (ev: Event) => {
+          ev.preventDefault();
+          ev.stopPropagation();
+        };
+        slider.addEventListener('click', kill, { capture: true, once: true });
+      }
+      slider.classList.remove('dragging');
+      slides.forEach((s) => {
+        const el = s as HTMLElement;
+        el.style.opacity = '';
+        el.style.transform = '';
+      });
+      show(target);
+      stopAutoplay();
+    }
+
+    slidesEl.addEventListener('pointerdown', (e: PointerEvent) => {
+      if (e.pointerType === 'mouse' && e.button !== 0) return;
+      startX = e.clientX;
+      dragX = 0;
+      stop();
+    });
+
+    window.addEventListener('pointermove', (e: PointerEvent) => {
+      if (startX === null) return;
+      dragX = e.clientX - startX;
+      if (Math.abs(dragX) > 8) applyDrag(dragX);
+    });
+
+    window.addEventListener('pointerup', endDrag);
+    window.addEventListener('pointercancel', endDrag);
+
+    show(0);
+    play();
+  }
+</script>
