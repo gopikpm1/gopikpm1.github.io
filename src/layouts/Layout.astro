@@ -31,6 +31,8 @@ const personSchema = {
   email: 'mailto:gopikpm1@gmail.com',
   telephone: '+91-9952104427',
   sameAs: ['https://github.com/gopikpm1', 'https://linkedin.com/in/gopikpm1'],
+  image: siteUrl + '/images/profile.jpg',
+  knowsLanguage: ['Tamil', 'English'],
   alumniOf: [
     {
       '@type': 'CollegeOrUniversity',
@@ -178,20 +180,21 @@ const projectsSchema = {
     <meta name="geo.placename" content="Chennai, Tamil Nadu, India" />
 
     <!-- Open Graph (Facebook / LinkedIn / WhatsApp) -->
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content="profile" />
     <meta property="og:site_name" content="Gopi M — Mobile & Web Developer" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
-    <meta property="og:image" content={siteUrl + '/images/og-cover.svg'} />
+    <meta property="og:image" content={siteUrl + '/images/profile.jpg'} />
     <meta property="og:image:alt" content="Gopi M — Senior Cross-Platform Mobile & Web Developer" />
     <meta property="og:locale" content="en_IN" />
 
     <!-- Twitter / X -->
-    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content={siteUrl + '/images/og-cover.svg'} />
+    <meta name="twitter:image" content={siteUrl + '/images/profile.jpg'} />
+    <meta name="twitter:image:alt" content="Gopi M — Senior Cross-Platform Mobile & Web Developer" />
 
     <!-- Favicons -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
