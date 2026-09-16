@@ -449,17 +449,10 @@ body {
 /* Company/product logo replacing the icon in a project card */
 .project-logo {
     display: block;
-    height: 48px;
-    width: auto;
-    max-width: 80%;
+    height: 72px;
+    width: 160px;
     margin: 0 auto 1.5rem;
     object-fit: contain;
-}
-/* Light-background logos need a white chip to be visible on the dark card */
-.project-logo--light {
-    background: #ffffff;
-    padding: 10px 20px;
-    border-radius: 10px;
 }
 
 
