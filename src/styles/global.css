@@ -5,15 +5,28 @@
 }
 
 :root {
-    --primary-color: #3b82f6;
-    --secondary-color: #1d4ed8;
-    --accent-color: #f59e0b;
-    --text-dark: #e5e7eb;
-    --text-light: #9ca3af;
-    --bg-light: #111827;
-    --bg-white: #1f2937;
-    --border-color: #374151;
+    /* Colors — dark-mode palette tuned for accessible (AA) contrast */
+    --primary-color: #60a5fa;      /* links, accents, active states */
+    --secondary-color: #3b82f6;    /* gradients, filled surfaces */
+    --accent-color: #fbbf24;       /* badges, highlights */
+
+    --text-dark: #f1f5f9;          /* headings / primary text */
+    --text-light: #cbd5e1;         /* body / secondary text */
+    --text-muted: #94a3b8;         /* meta text */
+
+    --bg-light: #0f172a;           /* page background */
+    --bg-white: #1e293b;           /* cards / navbar */
+    --border-color: #334155;
+
     color-scheme: dark;
+
+    /* Standard type scale (16px base) */
+    --fs-sm: 0.875rem;
+    --fs-base: 1rem;
+    --fs-lead: 1.125rem;
+    --fs-h3: 1.25rem;
+    --fs-h2: 2rem;
+    --fs-h1: 3rem;
 }
 
 html {
@@ -21,10 +34,23 @@ html {
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-size: var(--fs-base);
+    line-height: 1.7;
     color: var(--text-dark);
     background-color: var(--bg-light);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+::selection {
+    background: rgba(59, 130, 246, 0.35);
+    color: #ffffff;
+}
+
+:focus-visible {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
 }
 
 .container {
@@ -87,21 +113,21 @@ body {
 }
 
 .hero-title {
-    font-size: 3.5rem;
+    font-size: var(--fs-h1);
     font-weight: 700;
     margin-bottom: 0.5rem;
     animation: slideInDown 0.8s ease;
 }
 
 .hero-subtitle {
-    font-size: 1.8rem;
-    font-weight: 300;
+    font-size: 1.5rem;
+    font-weight: 400;
     margin-bottom: 1rem;
     opacity: 0.95;
 }
 
 .hero-description {
-    font-size: 1.1rem;
+    font-size: var(--fs-lead);
     margin-bottom: 2rem;
     max-width: 600px;
     margin-left: auto;
@@ -122,13 +148,14 @@ body {
     border-radius: 5px;
     text-decoration: none;
     font-weight: 600;
+    font-size: var(--fs-base);
     transition: all 0.3s ease;
     display: inline-block;
 }
 
 .btn-primary {
     background: var(--accent-color);
-    color: white;
+    color: #111827;
 }
 
 .btn-primary:hover {
@@ -139,7 +166,7 @@ body {
 
 .btn-secondary {
     background: white;
-    color: var(--primary-color);
+    color: #1d4ed8;
     border: 2px solid white;
 }
 
@@ -155,7 +182,7 @@ body {
 }
 
 .section-title {
-    font-size: 2.5rem;
+    font-size: var(--fs-h2);
     font-weight: 700;
     text-align: center;
     margin-bottom: 3rem;
@@ -177,7 +204,7 @@ body {
 }
 
 .about-text p {
-    font-size: 1.1rem;
+    font-size: var(--fs-lead);
     line-height: 1.8;
     margin-bottom: 1.5rem;
     color: var(--text-light);
@@ -241,7 +268,7 @@ body {
 }
 
 .skill-category {
-    font-size: 1.3rem;
+    font-size: var(--fs-h3);
     font-weight: 600;
     color: var(--primary-color);
     margin-bottom: 1.5rem;
@@ -265,7 +292,7 @@ body {
     color: #93c5fd;
     padding: 0.4rem 0.9rem;
     border-radius: 20px;
-    font-size: 0.9rem;
+    font-size: var(--fs-sm);
     font-weight: 500;
 }
 
@@ -320,7 +347,7 @@ body {
 }
 
 .company-title {
-    font-size: 1.3rem;
+    font-size: var(--fs-h3);
     font-weight: 600;
     color: var(--text-dark);
     margin-bottom: 0.5rem;
@@ -334,7 +361,7 @@ body {
 
 .duration {
     color: var(--text-light);
-    font-size: 0.95rem;
+    font-size: var(--fs-sm);
     margin-bottom: 1rem;
 }
 
@@ -362,7 +389,7 @@ body {
 
 /* Projects linked inside Experience timeline */
 .timeline-dot i {
-    color: white;
+    color: #0f172a;
     font-size: 1.4rem;
 }
 
@@ -380,7 +407,7 @@ body {
     width: 100%;
     font-weight: 600;
     color: var(--text-dark);
-    font-size: 0.95rem;
+    font-size: var(--fs-sm);
     margin-bottom: 0.2rem;
 }
 
@@ -394,7 +421,7 @@ body {
     color: #93c5fd;
     padding: 0.35rem 0.8rem;
     border-radius: 20px;
-    font-size: 0.85rem;
+    font-size: var(--fs-sm);
     font-weight: 600;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -403,7 +430,7 @@ body {
 
 .chip-link:hover {
     background: var(--primary-color);
-    color: white;
+    color: #0f172a;
     transform: translateY(-2px);
 }
 
@@ -469,14 +496,14 @@ body {
 
 
 .project-card h3 {
-    font-size: 1.4rem;
+    font-size: var(--fs-h3);
     margin-bottom: 0.5rem;
     color: var(--text-dark);
 }
 
 .project-tech {
     color: var(--primary-color);
-    font-size: 0.9rem;
+    font-size: var(--fs-sm);
     font-weight: 600;
     margin-bottom: 1rem;
 }
@@ -490,7 +517,7 @@ body {
     display: inline-block;
     background: rgba(245, 158, 11, 0.15);
     color: #fbbf24;
-    font-size: 0.72rem;
+    font-size: 0.75rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -516,8 +543,8 @@ body {
     padding-left: 1.4rem;
     margin-bottom: 0.5rem;
     color: var(--text-light);
-    font-size: 0.95rem;
-    line-height: 1.6;
+    font-size: var(--fs-sm);
+    line-height: 1.7;
 }
 
 .project-highlights li::before {
@@ -571,7 +598,7 @@ body {
 }
 
 .stat-number {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
 }
@@ -589,7 +616,7 @@ body {
 
 .section-description {
     text-align: center;
-    font-size: 1.1rem;
+    font-size: var(--fs-lead);
     color: var(--text-light);
     max-width: 600px;
     margin: 0 auto 3rem;
@@ -628,7 +655,7 @@ body {
 }
 
 .contact-card h3 {
-    font-size: 1.2rem;
+    font-size: var(--fs-lead);
     margin-bottom: 0.5rem;
 }
 
@@ -663,11 +690,11 @@ body {
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 2.25rem;
     }
 
     .hero-subtitle {
-        font-size: 1.3rem;
+        font-size: 1.25rem;
     }
 
     .nav-menu {
@@ -676,11 +703,11 @@ body {
     }
 
     .nav-link {
-        font-size: 0.85rem;
+        font-size: var(--fs-sm);
     }
 
     .section-title {
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
 
     .skills-grid,
@@ -713,11 +740,11 @@ body {
     }
 
     .hero-title {
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
 
     .hero-subtitle {
-        font-size: 1.1rem;
+        font-size: var(--fs-lead);
     }
 
     .hero-buttons {

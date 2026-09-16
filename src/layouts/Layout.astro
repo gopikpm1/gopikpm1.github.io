@@ -8,8 +8,135 @@ interface Props {
 
 const {
   title,
-  description = 'Senior Cross-Platform Mobile & Web Developer with 13+ years of expertise in designing, architecting, and deploying enterprise and consumer mobile applications for iOS and Android platforms.',
+  description = 'Gopi M — Senior Cross-Platform Mobile & Web Developer with 13+ years of experience building enterprise and consumer apps with React Native, Expo, Ionic, Node.js and AI for iOS, Android and the web. Available for freelance projects.',
 } = Astro.props;
+
+const siteUrl = 'https://gopikpm1.github.io';
+const canonical = new URL(Astro.url.pathname, siteUrl).href;
+
+const personSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Gopi M',
+  url: siteUrl + '/',
+  jobTitle: 'Senior Cross-Platform Mobile & Web Developer',
+  description:
+    'Senior Cross-Platform Mobile & Web Developer with 13+ years of experience designing, architecting, and deploying enterprise and consumer applications for mobile (iOS & Android) and the web.',
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Chennai',
+    addressRegion: 'Tamil Nadu',
+    addressCountry: 'IN',
+  },
+  email: 'mailto:gopikpm1@gmail.com',
+  telephone: '+91-9952104427',
+  sameAs: ['https://github.com/gopikpm1', 'https://linkedin.com/in/gopikpm1'],
+  knowsAbout: [
+    'React Native',
+    'Expo',
+    'TypeScript',
+    'React',
+    'Astro',
+    'Ionic',
+    'Cordova',
+    'Node.js',
+    'MongoDB',
+    'WebRTC',
+    'Firebase',
+    'OpenAI API',
+    'Generative AI',
+    'Mobile App Development',
+    'iOS App Development',
+    'Android App Development',
+    'Web Application Development',
+    'Offline-First Architecture',
+    'App Store Optimization',
+    'Freelance Mobile App Developer',
+  ],
+};
+
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Gopi M — Senior Cross-Platform Mobile & Web Developer',
+  url: siteUrl + '/',
+  inLanguage: 'en',
+  author: { '@type': 'Person', name: 'Gopi M', url: siteUrl + '/' },
+};
+
+const projectsSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Key Projects by Gopi M',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      item: {
+        '@type': 'SoftwareApplication',
+        name: 'MService Enterprise FSM App',
+        url: siteUrl + '/#proj-mservice',
+        applicationCategory: 'BusinessApplication',
+        operatingSystem: ['iOS', 'Android'],
+      },
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      item: {
+        '@type': 'SoftwareApplication',
+        name: 'AstroVed Consumer Mobile App',
+        url: siteUrl + '/#proj-astroved-consumer',
+        applicationCategory: 'LifestyleApplication',
+        operatingSystem: ['iOS', 'Android'],
+      },
+    },
+    {
+      '@type': 'ListItem',
+      position: 3,
+      item: {
+        '@type': 'SoftwareApplication',
+        name: 'AstroVedSpeaks — Consultation Platform',
+        url: siteUrl + '/#proj-astrovedspeaks',
+        applicationCategory: 'BusinessApplication',
+        operatingSystem: ['Web', 'iOS', 'Android'],
+      },
+    },
+    {
+      '@type': 'ListItem',
+      position: 4,
+      item: {
+        '@type': 'SoftwareApplication',
+        name: 'QuantumGPT — AI Spiritual & Life Guidance Platform',
+        url: siteUrl + '/#proj-quantumgpt',
+        applicationCategory: 'LifestyleApplication',
+        operatingSystem: ['Web', 'iOS', 'Android'],
+      },
+    },
+    {
+      '@type': 'ListItem',
+      position: 5,
+      item: {
+        '@type': 'WebApplication',
+        name: 'Planets360 — Vedic Astrology Platform',
+        url: siteUrl + '/#proj-planets360',
+        applicationCategory: 'LifestyleApplication',
+        operatingSystem: 'Web',
+      },
+    },
+    {
+      '@type': 'ListItem',
+      position: 6,
+      item: {
+        '@type': 'MobileApplication',
+        name: 'Commodity Quant — MCX Signals App',
+        url: siteUrl + '/#proj-commodity-quant',
+        applicationCategory: 'FinanceApplication',
+        operatingSystem: ['iOS', 'Android', 'Web'],
+      },
+    },
+  ],
+};
 ---
 
 <!doctype html>
@@ -21,6 +148,49 @@ const {
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+
+    <!-- Canonical + robots (max indexing, rich previews) -->
+    <link rel="canonical" href={canonical} />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+
+    <!-- Primary SEO -->
+    <meta name="author" content="Gopi M" />
+    <meta name="theme-color" content="#0f172a" />
+    <meta
+      name="keywords"
+      content="freelance mobile app developer, freelance web developer chennai, react native developer india, expo developer, ios android app developer, ai app developer, webRTC developer, astro web developer, hire app developer"
+    />
+    <meta name="geo.region" content="IN-TN" />
+    <meta name="geo.placename" content="Chennai, Tamil Nadu, India" />
+
+    <!-- Open Graph (Facebook / LinkedIn / WhatsApp) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Gopi M — Mobile & Web Developer" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={siteUrl + '/images/og-cover.svg'} />
+    <meta property="og:image:alt" content="Gopi M — Senior Cross-Platform Mobile & Web Developer" />
+    <meta property="og:locale" content="en_IN" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={siteUrl + '/images/og-cover.svg'} />
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+
+    <!-- JSON-LD structured data: Person, WebSite, Projects -->
+    <script type="application/ld+json" set:html={JSON.stringify(personSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(projectsSchema)} />
 
     <!-- Google tag (gtag.js) -->
     <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-5KDJ30TR26"></script>

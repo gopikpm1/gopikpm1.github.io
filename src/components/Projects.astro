@@ -21,14 +21,16 @@ import { projects } from '../data/projects';
                   src={project.logo.src}
                   alt={project.logo.alt}
                   loading="lazy"
+                  width="160"
+                  height="72"
                 />
               ) : (
                 <div class="project-icon">
-                  <i class={project.icon} />
+                  <i class={project.icon} aria-hidden="true" />
                 </div>
               )
             }
-            <span class:list={['project-badge', project.badgeClass]}>{project.badge}</span>
+            <span class="project-badge" data-badge={project.badge}>{project.badge}</span>
             <h3>{project.title}</h3>
             <p class="project-tech" set:html={project.tech} />
             <p class="project-description" set:html={project.description} />

@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+
+# AI assistants & LLM crawlers — welcome, content is factual and current
+User-agent: GPTBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: Claude-Web
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Bytespider
+Allow: /
+
+Sitemap: https://gopikpm1.github.io/sitemap.xml

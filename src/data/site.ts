@@ -11,7 +11,7 @@ export const hero = {
   name: 'Gopi M',
   subtitle: 'Senior Cross-Platform Mobile & Web Developer',
   description:
-    'With 13+ years of expertise in designing, architecting, and deploying enterprise and consumer mobile applications for iOS and Android platforms.',
+    'With 13+ years of expertise in designing, architecting, and deploying enterprise and consumer applications for mobile (iOS & Android) and the web.',
   primaryCta: { href: '#contact', label: 'Get In Touch' },
   secondaryCta: { href: '#projects', label: 'View Projects' },
 };
