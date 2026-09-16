@@ -5,14 +5,15 @@
 }
 
 :root {
-    --primary-color: #2563eb;
-    --secondary-color: #1e40af;
+    --primary-color: #3b82f6;
+    --secondary-color: #1d4ed8;
     --accent-color: #f59e0b;
-    --text-dark: #1f2937;
-    --text-light: #6b7280;
-    --bg-light: #f9fafb;
-    --bg-white: #ffffff;
-    --border-color: #e5e7eb;
+    --text-dark: #e5e7eb;
+    --text-light: #9ca3af;
+    --bg-light: #111827;
+    --bg-white: #1f2937;
+    --border-color: #374151;
+    color-scheme: dark;
 }
 
 html {
@@ -74,7 +75,7 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    background: linear-gradient(135deg, #1e3a8a 0%, #172554 100%);
     color: white;
     padding: 100px 20px;
     text-align: center;
@@ -203,7 +204,7 @@ body {
 }
 
 .freelance-badge {
-    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+    background: rgba(245, 158, 11, 0.12);
     border: 2px solid var(--accent-color);
     border-radius: 8px;
     padding: 0.8rem 1.2rem;
@@ -260,8 +261,8 @@ body {
 }
 
 .tag {
-    background: linear-gradient(135deg, #e0e7ff 0%, #f0f4ff 100%);
-    color: var(--primary-color);
+    background: rgba(59, 130, 246, 0.15);
+    color: #93c5fd;
     padding: 0.4rem 0.9rem;
     border-radius: 20px;
     font-size: 0.9rem;
@@ -359,6 +360,53 @@ body {
     font-size: 1.2rem;
 }
 
+/* Projects linked inside Experience timeline */
+.timeline-dot i {
+    color: white;
+    font-size: 1.4rem;
+}
+
+.experience-projects {
+    margin-top: 1.2rem;
+    padding-top: 1rem;
+    border-top: 1px dashed var(--border-color);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    align-items: center;
+}
+
+.exp-projects-label {
+    width: 100%;
+    font-weight: 600;
+    color: var(--text-dark);
+    font-size: 0.95rem;
+    margin-bottom: 0.2rem;
+}
+
+.exp-projects-label i {
+    color: var(--accent-color);
+    margin-right: 0.4rem;
+}
+
+.chip-link {
+    background: rgba(59, 130, 246, 0.15);
+    color: #93c5fd;
+    padding: 0.35rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.chip-link:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+}
+
 /* Projects Section */
 .projects {
     padding: 80px 20px;
@@ -416,10 +464,77 @@ body {
     line-height: 1.8;
 }
 
+.project-badge {
+    display: inline-block;
+    background: rgba(245, 158, 11, 0.15);
+    color: #fbbf24;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 0.3rem 0.9rem;
+    border-radius: 20px;
+    margin-bottom: 0.8rem;
+}
+
+.project-badge.org {
+    background: rgba(59, 130, 246, 0.15);
+    color: #93c5fd;
+}
+
+.project-highlights {
+    list-style: none;
+    text-align: left;
+    margin-top: 0.5rem;
+    padding: 0;
+}
+
+.project-highlights li {
+    position: relative;
+    padding-left: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-light);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.project-highlights li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+/* Skills linked to projects */
+.applied-in {
+    margin-top: 1.2rem;
+    padding-top: 1rem;
+    border-top: 1px dashed var(--border-color);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.applied-in-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--text-light);
+    font-weight: 700;
+}
+
+/* Anchor offset for sticky navbar */
+.project-card,
+.timeline-content {
+    scroll-margin-top: 90px;
+}
+
 /* Stats Section */
 .stats {
     padding: 80px 20px;
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    background: linear-gradient(135deg, #1e3a8a 0%, #172554 100%);
     color: white;
 }
 
@@ -478,9 +593,9 @@ body {
 }
 
 .contact-card:hover {
-    background: white;
+    background: var(--bg-white);
     border-top-color: var(--primary-color);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
     transform: translateY(-5px);
 }
 
@@ -501,8 +616,8 @@ body {
 
 /* Footer */
 .footer {
-    background: var(--text-dark);
-    color: white;
+    background: #0b1220;
+    color: var(--text-light);
     text-align: center;
     padding: 2rem;
 }
