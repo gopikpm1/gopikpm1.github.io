@@ -35,21 +35,25 @@ export const projects: Project[] = [
       alt: 'mservice.ai logo',
       theme: 'light',
     },
-    title: 'MService Enterprise FSM App',
-    tech: 'Cordova • jQuery Mobile • Kendo UI • Custom Java Plugins',
+    title: 'MService Enterprise FSM App — Flagship Product Platform',
+    tech:
+      'Cordova • jQuery Mobile • Kendo UI • ASP.NET 3.5 • C# • SQL Server • Custom Java Plugins',
     description:
-      'A B2B Field Service Management app for iOS &amp; Android, built to work even with no network.',
+      'The flagship MService product of Selfservit (mservice.ai) — a cloud-based, omni-channel Equipment Lifecycle / Field Service Management SaaS platform for OEMs, dealers, operators &amp; customers on iOS, Android &amp; Windows, built to work even with no network.',
     highlights: [
-      'Real-time task management, SLA tracking, barcode scanning &amp; map layers',
-      'Offline-first data sync delivering 99.5% availability for field engineers',
-      'Custom Java native plugins for background GPS location tracking',
+      'Flagship MService platform (mservice.ai): FSM, DMS (Direct-to-Dealer) &amp; MService.Net modules connecting machine manufacturer OEM, component OEM, dealer, customer, operator &amp; telematics — personalized per equipment vertical (construction, road, compressor, generators, pharma, UPS, medical CT / X-Ray)',
+      'Complete service-process automation: work orders / calls, scheduling &amp; dispatch, real-time SLA tracking, barcode scanning, map layers and punch in / punch out with live technician tracking',
+      'Offline-first sync across attachments, forms, punch in / out and my calls — 99.5% availability for field engineers; custom Java native plugins for background GPS with battery-optimized location fetching',
+      '.NET server stack: ASP.NET 3.5 / C# web application on SQL Server with multi-client, multi-lingual &amp; strong password / account-lockout security policies',
+      'Dynamic form handler with versioning, drafts &amp; per-page auto-save; live camera &amp; gallery widgets with image compression, plus mobile reports with pan &amp; zoom',
+      'Enterprise scale &amp; data security: on-device encryption / decryption, queue-process sync engine, push notifications and releases across Google Play, Apple App Store &amp; Windows Store',
     ],
     links: [
       { kind: 'site', label: 'Website', href: 'https://www.mservice.ai/', icon: 'fas fa-globe' },
       {
         kind: 'android',
         label: 'Android',
-        href: 'https://play.google.com/store/apps/details?id=com.mservice.app',
+        href: 'https://play.google.com/store/apps/details?id=com.selfservit.mservice',
         icon: 'fab fa-google-play',
       },
       {
@@ -71,13 +75,17 @@ export const projects: Project[] = [
       theme: 'light',
     },
     title: 'AstroVed Consumer Mobile App',
-    tech: 'React Native • ZegoCall • TeleCMI • Exotel • Node.js • MongoDB',
+    tech:
+      'Ionic • Angular • React Native • .NET • PHP • Node.js • MongoDB • ZegoCall • TeleCMI • Exotel • WebView Payments',
     description:
-      'A high-traffic B2C astrology app with live consultation and streaming modules.',
+      'The official brand app version of AstroVed.com — a comprehensive personalized Vedic astrology platform with horoscopes, Kundali, Panchang, Virtual Pooja, LIVE TV, product store &amp; astrologer consultations.',
     highlights: [
-      'Real-time chat, video &amp; voice using ZegoCall, TeleCMI &amp; Exotel',
-      'Automated push notifications &amp; personalized user alerts',
-      'Secure payment gateway integration on a Node.js / MongoDB backend',
+      'Official AstroVed.com app: daily / weekly / monthly horoscopes (Rasi Palan), Janma Kundali in South / North Indian chart styles &amp; unlimited profiles — multilingual (English, Hindi, Tamil) &amp; location-based personalization',
+      'Free Vedic tools: location-based Panchang (Drik), Gowri / Hora planner, Vedic Calendar, Dasa / Bhukti, Jupiter / Saturn / Mars transits, Chandrashtama, lucky color / gemstone / number, Dosha checks (Mangalik, Naga, Pitru, Sade Sati), Numerology &amp; Horoscope Matching',
+      'Virtual Pooja to your favorite deity + 24x7 LIVE TV streaming of poojas, homams &amp; special events with reminders &amp; replays, AstroVedPedia encyclopedia &amp; home-screen widgets (Thithi, Hora, Horoscope)',
+      'In-app product store: poojas, homams, yantras, rudraksha, gemstones &amp; remedies with cart, checkout &amp; order history',
+      'Talk to expert astrologers via chat, voice / video &amp; phone using ZegoCall, TeleCMI &amp; Exotel',
+      'Multi-backend commerce: .NET + PHP + Node.js / MongoDB APIs with secure WebView-based payment checkout',
     ],
     links: [
       { kind: 'site', label: 'Website', href: 'https://www.astroved.com/', icon: 'fas fa-globe' },

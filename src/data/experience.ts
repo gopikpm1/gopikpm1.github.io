@@ -23,15 +23,15 @@ export const experience: ExperienceItem[] = [
     achievements: [
       '<strong>Spearheaded end-to-end development</strong> of a cloud-based Field Service Management (FSM) mobile app for iOS and Android using Cordova, jQuery Mobile, and Kendo UI.',
       '<strong>Conducted Research &amp; Development</strong> with new technologies to build core software product components and solutions as a key member of the product engineering team.',
-      '<strong>Developed hybrid mobile and web applications</strong> using jQuery, jQuery Mobile, and Kendo UI Mobile, alongside functional components using .NET technologies (.aspx, C#, and SQL Server).',
+      '<strong>Developed hybrid mobile and web applications</strong> using jQuery, jQuery Mobile, and Kendo UI Mobile, alongside functional components using .NET technologies (ASP.NET 3.5, .aspx, C#, and SQL Server).',
       '<strong>Built custom Java native plugins</strong> for background GPS location tracking and offline data synchronization.',
       '<strong>Architected an Offline-First mobile system</strong> ensuring 99.5% application availability for field engineers working in low-connectivity zones.',
       '<strong>Improved cross-device UI accessibility and mobile responsiveness by 30%</strong> across multiple screen sizes and operating systems.',
       '<strong>Managed app deployments across Google Play, Apple App Store, and Windows Store</strong>, owning release builds and store compliance.',
       '<strong>Handled requirements analysis, design, customer delivery, and support</strong>, translating business needs into product features and resolving client issues.',
     ],
-    keyProjectsLabel: 'Key Project Delivered',
-    keyProjects: [{ label: 'MService Enterprise FSM App', href: '#proj-mservice' }],
+    keyProjectsLabel: 'Flagship Product Delivered',
+    keyProjects: [{ label: 'MService Enterprise FSM App (mservice.ai)', href: '#proj-mservice' }],
   },
   {
     logo: {

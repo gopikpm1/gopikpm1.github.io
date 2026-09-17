@@ -124,6 +124,21 @@ export const services: ServiceSlide[] = [
     cta: { label: 'Build My Plugin', href: '#contact' },
   },
   {
+    tag: 'Enterprise SaaS',
+    icon: 'fas fa-server',
+    gradient: 'linear-gradient(135deg, #134e4a 0%, #0f172a 100%)',
+    title: 'Need an Enterprise SaaS / Product Platform?',
+    description:
+      'I build and scale complete B2B product platforms — SaaS web apps, mobile apps, desktop apps & PWA — like MService, an Equipment Lifecycle / Field Service Management platform used by OEMs, dealers, operators & customers across industries.',
+    points: [
+      'Multi-tenant SaaS architecture with role-based access & multi-client support',
+      'Offline-first field apps: work orders, dispatch, SLA tracking, barcode, maps & GPS',
+      '.NET stack expertise — ASP.NET 3.5 / C#, SQL Server, REST APIs (plus PHP & Node.js)',
+      'Enterprise security: encryption, strong password / lockout policies & audit trails',
+    ],
+    cta: { label: 'Build My Platform', href: '#contact' },
+  },
+  {
     tag: 'Launch & Grow',
     icon: 'fas fa-chart-line',
     gradient: 'linear-gradient(135deg, #db2777 0%, #7c3aed 100%)',

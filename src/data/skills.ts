@@ -224,6 +224,7 @@ const skillCategories: SkillCategory[] = [
       'Node.js',
       'Express.js',
       'PHP',
+      'ASP.NET 3.5 / C#',
       'REST API Design',
       'MySQL',
       'PostgreSQL',
@@ -234,6 +235,7 @@ const skillCategories: SkillCategory[] = [
       'Query Optimization',
     ],
     appliedIn: [
+      { label: 'MService FSM App', href: '#proj-mservice' },
       { label: 'AstroVedSpeaks', href: '#proj-astrovedspeaks' },
       { label: 'QuantumGPT', href: '#proj-quantumgpt' },
       { label: 'AstroVed Consumer App', href: '#proj-astroved-consumer' },
