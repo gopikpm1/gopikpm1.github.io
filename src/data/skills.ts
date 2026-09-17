@@ -134,6 +134,7 @@ const skillCategories: SkillCategory[] = [
     icon: 'fas fa-credit-card',
     category: 'Payment Integration',
     tags: [
+      'Razorpay',
       'Stripe',
       'Cosmofeed',
       'In-App Purchases',
@@ -142,6 +143,7 @@ const skillCategories: SkillCategory[] = [
       'Payment Gateway Integration',
     ],
     appliedIn: [
+      { label: 'Instant Pooja Homa', href: '#proj-instant-pooja-homa' },
       { label: 'Commodity Quant', href: '#proj-commodity-quant' },
       { label: 'QuantumGPT', href: '#proj-quantumgpt' },
       { label: 'AstroVed Consumer App', href: '#proj-astroved-consumer' },
