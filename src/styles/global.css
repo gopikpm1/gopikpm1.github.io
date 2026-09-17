@@ -769,6 +769,25 @@ body {
     object-fit: contain;
 }
 
+/* Logos with squarish artwork (e.g. Instant Pooja Homa): give a taller box
+   so the visible mark matches the presence of the other wide card logos */
+.project-logo--zoom {
+    width: 200px;
+    height: 120px;
+    object-fit: contain;
+}
+
+/* Portrait/photo logo (e.g. Dr Pillai): square, cropped circle like an avatar */
+
+.project-logo--avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--border-color);
+    background: var(--bg-light);
+}
+
 
 
 /* Company logo shown inside an experience timeline dot */

@@ -12,8 +12,10 @@ export interface Project {
   /** 'org' renders the blue badge variant (organization project) */
   badgeClass?: 'org';
   /** Optional company/product logo shown at the top of the card.
-   *  theme 'light' renders the logo on a white chip (for logos made for light backgrounds). */
-  logo?: { src: string; alt: string; theme?: 'light' };
+   *  theme 'light' renders the logo on a white chip (for logos made for light backgrounds).
+   *  shape 'avatar' renders a square/circular photo (for portrait images like Dr Pillai).
+   *  zoom renders with object-fit cover to crop heavy built-in image padding. */
+  logo?: { src: string; alt: string; theme?: 'light'; shape?: 'avatar'; zoom?: boolean };
   title: string;
   tech: string;
   /** May contain HTML entities */
@@ -140,9 +142,9 @@ export const projects: Project[] = [
     badge: 'AstroVed',
     badgeClass: 'org',
     logo: {
-      src: '/images/astroved-logo.svg',
-      alt: 'AstroVed logo',
-      theme: 'light',
+      src: '/images/drpillailogo.png',
+      alt: 'Dr Pillai logo',
+      shape: 'avatar',
     },
     title: 'QuantumGPT — AI Spiritual & Life Guidance Platform',
     tech: 'React.js • React Native • Node.js • Express.js • MongoDB • JWT • OpenAI API',
@@ -171,6 +173,47 @@ export const projects: Project[] = [
         kind: 'ios',
         label: 'iOS',
         href: 'https://apps.apple.com/us/app/dr-pillai-quantum-gpt/id6748348606',
+        icon: 'fab fa-apple',
+      },
+    ],
+  },
+  {
+    id: 'proj-instant-pooja-homa',
+    icon: 'fas fa-fire',
+    badge: 'AstroVed',
+    badgeClass: 'org',
+    logo: {
+      src: '/images/instantpoojahoma.png',
+      alt: 'Instant Pooja Homa logo',
+      zoom: true,
+    },
+    title: 'Instant Pooja Homa — Live Priest Booking App',
+    tech: 'React Native • TypeScript • Redux Toolkit • ZegoCloud • Razorpay • Firebase • Notifee',
+    description:
+      'A React Native app by AstroVed for booking Instant Poojas and Homas with live priests on video call.',
+    highlights: [
+      'Home tabs for Poojas, Homas &amp; Priests with category, language &amp; online-status filters',
+      'Buy flow: select Priest + Pooja — Razorpay / web checkout — MyOrders history',
+      'ZegoCloud live video calls with Call Info page, scheduled-order pulse &amp; Join call',
+      'Drawer menu: orders, feedback, support desk, settings, profile &amp; account deletion',
+    ],
+    links: [
+      {
+        kind: 'site',
+        label: 'Website',
+        href: 'https://www.astroved.com/instant-pooja',
+        icon: 'fas fa-globe',
+      },
+      {
+        kind: 'android',
+        label: 'Android',
+        href: 'https://play.google.com/store/apps/details?id=com.astroved.instantpoojahoma',
+        icon: 'fab fa-google-play',
+      },
+      {
+        kind: 'ios',
+        label: 'iOS',
+        href: 'https://apps.apple.com/us/app/instant-pooja-homa/id6478273914',
         icon: 'fab fa-apple',
       },
     ],

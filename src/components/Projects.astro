@@ -17,12 +17,17 @@ import { projects } from '../data/projects';
             {
               project.logo ? (
                 <img
-                  class:list={['project-logo', project.logo.theme === 'light' && 'project-logo--light']}
+                  class:list={[
+                    'project-logo',
+                    project.logo.theme === 'light' && 'project-logo--light',
+                    project.logo.shape === 'avatar' && 'project-logo--avatar',
+                    project.logo.zoom && 'project-logo--zoom',
+                  ]}
                   src={project.logo.src}
                   alt={project.logo.alt}
                   loading="lazy"
-                  width="160"
-                  height="72"
+                  width={project.logo.shape === 'avatar' ? '96' : '160'}
+                  height={project.logo.shape === 'avatar' ? '96' : '72'}
                 />
               ) : (
                 <div class="project-icon">

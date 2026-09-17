@@ -54,6 +54,7 @@ export const experience: ExperienceItem[] = [
     keyProjects: [
       { label: 'AstroVed Consumer Mobile App', href: '#proj-astroved-consumer' },
       { label: 'AstroVedSpeaks Consultation Platform', href: '#proj-astrovedspeaks' },
+      { label: 'Instant Pooja Homa Booking App', href: '#proj-instant-pooja-homa' },
       { label: 'QuantumGPT AI Guidance Platform', href: '#proj-quantumgpt' },
     ],
   },
