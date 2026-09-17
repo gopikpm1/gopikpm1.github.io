@@ -52,6 +52,16 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://gopikpm1.github.io/#proj-instant-pooja-homa</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gopikpm1.github.io/#proj-pillai-center-academy</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://gopikpm1.github.io/#proj-planets360</loc>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>

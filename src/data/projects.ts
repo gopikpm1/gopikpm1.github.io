@@ -178,6 +178,47 @@ export const projects: Project[] = [
     ],
   },
   {
+    id: 'proj-pillai-center-academy',
+    icon: 'fas fa-graduation-cap',
+    badge: 'AstroVed',
+    badgeClass: 'org',
+    logo: {
+      src: '/images/pillaicenteracademylogo.webp',
+      alt: 'Pillai Center Academy logo',
+      theme: 'light',
+    },
+    title: 'Pillai Center Academy — Transformational Learning App',
+    tech: 'React Native • WordPress • BuddyBoss • In-App Purchases • Audio / Video Courses',
+    description:
+      'The online home of Dr. Baskaran Pillai&#39;s programs &amp; courses for health, wealth, relationships &amp; spiritual growth — guiding learners to a 200% life.',
+    highlights: [
+      'Lesson-based course catalog, live events &amp; free programs serving 1M+ learners across 98 countries',
+      'Audio &amp; video lessons: mantras, meditations, karma-clearing protocols &amp; divine empowerment practices',
+      'No-code WordPress + BuddyBoss web platform — mobile app consumes the existing course &amp; community APIs',
+      'In-app purchases for audio programs (e.g. Karma Busting, Sharaba) on iOS &amp; Android',
+    ],
+    links: [
+      {
+        kind: 'site',
+        label: 'Website',
+        href: 'https://academy.pillaicenter.com/',
+        icon: 'fas fa-globe',
+      },
+      {
+        kind: 'android',
+        label: 'Android',
+        href: 'https://play.google.com/store/apps/details?id=com.pca.android',
+        icon: 'fab fa-google-play',
+      },
+      {
+        kind: 'ios',
+        label: 'iOS',
+        href: 'https://apps.apple.com/us/app/pillai-center-academy/id6748059707',
+        icon: 'fab fa-apple',
+      },
+    ],
+  },
+  {
     id: 'proj-instant-pooja-homa',
     icon: 'fas fa-fire',
     badge: 'AstroVed',

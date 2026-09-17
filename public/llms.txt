@@ -28,6 +28,7 @@
 4. QuantumGPT — AI spiritual guidance platform, web + iOS + Android (React, React Native, OpenAI API, JWT subscriptions).
 5. Planets360 — Vedic astrology web platform, 36-Guna matching, SEO JSON-LD (Astro, React, TypeScript, Zod).
 6. Commodity Quant — real-time MCX trading signals app, Android/iOS/Web (Expo, TypeScript, OneSignal, Zustand, Msg91).
+7. Pillai Center Academy — transformational learning app, iOS + Android (React Native, WordPress + BuddyBoss backend, in-app purchases, audio/video courses).
 
 ## Track record
 

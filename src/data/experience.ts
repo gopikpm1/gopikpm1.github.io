@@ -56,6 +56,7 @@ export const experience: ExperienceItem[] = [
       { label: 'AstroVedSpeaks Consultation Platform', href: '#proj-astrovedspeaks' },
       { label: 'Instant Pooja Homa Booking App', href: '#proj-instant-pooja-homa' },
       { label: 'QuantumGPT AI Guidance Platform', href: '#proj-quantumgpt' },
+      { label: 'Pillai Center Academy Learning App', href: '#proj-pillai-center-academy' },
     ],
   },
   {

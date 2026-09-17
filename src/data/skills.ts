@@ -29,6 +29,7 @@ const skillCategories: SkillCategory[] = [
     appliedIn: [
       { label: 'Commodity Quant', href: '#proj-commodity-quant' },
       { label: 'MService FSM App', href: '#proj-mservice' },
+      { label: 'Pillai Center Academy', href: '#proj-pillai-center-academy' },
     ],
   },
   {
@@ -57,6 +58,8 @@ const skillCategories: SkillCategory[] = [
       'React',
       'Angular',
       'Astro',
+      'WordPress',
+      'BuddyBoss',
       'HTML5',
       'CSS3',
       'SASS',
@@ -69,6 +72,7 @@ const skillCategories: SkillCategory[] = [
       { label: 'Planets360', href: '#proj-planets360' },
       { label: 'QuantumGPT', href: '#proj-quantumgpt' },
       { label: 'MService FSM App', href: '#proj-mservice' },
+      { label: 'Pillai Center Academy', href: '#proj-pillai-center-academy' },
     ],
   },
   {
@@ -144,6 +148,7 @@ const skillCategories: SkillCategory[] = [
     ],
     appliedIn: [
       { label: 'Instant Pooja Homa', href: '#proj-instant-pooja-homa' },
+      { label: 'Pillai Center Academy', href: '#proj-pillai-center-academy' },
       { label: 'Commodity Quant', href: '#proj-commodity-quant' },
       { label: 'QuantumGPT', href: '#proj-quantumgpt' },
       { label: 'AstroVed Consumer App', href: '#proj-astroved-consumer' },
