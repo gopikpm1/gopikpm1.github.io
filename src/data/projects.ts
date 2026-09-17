@@ -1,3 +1,10 @@
+export interface ProjectLink {
+  kind: 'site' | 'android' | 'ios' | 'drive';
+  label: string;
+  href: string;
+  icon: string;
+}
+
 export interface Project {
   id: string;
   icon: string;
@@ -12,6 +19,7 @@ export interface Project {
   /** May contain HTML entities */
   description: string;
   highlights: string[];
+  links?: ProjectLink[];
 }
 
 export const projects: Project[] = [
@@ -34,6 +42,21 @@ export const projects: Project[] = [
       'Offline-first data sync delivering 99.5% availability for field engineers',
       'Custom Java native plugins for background GPS location tracking',
     ],
+    links: [
+      { kind: 'site', label: 'Website', href: 'https://www.mservice.ai/', icon: 'fas fa-globe' },
+      {
+        kind: 'android',
+        label: 'Android',
+        href: 'https://play.google.com/store/apps/details?id=com.mservice.app',
+        icon: 'fab fa-google-play',
+      },
+      {
+        kind: 'ios',
+        label: 'iOS',
+        href: 'https://apps.apple.com/us/app/mservice/id945991789',
+        icon: 'fab fa-apple',
+      },
+    ],
   },
   {
     id: 'proj-astroved-consumer',
@@ -53,6 +76,21 @@ export const projects: Project[] = [
       'Real-time chat, video &amp; voice using ZegoCall, TeleCMI &amp; Exotel',
       'Automated push notifications &amp; personalized user alerts',
       'Secure payment gateway integration on a Node.js / MongoDB backend',
+    ],
+    links: [
+      { kind: 'site', label: 'Website', href: 'https://www.astroved.com/', icon: 'fas fa-globe' },
+      {
+        kind: 'android',
+        label: 'Android',
+        href: 'https://play.google.com/store/apps/details?id=com.astroved.birthchartnew',
+        icon: 'fab fa-google-play',
+      },
+      {
+        kind: 'ios',
+        label: 'iOS',
+        href: 'https://apps.apple.com/us/app/astroved-astrology-remedies/id1406242342',
+        icon: 'fab fa-apple',
+      },
     ],
   },
   {
@@ -75,6 +113,26 @@ export const projects: Project[] = [
       'Prepaid wallet with real-time per-minute billing engine (Node.js + MongoDB)',
       'Advisor filters, live status tracking &amp; booking schedules',
     ],
+    links: [
+      {
+        kind: 'site',
+        label: 'Website',
+        href: 'https://www.astroved.com/astrovedspeaks/',
+        icon: 'fas fa-globe',
+      },
+      {
+        kind: 'android',
+        label: 'Android',
+        href: 'https://play.google.com/store/apps/details?id=com.astroved.birthchartnew',
+        icon: 'fab fa-google-play',
+      },
+      {
+        kind: 'ios',
+        label: 'iOS',
+        href: 'https://play.google.com/store/apps/details?id=com.astroved.birthchartnew',
+        icon: 'fab fa-apple',
+      },
+    ],
   },
   {
     id: 'proj-quantumgpt',
@@ -96,6 +154,26 @@ export const projects: Project[] = [
       'Personalized coaching, mantras &amp; remedies from user prompts + planetary metrics',
       'JWT auth + tiered subscriptions (Free / Plus / Pro) with daily question quotas',
     ],
+    links: [
+      {
+        kind: 'site',
+        label: 'Website',
+        href: 'https://www.pillaicenter.com/dr-pillai-quantumgpt/',
+        icon: 'fas fa-globe',
+      },
+      {
+        kind: 'android',
+        label: 'Android',
+        href: 'https://play.google.com/store/apps/details?id=com.pillaicenter.drpillaiquantumgpt',
+        icon: 'fab fa-google-play',
+      },
+      {
+        kind: 'ios',
+        label: 'iOS',
+        href: 'https://apps.apple.com/us/app/dr-pillai-quantum-gpt/id6748348606',
+        icon: 'fab fa-apple',
+      },
+    ],
   },
   {
     id: 'proj-planets360',
@@ -116,6 +194,7 @@ export const projects: Project[] = [
       'Life predictions: career, marriage, health, wealth, education &amp; foreign settlement',
       'Astro framework + Zod v4 validation + JSON-LD structured data for SEO',
     ],
+    links: [{ kind: 'site', label: 'Website', href: 'http://planets360.in/', icon: 'fas fa-globe' }],
   },
   {
     id: 'proj-commodity-quant',
@@ -135,6 +214,15 @@ export const projects: Project[] = [
       'Personalized OneSignal push notifications with per-instrument preferences',
       'OTP login via Msg91 + tiered subscription with Pro upsell flows',
       'SEBI-registered Research Analyst branding &amp; compliance',
+    ],
+    links: [
+      { kind: 'site', label: 'Website', href: 'https://www.commodityquant.com/', icon: 'fas fa-globe' },
+      {
+        kind: 'drive',
+        label: 'Android APK',
+        href: 'https://drive.google.com/drive/folders/1gt-QyNgMa3356pXKfBsZhxIFV-KMvjsz?usp=sharing',
+        icon: 'fab fa-google-drive',
+      },
     ],
   },
 ];

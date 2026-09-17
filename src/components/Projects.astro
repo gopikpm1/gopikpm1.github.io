@@ -39,6 +39,25 @@ import { projects } from '../data/projects';
                 <li set:html={highlight} />
               ))}
             </ul>
+            {
+              project.links && project.links.length > 0 && (
+                <div class="project-links">
+                  {project.links.map((link) => (
+                    <a
+                      class="project-link"
+                      data-kind={link.kind}
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`${project.title} — ${link.label}`}
+                    >
+                      <i class={link.icon} aria-hidden="true" />
+                      <span>{link.label}</span>
+                    </a>
+                  ))}
+                </div>
+              )
+            }
           </div>
         ))
       }
