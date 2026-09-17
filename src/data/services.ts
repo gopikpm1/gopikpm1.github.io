@@ -47,6 +47,7 @@ export const services: ServiceSlide[] = [
     points: [
       'AI-assisted code review, cleanup & modernization',
       'Migrate legacy code to React Native, Expo, Electron & TypeScript',
+      'Custom plugins & reusable libraries in Java, C# & npm',
       'Faster builds, fewer bugs, happier developers',
     ],
     cta: { label: 'Modernize My Code', href: '#contact' },
@@ -99,13 +100,28 @@ export const services: ServiceSlide[] = [
     gradient: 'linear-gradient(135deg, #0f172a 0%, #2563eb 100%)',
     title: 'Need a Desktop App for Windows / Mac?',
     description:
-      'Get a fast, installable desktop app for Windows & Apple macOS — plus mobile apps, website & PWA — all from one codebase to save time and cost.',
+      'Get a fast, installable desktop app for Windows & Apple macOS — plus mobile apps, website & PWA — all from one codebase to save time and cost. Need a special feature? I build custom native plugins & libraries in Java, C# & npm.',
     points: [
       'Electron desktop apps for Windows (NSIS / MSI) & macOS (DMG / Mac App Store)',
       'Mobile apps (iOS & Android) + responsive website + installable PWA from shared code',
+      'Custom Java / C# / npm plugins & libraries for any native capability',
       'Offline support, system tray, native menus, notifications & secure auto-updates',
     ],
     cta: { label: 'Build My Desktop App', href: '#contact' },
+  },
+  {
+    tag: 'Plugins & SDKs',
+    icon: 'fas fa-plug',
+    gradient: 'linear-gradient(135deg, #1e293b 0%, #0ea5e9 100%)',
+    title: 'Need a Custom Plugin or Library?',
+    description:
+      'Missing a native feature? I design and build custom plugins & reusable libraries in Java, C# and npm — so your mobile, desktop, web & PWA apps can do anything native can.',
+    points: [
+      'Java plugins: Cordova / Capacitor / React Native bridges, background GPS, AAR / JAR libs',
+      'C# libraries: .NET class libs, NuGet packages, SDK & API integrations',
+      'npm packages: TypeScript libs, versioned, documented & published',
+    ],
+    cta: { label: 'Build My Plugin', href: '#contact' },
   },
   {
     tag: 'Launch & Grow',

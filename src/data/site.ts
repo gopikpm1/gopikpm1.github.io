@@ -20,7 +20,7 @@ export const hero = {
 export const about = {
   paragraphs: [
     "I'm a Senior Cross-Platform Mobile, Web & Desktop Developer with over 13 years of hands-on experience in building high-impact mobile, web, desktop and PWA solutions. I specialize in creating seamless user experiences across iOS, Android, Windows, macOS and the web using modern frameworks and cutting-edge technologies.",
-    'My expertise spans offline-first architecture, Electron desktop apps with native integrations and auto-updates, installable Progressive Web Apps (PWA), real-time communication systems, AI integration, and performance optimization across mobile, desktop and web. I\'m passionate about delivering solutions — one shared codebase for mobile apps, website, Windows / Apple desktop apps and PWA — that not only meet technical requirements but exceed user expectations.',
+    'My expertise spans offline-first architecture, Electron desktop apps with native integrations and auto-updates, installable Progressive Web Apps (PWA), custom native plugins & reusable libraries in Java, C# and npm, real-time communication systems, AI integration, and performance optimization across mobile, desktop and web. I\'m passionate about delivering solutions — one shared codebase for mobile apps, website, Windows / Apple desktop apps and PWA — that not only meet technical requirements but exceed user expectations.',
   ],
   info: [
     { icon: 'fas fa-map-marker-alt', text: 'Chennai, Tamil Nadu, India' },

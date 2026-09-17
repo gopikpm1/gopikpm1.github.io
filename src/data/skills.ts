@@ -53,6 +53,26 @@ const skillCategories: SkillCategory[] = [
     ],
   },
   {
+    icon: 'fas fa-plug',
+    category: 'Native Plugins & Library Development (Java / C# / npm)',
+    tags: [
+      'Java (Android Native Modules)',
+      'Cordova Custom Plugins (Java)',
+      'Capacitor Custom Plugins (Java)',
+      'React Native Bridging (Java)',
+      'Background Services & GPS Plugins',
+      'AAR / JAR Library Packaging',
+      'C# (.NET Class Libraries)',
+      'NuGet Package Publishing',
+      'C# Plugins & SDK Integrations',
+      '.NET Components (ASP.NET / C# / SQL Server)',
+      'npm Package Development',
+      'TypeScript Reusable Libraries',
+      'Publish & Version npm Packages',
+    ],
+    appliedIn: [{ label: 'MService FSM App', href: '#proj-mservice' }],
+  },
+  {
     icon: 'fas fa-video',
     category: 'Real-Time Communication (RTC)',
     tags: [
