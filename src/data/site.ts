@@ -10,17 +10,17 @@ export const navLinks = [
 
 export const hero = {
   name: 'Gopi M',
-  subtitle: 'Senior Cross-Platform Mobile & Web Developer',
+  subtitle: 'Senior Cross-Platform Mobile, Web & Desktop Developer',
   description:
-    'With 13+ years of expertise in designing, architecting, and deploying enterprise and consumer applications for mobile (iOS & Android) and the web.',
+    'With 13+ years of expertise in designing, architecting, and deploying enterprise and consumer applications for mobile (iOS & Android), web, desktop (Windows & macOS via Electron) and installable PWA.',
   primaryCta: { href: '#contact', label: 'Get In Touch' },
   secondaryCta: { href: '#projects', label: 'View Projects' },
 };
 
 export const about = {
   paragraphs: [
-    "I'm a Senior Cross-Platform Mobile & Web Developer with over 13 years of hands-on experience in building high-impact mobile and web solutions. I specialize in creating seamless user experiences across iOS, Android, and web platforms using modern frameworks and cutting-edge technologies.",
-    "My expertise spans offline-first architecture, real-time communication systems, AI integration, and mobile performance optimization. I'm passionate about delivering solutions that not only meet technical requirements but exceed user expectations.",
+    "I'm a Senior Cross-Platform Mobile, Web & Desktop Developer with over 13 years of hands-on experience in building high-impact mobile, web, desktop and PWA solutions. I specialize in creating seamless user experiences across iOS, Android, Windows, macOS and the web using modern frameworks and cutting-edge technologies.",
+    'My expertise spans offline-first architecture, Electron desktop apps with native integrations and auto-updates, installable Progressive Web Apps (PWA), real-time communication systems, AI integration, and performance optimization across mobile, desktop and web. I\'m passionate about delivering solutions — one shared codebase for mobile apps, website, Windows / Apple desktop apps and PWA — that not only meet technical requirements but exceed user expectations.',
   ],
   info: [
     { icon: 'fas fa-map-marker-alt', text: 'Chennai, Tamil Nadu, India' },
@@ -30,13 +30,13 @@ export const about = {
     { icon: 'fas fa-phone', text: '+91-9952104427' },
     { icon: 'fas fa-envelope', text: 'gopikpm1@gmail.com' },
   ],
-  freelanceBadge: { icon: 'fas fa-laptop-code', text: 'Freelance Mobile Developer' },
+  freelanceBadge: { icon: 'fas fa-laptop-code', text: 'Freelance Mobile • Web • Desktop Developer' },
 };
 
 export const stats = [
   { number: '13+', label: 'Years of Experience' },
-  { number: '52+', label: 'Mobile Apps Delivered' },
-  { number: '2M+', label: 'Active Users Served' },
+  { number: '52+', label: 'Mobile, Web, Desktop & PWA Apps Delivered' },
+  { number: '1M+', label: 'Active Users Served' },
   { number: '99.5%', label: 'App Availability Rate' },
 ];
 

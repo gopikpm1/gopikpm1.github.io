@@ -8,7 +8,7 @@ interface Props {
 
 const {
   title,
-  description = 'Gopi M — Senior Cross-Platform Mobile & Web Developer with 13+ years of experience building enterprise and consumer apps with React Native, Expo, Ionic, Node.js and AI for iOS, Android and the web. Available for freelance projects.',
+  description = 'Gopi M — Senior Cross-Platform Mobile, Web & Desktop Developer with 13+ years of experience building enterprise and consumer apps with React Native, Expo, Electron, Ionic, Node.js and AI for mobile apps, website, Windows / Apple desktop apps & PWA. Available for freelance projects.',
 } = Astro.props;
 
 const siteUrl = 'https://gopikpm1.github.io';
@@ -19,9 +19,9 @@ const personSchema = {
   '@type': 'Person',
   name: 'Gopi M',
   url: siteUrl + '/',
-  jobTitle: 'Senior Cross-Platform Mobile & Web Developer',
+  jobTitle: 'Senior Cross-Platform Mobile, Web & Desktop Developer',
   description:
-    'Senior Cross-Platform Mobile & Web Developer with 13+ years of experience designing, architecting, and deploying enterprise and consumer applications for mobile (iOS & Android) and the web.',
+    'Senior Cross-Platform Mobile, Web & Desktop Developer with 13+ years of experience designing, architecting, and deploying enterprise and consumer applications for mobile apps (iOS & Android), website, Windows / Apple desktop apps (Electron) and PWA.',
   address: {
     '@type': 'PostalAddress',
     addressLocality: 'Chennai',
@@ -46,6 +46,12 @@ const personSchema = {
   knowsAbout: [
     'React Native',
     'Expo',
+    'Electron',
+    'Desktop App Development',
+    'Windows App Development',
+    'macOS App Development',
+    'Progressive Web Apps',
+    'PWA Development',
     'TypeScript',
     'React',
     'Astro',
@@ -61,16 +67,18 @@ const personSchema = {
     'iOS App Development',
     'Android App Development',
     'Web Application Development',
+    'Website Development',
     'Offline-First Architecture',
     'App Store Optimization',
     'Freelance Mobile App Developer',
+    'Freelance Desktop App Developer',
   ],
 };
 
 const websiteSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
-  name: 'Gopi M — Senior Cross-Platform Mobile & Web Developer',
+  name: 'Gopi M — Senior Cross-Platform Mobile, Web & Desktop Developer',
   url: siteUrl + '/',
   inLanguage: 'en',
   author: { '@type': 'Person', name: 'Gopi M', url: siteUrl + '/' },
@@ -185,19 +193,19 @@ const projectsSchema = {
     <meta name="theme-color" content="#0f172a" />
     <meta
       name="keywords"
-      content="freelance mobile app developer, freelance web developer chennai, react native developer india, expo developer, ios android app developer, ai app developer, webRTC developer, astro web developer, hire app developer"
+      content="freelance mobile app developer, freelance web developer chennai, freelance desktop app developer, electron developer india, windows app developer, mac app developer, pwa developer, react native developer india, expo developer, ios android app developer, ai app developer, webRTC developer, astro web developer, hire app developer"
     />
     <meta name="geo.region" content="IN-TN" />
     <meta name="geo.placename" content="Chennai, Tamil Nadu, India" />
 
     <!-- Open Graph (Facebook / LinkedIn / WhatsApp) -->
     <meta property="og:type" content="profile" />
-    <meta property="og:site_name" content="Gopi M — Mobile & Web Developer" />
+    <meta property="og:site_name" content="Gopi M — Mobile, Web & Desktop Developer" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     <meta property="og:image" content={siteUrl + '/images/profile.jpg'} />
-    <meta property="og:image:alt" content="Gopi M — Senior Cross-Platform Mobile & Web Developer" />
+    <meta property="og:image:alt" content="Gopi M — Senior Cross-Platform Mobile, Web & Desktop Developer" />
     <meta property="og:locale" content="en_IN" />
 
     <!-- Twitter / X -->
@@ -205,7 +213,7 @@ const projectsSchema = {
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={siteUrl + '/images/profile.jpg'} />
-    <meta name="twitter:image:alt" content="Gopi M — Senior Cross-Platform Mobile & Web Developer" />
+    <meta name="twitter:image:alt" content="Gopi M — Senior Cross-Platform Mobile, Web & Desktop Developer" />
 
     <!-- Favicons -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />

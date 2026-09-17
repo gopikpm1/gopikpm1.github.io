@@ -15,10 +15,10 @@ export const services: ServiceSlide[] = [
     gradient: 'linear-gradient(135deg, #7c3aed 0%, #2563eb 100%)',
     title: 'Want an AI Chatbot for Your Business?',
     description:
-      'Turn visitors into paying customers with a 24/7 AI assistant that chats, answers questions and books sales while you sleep.',
+      'Turn visitors into paying customers with a 24/7 AI assistant that chats, answers questions and books sales while you sleep — on mobile apps, website, Windows / Apple desktop apps & PWA.',
     points: [
       'ChatGPT-powered chat & voice bots',
-      'Website, WhatsApp & in-app assistants',
+      'Mobile apps, website, Windows / Mac desktop apps, WhatsApp, PWA & in-app assistants',
       'Trained on YOUR business data',
     ],
     cta: { label: 'Get AI for My Business', href: '#contact' },
@@ -29,11 +29,11 @@ export const services: ServiceSlide[] = [
     gradient: 'linear-gradient(135deg, #b91c1c 0%, #7c2d12 100%)',
     title: 'Critical Bugs? Crashes No One Can Fix?',
     description:
-      'App crashing on launch? 1-star reviews piling up? I hunt down the nastiest production bugs and ship a safe hotfix — fast.',
+      'Mobile app, website, desktop app or PWA crashing on launch? 1-star reviews piling up? I hunt down the nastiest production bugs and ship a safe hotfix — fast.',
     points: [
       'Crash, ANR & freeze diagnosis with root-cause report',
       'Broken payments, login & sync repaired',
-      'Emergency hotfix released to stores within days',
+      'Emergency hotfix released to stores, desktop & web within days',
     ],
     cta: { label: 'Fix My App Now', href: '#contact' },
   },
@@ -46,7 +46,7 @@ export const services: ServiceSlide[] = [
       'Legacy, messy or slow code eating your time and money? I refactor it with modern AI-assisted engineering — cleaner, faster, cheaper to maintain.',
     points: [
       'AI-assisted code review, cleanup & modernization',
-      'Migrate legacy code to React Native, Expo & TypeScript',
+      'Migrate legacy code to React Native, Expo, Electron & TypeScript',
       'Faster builds, fewer bugs, happier developers',
     ],
     cta: { label: 'Modernize My Code', href: '#contact' },
@@ -57,7 +57,7 @@ export const services: ServiceSlide[] = [
     gradient: 'linear-gradient(135deg, #16a34a 0%, #0d9488 100%)',
     title: 'Low Budget, High-Quality Apps?',
     description:
-      'Big-agency quality without the big-agency invoice. One senior developer, zero middlemen — premium iOS, Android & web apps at freelance prices.',
+      'Big-agency quality without the big-agency invoice. One senior developer, zero middlemen — premium mobile apps, website, Windows / Apple desktop apps & PWA at freelance prices.',
     points: [
       'Fixed quote upfront — no hidden costs, ever',
       'Senior quality: clean code, tested releases',
@@ -69,13 +69,13 @@ export const services: ServiceSlide[] = [
     tag: 'Free Audit',
     icon: 'fas fa-rocket',
     gradient: 'linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)',
-    title: 'Consult or Upgrade Your Mobile / Web App',
+    title: 'Consult or Upgrade Your Mobile / Web / Desktop App',
     description:
-      'Slow, buggy or outdated app losing users? Get a free expert audit and a clear upgrade plan — no jargon, just results.',
+      'Slow, buggy or outdated mobile app, website, desktop app or PWA losing users? Get a free expert audit and a clear upgrade plan — no jargon, just results.',
     points: [
       'Free performance, UI & crash audit',
       'Speed boost, bug fixes & modern redesign',
-      'Migrate to React Native, Expo & the latest stack',
+      'Migrate to React Native, Expo, Electron & the latest stack',
     ],
     cta: { label: 'Audit My App — Free', href: '#contact' },
   },
@@ -85,13 +85,27 @@ export const services: ServiceSlide[] = [
     gradient: 'linear-gradient(135deg, #059669 0%, #2563eb 100%)',
     title: 'Build Your Own Brand Mobile App',
     description:
-      'Stop depending on marketplaces. Launch your own branded app on iOS & Android and own your customers forever.',
+      'Stop depending on marketplaces. Launch your own branded mobile apps, website, Windows / Apple desktop apps & PWA and own your customers forever.',
     points: [
-      'iOS + Android from a single codebase',
+      'Mobile apps (iOS + Android), website, Windows / Mac desktop apps & PWA from a single codebase',
       'Your logo, your colors, your store listing',
       'Payments, subscriptions & push notifications built in',
     ],
     cta: { label: 'Start My Brand App', href: '#contact' },
+  },
+  {
+    tag: 'Desktop Apps',
+    icon: 'fas fa-desktop',
+    gradient: 'linear-gradient(135deg, #0f172a 0%, #2563eb 100%)',
+    title: 'Need a Desktop App for Windows / Mac?',
+    description:
+      'Get a fast, installable desktop app for Windows & Apple macOS — plus mobile apps, website & PWA — all from one codebase to save time and cost.',
+    points: [
+      'Electron desktop apps for Windows (NSIS / MSI) & macOS (DMG / Mac App Store)',
+      'Mobile apps (iOS & Android) + responsive website + installable PWA from shared code',
+      'Offline support, system tray, native menus, notifications & secure auto-updates',
+    ],
+    cta: { label: 'Build My Desktop App', href: '#contact' },
   },
   {
     tag: 'Launch & Grow',
