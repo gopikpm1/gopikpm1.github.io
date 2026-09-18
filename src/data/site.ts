@@ -27,7 +27,7 @@ export const about = {
     { icon: 'fas fa-graduation-cap', text: 'BCA (2011) — University of Madras' },
     { icon: 'fas fa-certificate', text: 'Diploma in .NET Technologies (2012) — NIIT, Chennai' },
     { icon: 'fas fa-language', text: 'Tamil & English' },
-    { icon: 'fas fa-envelope', text: 'gopikpm1@gmail.com' },
+    { icon: 'fas fa-envelope', text: 'contact@gopim.dev' },
   ],
   freelanceBadge: { icon: 'fas fa-laptop-code', text: 'Freelance Mobile • Web • Desktop Developer' },
 };
@@ -41,17 +41,17 @@ export const stats = [
 
 export const contacts = [
   {
-    href: 'mailto:gopikpm1@gmail.com',
+    href: 'mailto:contact@gopim.dev',
     icon: 'fas fa-envelope',
     title: 'Email',
-    detail: 'gopikpm1@gmail.com',
+    detail: 'contact@gopim.dev',
     external: false,
   },
   {
-    href: 'https://www.linkedin.com/in/gopi-m-12a61470',
+    href: 'https://www.linkedin.com/in/gopi-kpm/',
     icon: 'fab fa-linkedin',
     title: 'LinkedIn',
-    detail: '@gopi-m-12a61470',
+    detail: '@gopi-kpm',
     external: true,
   },
 ];
