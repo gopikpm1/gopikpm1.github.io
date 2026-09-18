@@ -19,4 +19,4 @@ Allow: /
 User-agent: Bytespider
 Allow: /
 
-Sitemap: https://gopikpm1.github.io/sitemap.xml
+Sitemap: https://gopim.dev/sitemap.xml

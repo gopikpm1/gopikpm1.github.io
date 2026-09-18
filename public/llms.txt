@@ -5,7 +5,7 @@
 > Ships iOS, Android & web apps end-to-end: architecture → UI → store release → growth.
 > Based in Chennai, India — working with clients worldwide.
 
-- Website: https://gopikpm1.github.io/
+- Website: https://gopim.dev/
 - Contact: gopikpm1@gmail.com · +91-9952104427 · https://linkedin.com/in/gopikpm1 · https://github.com/gopikpm1
 
 ## Services (freelance)
