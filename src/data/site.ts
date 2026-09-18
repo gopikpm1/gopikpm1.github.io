@@ -63,10 +63,10 @@ export const contacts = [
     external: true,
   },
   {
-    href: 'https://linkedin.com/in/gopikpm1',
+    href: 'https://www.linkedin.com/in/gopi-m-12a61470',
     icon: 'fab fa-linkedin',
     title: 'LinkedIn',
-    detail: '@gopikpm1',
+    detail: '@gopi-m-12a61470',
     external: true,
   },
 ];
