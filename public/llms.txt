@@ -23,6 +23,18 @@
 - Astrology & consultation apps (chat/voice/video): https://gopim.dev/mobile-app-development/astrology-consultation-app-development/
 - Exhibition, showcase & webinar apps: https://gopim.dev/mobile-app-development/expo-exhibition-showcase-webinar-app-development/
 - App update, republish & migration: https://gopim.dev/mobile-app-development/app-update-republish-migration-modernization/
+- Community, sports & marathon apps: https://gopim.dev/mobile-app-development/community-sports-marathon-event-club-app-development/
+- Private secure family & 1-to-1 apps: https://gopim.dev/mobile-app-development/private-secure-family-personal-chat-video-app-development/
+- Direct APK apps, no Play Store: https://gopim.dev/mobile-app-development/direct-apk-private-distribution-no-play-store-app-development/
+- Personal notepad & password-locked apps: https://gopim.dev/mobile-app-development/personal-notepad-password-protected-diary-app-development/
+- Temple, pooja & spiritual apps: https://gopim.dev/mobile-app-development/temple-pooja-homa-spiritual-app-development/
+- Tour, travels & pilgrimage apps: https://gopim.dev/mobile-app-development/tour-travels-pilgrimage-holiday-package-app-development/
+- School, college & student apps: https://gopim.dev/mobile-app-development/school-college-student-education-app-development/
+- Startup company & SaaS product apps: https://gopim.dev/mobile-app-development/startup-company-product-saas-app-development/
+- Ecommerce & online shopping apps: https://gopim.dev/mobile-app-development/ecommerce-online-shopping-app-development/
+- Enterprise & corporate internal apps: https://gopim.dev/mobile-app-development/enterprise-business-internal-corporate-app-development/
+- Finance, loan & money apps: https://gopim.dev/mobile-app-development/finance-loan-chitfund-money-lending-app-development/
+- Trading & share market apps: https://gopim.dev/mobile-app-development/trading-share-market-mcx-signals-app-development/
 
 ## Services (freelance)
 

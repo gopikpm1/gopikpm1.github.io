@@ -1224,5 +1224,7 @@ body {
 .svc-faq p { color: var(--text-light); margin-top: 0.4rem; }
 .svc-final { background: var(--bg-white); border: 1px solid var(--border-color); border-radius: 14px; padding: 1.4rem; }
 .svc-final a { color: var(--primary-color); }
+.svc-final a.btn-primary, .svc-cta-row a.btn-primary { color: #000; }
+.svc-final a.btn-secondary, .svc-cta-row a.btn-secondary { color: #1d4ed8; }
 @media (max-width: 900px) { .svc-two { grid-template-columns: 1fr; } .svc-grid { grid-template-columns: 1fr 1fr; } .svc-cols { grid-template-columns: 1fr; } }
 @media (max-width: 600px) { .svc-hero h1 { font-size: 1.7rem; } .svc-grid { grid-template-columns: 1fr; } }
