@@ -1,0 +1,149 @@
+---
+import type { MobileService } from '../data/mobileServices';
+import { mobileServices, mobileHub } from '../data/mobileServices';
+
+interface Props {
+  service: MobileService;
+}
+
+const { service } = Astro.props as Props;
+const siteUrl = 'https://gopim.dev';
+const pageUrl = `${siteUrl}/mobile-app-development/${service.slug}/`;
+const others = mobileServices.filter((s) => s.slug !== service.slug);
+
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: service.h1,
+  description: service.metaDescription,
+  url: pageUrl,
+  provider: { '@type': 'Person', name: 'Gopi M', url: siteUrl + '/' },
+  areaServed: ['Chennai', 'Tamil Nadu', 'India', 'Worldwide'],
+  serviceType: service.label,
+};
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: service.faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
+const crumbs = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: siteUrl + '/' },
+    { '@type': 'ListItem', position: 2, name: 'Mobile App Development', item: `${siteUrl}/mobile-app-development/` },
+    { '@type': 'ListItem', position: 3, name: service.label, item: pageUrl },
+  ],
+};
+---
+
+<nav class="svc-crumb container" aria-label="Breadcrumb">
+  <a href="/">Home</a> <span>›</span>
+  <a href="/mobile-app-development/">Mobile Apps</a> <span>›</span>
+  <span>{service.label}</span>
+</nav>
+
+<header class="svc-hero">
+  <div class="container">
+    <p class="svc-kicker"><i class={service.icon} aria-hidden="true"></i> {service.label} · Chennai, India</p>
+    <h1>{service.h1}</h1>
+    <p class="svc-tag">{service.tagline}</p>
+    <div class="svc-cta-row">
+      <a class="btn btn-primary" href="/#contact">Contact Me — Get Free Quote in 24 Hrs</a>
+    </div>
+    <p class="svc-trust">13+ yrs · 52+ apps · 1M+ users · Fixed quote · Play Store + App Store launch</p>
+  </div>
+</header>
+
+<main class="container svc-main">
+  <section class="svc-block">
+    {service.intro.map((p) => <p class="svc-lead">{p}</p>)}
+  </section>
+
+  <section class="svc-block svc-two">
+    <div>
+      <h2>Who is this for?</h2>
+      <ul class="svc-checks">
+        {service.forWho.map((w) => <li>{w}</li>)}
+      </ul>
+    </div>
+    <aside class="svc-card">
+      <h3>Why owners hire me</h3>
+      <ul>
+        <li>One senior dev — no middlemen, 40–60% less than agencies</li>
+        <li>Single codebase: iOS + Android (+ web) = faster, cheaper</li>
+        <li>Weekly demo on YOUR phone before you pay next milestone</li>
+        <li>Proven: FSM 99.5% uptime, live video + payments at scale</li>
+      </ul>
+      <a class="btn btn-primary" href="/#contact">Ask Price — Free</a>
+    </aside>
+  </section>
+
+  <section class="svc-block">
+    <h2>6 reasons this app grows your business</h2>
+    <div class="svc-grid">
+      {service.benefits.map((b) => (
+        <article class="svc-item"><h3>{b.title}</h3><p>{b.text}</p></article>
+      ))}
+    </div>
+  </section>
+
+  <section class="svc-block">
+    <h2>What your app includes</h2>
+    <ul class="svc-checks svc-cols">
+      {service.features.map((f) => <li>{f}</li>)}
+    </ul>
+  </section>
+
+  <section class="svc-block svc-process">
+    <h2>How we launch in 4 simple steps</h2>
+    <ol>
+      <li><strong>Day 1 — Free 20-min call:</strong> you explain your idea, I note scope + fixed price.</li>
+      <li><strong>Week 1 — Demo screens:</strong> tap-through design on your phone, unlimited tweaks.</li>
+      <li><strong>Weekly builds:</strong> install APK/TestFlight, give feedback, I refine + backend.</li>
+      <li><strong>Launch + growth:</strong> Play Store ASO, analytics, 30-day free support.</li>
+    </ol>
+  </section>
+
+  <section class="svc-block">
+    <h2>Questions owners ask me</h2>
+    <div class="svc-faq">
+      {service.faqs.map((f) => (
+        <details><summary>{f.q}</summary><p>{f.a}</p></details>
+      ))}
+    </div>
+  </section>
+
+  <section class="svc-block svc-final">
+    <h2>Ready to put your business on every phone?</h2>
+    <p>Contact me below with your idea — get fixed quote + launch plan in 24 hours. Pilot offer: free store ASO + launch checklist with every mobile app this month.</p>
+    <div class="svc-cta-row">
+      <a class="btn btn-primary" href="/#contact">Contact Me — Start My App</a>
+      <a class="btn btn-secondary" href="/mobile-app-development/">See All Mobile Apps</a>
+    </div>
+  </section>
+
+  <section class="svc-block">
+    <h2>Explore more mobile apps</h2>
+    <div class="svc-grid">
+      <article class="svc-item svc-hub">
+        <h3><a href="/mobile-app-development/">All Mobile App Development</a></h3>
+        <p>{mobileHub.metaDescription.slice(0, 120)}…</p>
+      </article>
+      {others.map((o) => (
+        <article class="svc-item">
+          <h3><a href={`/mobile-app-development/${o.slug}/`}>{o.label}</a></h3>
+          <p>{o.tagline}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+</main>
+
+<script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+<script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+<script type="application/ld+json" set:html={JSON.stringify(crumbs)} />

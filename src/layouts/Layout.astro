@@ -4,15 +4,21 @@ import '../styles/global.css';
 interface Props {
   title: string;
   description?: string;
+  keywords?: string;
+  ogType?: string;
+  canonicalPath?: string;
 }
 
 const {
   title,
   description = 'Gopi M — Senior Cross-Platform Mobile, Web & Desktop Developer with 13+ years of experience building enterprise SaaS / B2B product platforms (ASP.NET 3.5, C#, SQL Server), consumer apps with React Native, Expo, Electron, Ionic, Node.js and AI for mobile apps, website, Windows / Apple desktop apps & PWA, plus custom Java / C# / npm plugins & libraries. Available for freelance projects.',
+  keywords = 'freelance mobile app developer, freelance web developer chennai, freelance desktop app developer, electron developer india, windows app developer, mac app developer, pwa developer, java plugin developer, cordova plugin developer, capacitor plugin developer, c# library developer, nuget package developer, npm package developer, asp.net developer, c# developer, sql server developer, dotnet developer india, enterprise saas developer, field service management software, fsm app developer, react native developer india, expo developer, ios android app developer, ai app developer, webRTC developer, astro web developer, hire app developer',
+  ogType = 'profile',
+  canonicalPath,
 } = Astro.props;
 
 const siteUrl = 'https://gopim.dev';
-const canonical = new URL(Astro.url.pathname, siteUrl).href;
+const canonical = new URL(canonicalPath ?? Astro.url.pathname, siteUrl).href;
 
 const personSchema = {
   '@context': 'https://schema.org',
@@ -208,15 +214,12 @@ const projectsSchema = {
     <!-- Primary SEO -->
     <meta name="author" content="Gopi M" />
     <meta name="theme-color" content="#0f172a" />
-    <meta
-      name="keywords"
-      content="freelance mobile app developer, freelance web developer chennai, freelance desktop app developer, electron developer india, windows app developer, mac app developer, pwa developer, java plugin developer, cordova plugin developer, capacitor plugin developer, c# library developer, nuget package developer, npm package developer, asp.net developer, c# developer, sql server developer, dotnet developer india, enterprise saas developer, field service management software, fsm app developer, react native developer india, expo developer, ios android app developer, ai app developer, webRTC developer, astro web developer, hire app developer"
-    />
+    <meta name="keywords" content={keywords} />
     <meta name="geo.region" content="IN-TN" />
     <meta name="geo.placename" content="Chennai, Tamil Nadu, India" />
 
     <!-- Open Graph (Facebook / LinkedIn / WhatsApp) -->
-    <meta property="og:type" content="profile" />
+    <meta property="og:type" content={ogType} />
     <meta property="og:site_name" content="Gopi M — Mobile, Web & Desktop Developer" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />

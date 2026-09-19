@@ -1,0 +1,79 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+import { mobileServices, mobileHub } from '../../data/mobileServices';
+
+const hubSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: mobileHub.metaTitle,
+  description: mobileHub.metaDescription,
+  url: 'https://gopim.dev/mobile-app-development/',
+};
+const itemSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Mobile App Development Services',
+  itemListElement: mobileServices.map((s, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    url: `https://gopim.dev/mobile-app-development/${s.slug}/`,
+    name: s.label,
+  })),
+};
+---
+
+<Layout
+  title={mobileHub.metaTitle}
+  description={mobileHub.metaDescription}
+  keywords={mobileHub.keywords}
+  ogType="website"
+  canonicalPath="/mobile-app-development/"
+>
+  <Navbar />
+  <nav class="svc-crumb container" aria-label="Breadcrumb">
+    <a href="/">Home</a> <span>›</span> <span>Mobile App Development</span>
+  </nav>
+  <header class="svc-hero">
+    <div class="container">
+      <p class="svc-kicker"><i class="fas fa-mobile-alt" aria-hidden="true"></i> Mobile Apps · iOS + Android · Chennai, India</p>
+      <h1>Mobile App Development That Brings Customers, Staff & Sales to Your Phone</h1>
+      <p class="svc-tag">Local shops, startups, schools, travels, clinics — pick your category, launch in weeks with fixed quote.</p>
+      <div class="svc-cta-row">
+        <a class="btn btn-primary" href="/#contact">Contact Me — Get Free Quote in 24 Hrs</a>
+      </div>
+      <p class="svc-trust">13+ yrs · 52+ mobile apps · 1M+ users · React Native + Expo · Play Store + App Store</p>
+    </div>
+  </header>
+  <main class="container svc-main">
+    <section class="svc-block">
+      <p class="svc-lead">One developer for your full journey — idea, design, iOS + Android build, backend, store launch and growth. Single codebase saves 40% cost. Weekly demo on your phone. You own 100% code.</p>
+      <p class="svc-lead">Choose the page closest to your business — each page shows price logic, features, FAQs and real proof from shipped apps (MService FSM 99.5% uptime, AstroVed live video + payments, Pillai Academy courses).</p>
+    </section>
+    <section class="svc-block">
+      <h2>Pick your mobile app category</h2>
+      <div class="svc-grid">
+        {mobileServices.map((s) => (
+          <article class="svc-item">
+            <p class="svc-card-icon"><i class={s.icon} aria-hidden="true"></i></p>
+            <h3><a href={`/mobile-app-development/${s.slug}/`}>{s.label}</a></h3>
+            <p>{s.tagline}</p>
+            <p><a href={`/mobile-app-development/${s.slug}/`}>Read full guide + pricing →</a></p>
+          </article>
+        ))}
+      </div>
+    </section>
+    <section class="svc-block svc-final">
+      <h2>Not sure which fits? Ask free.</h2>
+      <p>Contact me with 3 lines about your business — get the right category + fixed quote + launch plan in 24 hours.</p>
+      <div class="svc-cta-row">
+        <a class="btn btn-primary" href="/#contact">Contact Me — Ask Which App Fits Me</a>
+        <a class="btn btn-secondary" href="/">Back to Home</a>
+      </div>
+    </section>
+  </main>
+  <Footer />
+  <script type="application/ld+json" set:html={JSON.stringify(hubSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(itemSchema)} />
+</Layout>

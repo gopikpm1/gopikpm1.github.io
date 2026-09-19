@@ -10,12 +10,39 @@ import Projects from '../components/Projects.astro';
 import Stats from '../components/Stats.astro';
 import Contact from '../components/Contact.astro';
 import Footer from '../components/Footer.astro';
+import { mobileServices } from '../data/mobileServices';
 ---
 
 <Layout title="Gopi M — Freelance Mobile, Web & Desktop Developer | React Native, Expo, Electron, .NET / C#, AI Apps, PWA">
   <Navbar />
   <Hero />
   <About />
+  <section id="mobile-apps" class="services">
+    <div class="container">
+      <h2 class="section-title">Mobile Apps for Shops, Startups & Teams</h2>
+      <p class="section-description">
+        Need mobile for your business? Pick your category — each page has pricing logic, features & FAQs.
+      </p>
+      <div class="svc-grid">
+        {
+          mobileServices.map((s) => (
+            <article class="svc-item">
+              <p class="svc-card-icon">
+                <i class={s.icon} aria-hidden="true" />
+              </p>
+              <h3>
+                <a href={`/mobile-app-development/${s.slug}/`}>{s.label}</a>
+              </h3>
+              <p>{s.tagline}</p>
+            </article>
+          ))
+        }
+      </div>
+      <p style="text-align:center; margin-top:1.2rem">
+        <a class="btn btn-primary" href="/mobile-app-development/">See All Mobile App Development</a>
+      </p>
+    </div>
+  </section>
   <Services />
   <Skills />
   <Experience />

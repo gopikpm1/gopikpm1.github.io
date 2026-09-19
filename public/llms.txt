@@ -1,4 +1,4 @@
-# Gopi M — Senior Cross-Platform Mobile & Web Developer
+# Gopi M — Senior Cross-Platform Mobile, Web & Desktop Developer
 
 > Hire a freelance mobile & web app developer with 13+ years of experience.
 > React Native, Expo, TypeScript, React, Ionic, Node.js, MongoDB, WebRTC, Firebase, OpenAI/AI.
@@ -6,7 +6,23 @@
 > Based in Chennai, India — working with clients worldwide.
 
 - Website: https://gopim.dev/
+- Mobile apps hub: https://gopim.dev/mobile-app-development/
 - Contact: contact@gopim.dev · https://www.linkedin.com/in/gopi-kpm/
+
+## Mobile app development (by customer category)
+
+- All mobile apps: https://gopim.dev/mobile-app-development/
+- Local shops & retail store apps: https://gopim.dev/mobile-app-development/local-shop-retail-store-app-development/
+- Startup MVP apps: https://gopim.dev/mobile-app-development/startup-mvp-app-development/
+- Employee attendance & tracking apps: https://gopim.dev/mobile-app-development/employee-attendance-tracking-app-development/
+- Ticket booking & travel apps: https://gopim.dev/mobile-app-development/ticket-booking-travel-app-development/
+- Education & coaching apps: https://gopim.dev/mobile-app-development/education-learning-app-development/
+- Video call & live streaming apps: https://gopim.dev/mobile-app-development/video-call-live-streaming-app-development/
+- Simple senior-friendly apps: https://gopim.dev/mobile-app-development/simple-easy-senior-friendly-app-development/
+- Brand visibility & business apps: https://gopim.dev/mobile-app-development/business-brand-visibility-app-development/
+- Astrology & consultation apps (chat/voice/video): https://gopim.dev/mobile-app-development/astrology-consultation-app-development/
+- Exhibition, showcase & webinar apps: https://gopim.dev/mobile-app-development/expo-exhibition-showcase-webinar-app-development/
+- App update, republish & migration: https://gopim.dev/mobile-app-development/app-update-republish-migration-modernization/
 
 ## Services (freelance)
 

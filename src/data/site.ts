@@ -1,11 +1,12 @@
 export const navLinks = [
-  { href: '#home', label: 'Home' },
-  { href: '#about', label: 'About' },
-  { href: '#services', label: 'Services' },
-  { href: '#skills', label: 'Skills' },
-  { href: '#experience', label: 'Experience' },
-  { href: '#projects', label: 'Projects' },
-  { href: '#contact', label: 'Contact' },
+  { href: '/#home', label: 'Home' },
+  { href: '/#about', label: 'About' },
+  { href: '/mobile-app-development/', label: 'Mobile Apps' },
+  { href: '/#services', label: 'Services' },
+  { href: '/#skills', label: 'Skills' },
+  { href: '/#experience', label: 'Experience' },
+  { href: '/#projects', label: 'Projects' },
+  { href: '/#contact', label: 'Contact' },
 ];
 
 export const hero = {
@@ -13,8 +14,8 @@ export const hero = {
   subtitle: 'Senior Cross-Platform Mobile, Web & Desktop Developer',
   description:
     'With 13+ years of expertise in designing, architecting, and deploying enterprise and consumer applications for mobile (iOS & Android), web, desktop (Windows & macOS via Electron) and installable PWA.',
-  primaryCta: { href: '#contact', label: 'Get In Touch' },
-  secondaryCta: { href: '#projects', label: 'View Projects' },
+  primaryCta: { href: '/#contact', label: 'Get In Touch' },
+  secondaryCta: { href: '/mobile-app-development/', label: 'Mobile App Services' },
 };
 
 export const about = {
