@@ -20,4 +20,3 @@ User-agent: Bytespider
 Allow: /
 
 Sitemap: https://gopim.dev/sitemap.xml
-Sitemap: https://gopim.dev/sitemap-index.xml
