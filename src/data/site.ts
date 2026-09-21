@@ -2,6 +2,7 @@ export const navLinks = [
   { href: '/#home', label: 'Home' },
   { href: '/#about', label: 'About' },
   { href: '/mobile-app-development/', label: 'Mobile Apps' },
+  { href: '/guides/', label: 'More' },
   { href: '/#services', label: 'Services' },
   { href: '/#skills', label: 'Skills' },
   { href: '/#experience', label: 'Experience' },

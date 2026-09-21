@@ -1,0 +1,32 @@
+import type { MobileService } from './mobileServices';
+export const seoTech: MobileService[] = [
+{
+slug: 'ionic-app-developer-in-chennai-india',
+icon: 'fas fa-mobile-alt',
+label: 'Ionic Developer',
+metaTitle: 'Ionic App Developer in Chennai, India | Capacitor iOS + Android — Gopi M',
+metaDescription: 'Hire Ionic developer in Chennai: Ionic + Angular/React + Capacitor iOS & Android apps, website to app, Tamil support, offline, push. 13+ yrs, MService proof.',
+keywords: 'ionic developer chennai, ionic developer india, hire ionic developer, ionic app development chennai, capacitor developer',
+h1: 'Ionic Developer in Chennai — Website to iOS + Android App, Fast',
+tagline: 'Have a website? Convert to app. Need staff forms? Ship in weeks with Ionic.',
+intro: ['Ionic + Capacitor is my fast path: your existing website becomes iOS + Android app with push, camera, offline and Tamil support. One web skillset runs app + site + PWA.', 'Proof: MService enterprise field app (Cordova + Kendo + Java plugins, 99.5% uptime) plus Ionic/Capacitor maintenance. New consumer apps I do React Native; simple forms/internal apps I do Ionic — honest pick.'],
+forWho: ['Website owners wanting app fast', 'Staff attendance/forms/internal tools', 'Schools/clinics with portals', 'Ionic app owners needing fix/update', 'Budget-first MVP needing PWA too'],
+benefits: [{ title: 'Web to app reuse', text: 'Reuse Angular/React website code — 50% faster, 40% cheaper.' }, { title: 'One skill, 3 outputs', text: 'App + website + PWA from same Ionic code.' }, { title: 'Plugin power', text: 'Camera, QR, push, offline via Capacitor/Cordova + custom Java when needed.' }, { title: 'Tamil support', text: 'Tamil + English toggle, Tamil voice, big buttons for staff.' }, { title: 'Maintain + migrate', text: 'Fix old Ionic/Cordova apps or migrate to RN screen-by-screen.' }, { title: 'Store handled', text: 'Play + App Store listing, Tamil screenshots, ASO.' }],
+features: ['Ionic + Angular/React + Capacitor', 'Push + camera + QR + offline', 'Tamil + English support', 'Website-to-app wrapper', 'Cordova plugin fix/make', 'Store launch + training'],
+faqs: [{ q: 'Ionic or React Native for me?', a: 'Internal forms/simple apps: Ionic ok and cheaper. Consumer shop/booking/video: React Native smoother. I tell on free call.' }, { q: 'Can you fix my Ionic app?', a: 'Yes — Cordova/Capacitor plugin errors, white screen, push, store rejection fixes + update to latest Ionic.' }, { q: 'Website to app time?', a: 'Wrapper + push + icon/splash in days; full Tamil support + offline in weeks. Fixed quote in 24 hrs.' }, { q: 'Handover?', a: 'Clean code + README + video. Any Ionic dev continues.' }],
+},
+{
+slug: 'cordova-app-developer-in-chennai-india',
+icon: 'fas fa-plug',
+label: 'Cordova Developer',
+metaTitle: 'Cordova App Developer in Chennai, India | Plugins, MService Proof — Gopi M',
+metaDescription: 'Hire Cordova developer in Chennai: Cordova plugin dev/fix, Kendo/Ionic apps, Java native modules, MService 99.5% proof. Tamil support, fixed quote.',
+keywords: 'cordova developer chennai, cordova developer india, hire cordova developer, cordova plugin developer, phonegap developer',
+h1: 'Cordova Developer in Chennai — Plugins, Fixes & Field Apps That Never Fail',
+tagline: 'Cordova veteran: MService field scale proof. Plugins, offline, Java fixes.',
+intro: ['Cordova powers thousands of field apps — including MService I built (offline-first, Java plugins, 99.5% availability across India field teams). I fix, maintain and extend Cordova apps others abandon.', 'Need custom Java plugin, BLE/printer integration, offline sync, migration to Capacitor/React Native? One senior who wrote Java + Cordova + native bridges for 13 yrs.'],
+forWho: ['Cordova app owners with bugs', 'Field teams with offline needs', 'Printer/BLE/hardware integrators', 'Enterprises on Kendo/Cordova stack', 'Teams migrating Cordova to RN/Capacitor'],
+benefits: [{ title: 'MService proof', text: 'Real field scale: offline queue, photo proof, sync — 99.5% uptime pattern reused.' }, { title: 'Java plugins custom', text: 'Printer, scanner, BLE, background sync — custom Java bridge built for you.' }, { title: 'Rescue + update', text: 'White screen, splash hang, API 34 target, push fix — old apps revived in days.' }, { title: 'Offline-first', text: 'Works in godown/highway, syncs later. No data loss — field proven.' }, { title: 'Migrate path', text: 'Cordova to Capacitor or React Native without losing data/users.' }, { title: 'Tamil support', text: 'Explain in Tamil, get Tamil training + direct phone help.' }],
+features: ['Cordova fix + target API update', 'Custom Java plugin dev', 'Offline queue + sync + SQLite', 'Push + camera + file + printer', 'Migrate to Capacitor/RN', 'Store republish + training'],
+faqs: [{ q: 'Is Cordova dead? Keep it?', a: 'Not dead for internal/field apps. If stable, keep + I maintain. If consumer-facing lag, migrate gradually. Honest advice free.' }, { q: 'Play Store target API rejection?', a: 'Yes fixed — I upgrade Cordova-Android, plugins, permissions + republish with ASO.' }, { q: 'Custom hardware needed?', a: 'Yes — Bluetooth printer/scanner, serial, kiosk lockdown via Java plugin + tested on your device.' }, { q: 'Cost?', a: 'Fixes at small fixed price; plugins/MVP fixed quote in 24 hrs after 20-min Tamil/English call.' }],
+}];

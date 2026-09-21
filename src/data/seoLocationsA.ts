@@ -1,0 +1,32 @@
+import type { MobileService } from './mobileServices';
+export const seoChennaiVellore: MobileService[] = [
+{
+slug: 'freelance-mobile-app-developer-in-chennai',
+icon: 'fas fa-city',
+label: 'App Developer in Chennai',
+metaTitle: 'Freelance Mobile App Developer in Chennai | iOS & Android — Gopi M',
+metaDescription: 'Hire freelance mobile app developer in Chennai. React Native + Expo iOS & Android apps for shops, startups & enterprises. Meet in T Nagar, Velachery, OMR. Fixed quote in 24 hrs.',
+keywords: 'freelance mobile app developer in chennai, app developer chennai, react native developer chennai, hire app developer chennai',
+h1: 'Freelance Mobile App Developer in Chennai — Meet Local, Launch on iOS & Android',
+tagline: 'Based in Chennai. Meet for coffee, weekly demo on your phone, Play Store + App Store launch.',
+intro: ['Searching for a freelance mobile app developer in Chennai you can meet? I live in Chennai — 13+ years building iOS & Android apps with React Native + Expo, enterprise SaaS (ASP.NET / C# / SQL Server) and Electron desktop apps.', 'From Anna Nagar shops to OMR startups to Ambattur factories: idea, Tamil/English design, iOS + Android from one codebase, backend, store publishing. Meet in person, talk Tamil or English, pay milestone-wise after demo.'],
+forWho: ['Chennai shops & retail (T Nagar, Velachery)', 'OMR / Guindy startups needing MVP', 'Schools & tuition centres (Tambaram, Porur)', 'Clinics, labs & hospitals', 'Manufacturers in Ambattur, Sriperumbudur'],
+benefits: [{ title: 'Meet in person', text: 'Discuss at your office, see demo on your phone. No remote-only risk.' }, { title: 'Tamil + English', text: 'Explain in Tamil, get Tamil training. Staff adopts faster.' }, { title: '40-60% cheaper', text: 'One senior dev, one codebase for iOS + Android. No agency overhead.' }, { title: 'Fast launch', text: 'Fixed quote in 24 hrs, design demo week 1, weekly builds.' }, { title: 'Proven scale', text: 'MService 99.5% uptime, AstroVed live video + payments, Commodity Quant signals.' }, { title: 'You own code', text: 'GitHub transfer, stores under your name, 30-day free support.' }],
+features: ['Free 20-min discovery in Tamil/English', 'Fixed quote + plan in 24 hrs', 'iOS + Android one codebase', 'UPI, WhatsApp, push, Tamil option', 'Play Store ASO + App Store handling', 'Training video + 30-day support'],
+faqs: [{ q: 'Where in Chennai can we meet?', a: 'Anywhere — T Nagar, Velachery, OMR, Anna Nagar, Tambaram. Kickoff + launch in person, rest video + phone demo.' }, { q: 'What does a shop app cost?', a: 'Catalogue + WhatsApp orders at affordable fixed price; booking/payment apps scale by features. Fixed quote, no hourly surprise.' }, { q: 'Do you publish to stores?', a: 'Yes — listing, screenshots, ASO (Chennai + Tamil), privacy policy, review fixes.' }, { q: 'Can staff manage without English?', a: 'Yes — Tamil admin + Tamil training video. If they use WhatsApp they can manage it.' }],
+},
+{
+slug: 'freelance-mobile-app-developer-in-vellore',
+icon: 'fas fa-map-marker-alt',
+label: 'App Developer in Vellore',
+metaTitle: 'Freelance Mobile App Developer in Vellore | Clinics, VIT, Shops — Gopi M',
+metaDescription: 'Hire freelance app developer for Vellore: CMC clinics, VIT startups, Katpadi shops, Ranipet factories. Tamil support, visit + remote, fixed quote. Chennai-based.',
+keywords: 'freelance mobile app developer in vellore, app developer vellore, mobile app vellore, hire app developer vellore',
+h1: 'Freelance Mobile App Developer for Vellore — Clinics, Colleges, Shops & Factories',
+tagline: 'Vellore gets Chennai senior quality with Tamil support — without agency price.',
+intro: ['Vellore — CMC, VIT, Katpadi bazaar, Ranipet SIPCOT — needs Tamil support, offline-first apps that run on low-end phones. I build that from Chennai with scheduled Vellore visits.', 'One codebase (React Native + Expo) for iOS + Android: clinic booking, shop catalogue + WhatsApp orders, college fees + attendance, factory field tracking. Weekly APK demo, Tamil training.'],
+forWho: ['CMC-area clinics, labs & pharmacies', 'VIT / colleges / tuition centres', 'Katpadi, Arcot & Gudiyatham retail', 'Ranipet / SIPCOT factories', 'Vellore startups & home business'],
+benefits: [{ title: 'Built for Vellore', text: 'Offline-first, 2G-friendly, Tamil support, runs on Rs.8000 phones.' }, { title: 'Visit + remote', text: 'Kickoff visit + weekly remote demos. Trust with low cost.' }, { title: 'Clinic-ready', text: 'Tokens, appointments, WhatsApp prescriptions, reminders.' }, { title: 'College-ready', text: 'Fees, attendance, push circulars, live classes.' }, { title: 'Fixed Tamil quote', text: 'Scope in Tamil/English, fixed price in 24 hrs.' }, { title: 'Store launch done', text: 'Play Store + App Store, Tamil screenshots, Vellore ASO.' }],
+features: ['Offline-first booking / catalogue', 'Tamil + English support + voice', 'UPI + WhatsApp integration', 'Staff / doctor / admin roles', 'Push + analytics', 'Store launch + training'],
+faqs: [{ q: 'Do you travel to Vellore?', a: 'Yes — kickoff + launch visits; weekly over video + APK demo. Travel told upfront, kept minimal.' }, { q: 'Tamil-only customers?', a: 'Yes — full Tamil support, Tamil push, Tamil training video.' }, { q: 'Single clinic app?', a: 'Perfect fit — single-business branded apps you fully own.' }, { q: 'Payment mode?', a: 'Milestone-wise: small advance, balance after demo + launch. UPI / bank with invoice.' }],
+}];

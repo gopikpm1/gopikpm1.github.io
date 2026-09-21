@@ -315,6 +315,39 @@ const projectsSchema = {
         });
       });
 
+      // Dropdown for More menu (desktop click + mobile tap)
+      document.querySelectorAll<HTMLButtonElement>('.nav-drop-btn').forEach((btn) => {
+        btn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const item = btn.closest('.nav-dropdown');
+          const wasOpen = item?.classList.contains('open') ?? false;
+          document.querySelectorAll('.nav-dropdown.open').forEach((d) => {
+            d.classList.remove('open');
+            d.querySelector('.nav-drop-btn')?.setAttribute('aria-expanded', 'false');
+          });
+          if (item && !wasOpen) {
+            item.classList.add('open');
+            btn.setAttribute('aria-expanded', 'true');
+          }
+        });
+      });
+      document.addEventListener('click', (e) => {
+        if (!(e.target as HTMLElement).closest('.nav-dropdown')) {
+          document.querySelectorAll('.nav-dropdown.open').forEach((d) => {
+            d.classList.remove('open');
+            d.querySelector('.nav-drop-btn')?.setAttribute('aria-expanded', 'false');
+          });
+        }
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          document.querySelectorAll('.nav-dropdown.open').forEach((d) => {
+            d.classList.remove('open');
+            d.querySelector('.nav-drop-btn')?.setAttribute('aria-expanded', 'false');
+          });
+        }
+      });
+
       // Intersection Observer for animations
       const observerOptions = {
         threshold: 0.1,

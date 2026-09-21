@@ -12,6 +12,7 @@
 ## Mobile app development (by customer category)
 
 - All mobile apps: https://gopim.dev/mobile-app-development/
+- More guides hub: https://gopim.dev/guides/
 - Local shops & retail store apps: https://gopim.dev/mobile-app-development/local-shop-retail-store-app-development/
 - Startup MVP apps: https://gopim.dev/mobile-app-development/startup-mvp-app-development/
 - Employee attendance & tracking apps: https://gopim.dev/mobile-app-development/employee-attendance-tracking-app-development/
@@ -35,6 +36,27 @@
 - Enterprise & corporate internal apps: https://gopim.dev/mobile-app-development/enterprise-business-internal-corporate-app-development/
 - Finance, loan & money apps: https://gopim.dev/mobile-app-development/finance-loan-chitfund-money-lending-app-development/
 - Trading & share market apps: https://gopim.dev/mobile-app-development/trading-share-market-mcx-signals-app-development/
+
+## More guides — local hiring, comparisons & growth (under More menu)
+
+- All guides: https://gopim.dev/guides/
+- Freelance mobile app developer in Chennai: https://gopim.dev/guides/freelance-mobile-app-developer-in-chennai/
+- Freelance mobile app developer in Vellore: https://gopim.dev/guides/freelance-mobile-app-developer-in-vellore/
+- Freelance mobile app developer in Thiruvallur: https://gopim.dev/guides/freelance-mobile-app-developer-in-thiruvallur/
+- Freelance mobile app developer in Kanchipuram: https://gopim.dev/guides/freelance-mobile-app-developer-in-kanchipuram/
+- Freelance mobile app developer in Tamil Nadu: https://gopim.dev/guides/freelance-mobile-app-developer-in-tamil-nadu-india/
+- Tamil speaking freelance developer: https://gopim.dev/guides/tamil-speaking-freelance-mobile-app-developer/
+- React Native developer Chennai: https://gopim.dev/guides/react-native-app-developer-in-chennai-india/
+- Ionic developer Chennai: https://gopim.dev/guides/ionic-app-developer-in-chennai-india/
+- Cordova developer Chennai: https://gopim.dev/guides/cordova-app-developer-in-chennai-india/
+- Hybrid vs Native: https://gopim.dev/guides/hybrid-vs-native-mobile-app-development/
+- Ionic vs React Native: https://gopim.dev/guides/ionic-vs-react-native-which-is-better/
+- React vs Angular: https://gopim.dev/guides/react-vs-angular-which-is-better-for-app/
+- Freelance vs Agency: https://gopim.dev/guides/hire-freelance-app-developer-vs-agency/
+- App cost Chennai: https://gopim.dev/guides/how-much-does-mobile-app-cost-in-chennai-india/
+- Why need mobile app: https://gopim.dev/guides/why-your-business-needs-a-mobile-app/
+- How apps grow business: https://gopim.dev/guides/how-mobile-apps-help-business-growth/
+- Custom app for small business: https://gopim.dev/guides/custom-mobile-app-for-small-business-shops-startups/
 
 ## Services (freelance)
 

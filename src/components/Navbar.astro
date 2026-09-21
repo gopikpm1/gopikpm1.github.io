@@ -1,11 +1,14 @@
 ---
 import { navLinks } from '../data/site';
+import { seoPages, moreMenuGroups } from '../data/seoPages';
+
+const bySlug = new Map(seoPages.map((s) => [s.slug, s]));
 ---
 
 <!-- Navigation -->
 <nav class="navbar">
   <div class="container">
-    <div class="nav-brand">Gopi M</div>
+    <div class="nav-brand"><a href="/#home" class="nav-brand-link">Gopi M</a></div>
     <button
       class="nav-toggle"
       type="button"
@@ -20,16 +23,49 @@ import { navLinks } from '../data/site';
     <ul class="nav-menu" id="nav-menu">
       {
         navLinks.map((link, index) => (
-          <li>
-            <a
-              href={link.href}
-              class:list={['nav-link', index === 0 && 'active']}
-            >
-              {link.label}
-            </a>
-          </li>
+          link.label === 'More' ? (
+            <li class="nav-item nav-dropdown">
+              <button
+                type="button"
+                class="nav-link nav-drop-btn"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                More <span class="nav-caret" aria-hidden="true">▾</span>
+              </button>
+              <div class="nav-drop-panel" role="menu" aria-label="More guides">
+                <div class="nav-drop-grid">
+                  {moreMenuGroups.map((g) => (
+                    <div class="nav-drop-group">
+                      <p class="nav-drop-heading">{g.heading}</p>
+                      <ul>
+                        {g.links.map((slug) => {
+                          const s = bySlug.get(slug);
+                          if (!s) return null;
+                          return (
+                            <li><a class="nav-drop-link" role="menuitem" href={`/guides/${s.slug}/`}>{s.label}</a></li>
+                          );
+                        })}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
+                <p class="nav-drop-all"><a href="/guides/">See all More guides →</a></p>
+              </div>
+            </li>
+          ) : (
+            <li class="nav-item">
+              <a
+                href={link.href}
+                class:list={['nav-link', index === 0 && 'active']}
+              >
+                {link.label}
+              </a>
+            </li>
+          )
         ))
       }
     </ul>
   </div>
 </nav>
+

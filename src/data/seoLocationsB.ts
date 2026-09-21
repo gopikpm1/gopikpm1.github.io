@@ -1,0 +1,32 @@
+import type { MobileService } from './mobileServices';
+export const seoThiruvallurKanchi: MobileService[] = [
+{
+slug: 'freelance-mobile-app-developer-in-thiruvallur',
+icon: 'fas fa-warehouse',
+label: 'App Developer in Thiruvallur',
+metaTitle: 'Freelance Mobile App Developer in Thiruvallur | Avadi, Tiruttani — Gopi M',
+metaDescription: 'Hire app developer for Thiruvallur: Avadi shops, Tiruttani services, Ponneri factories, Gummidipoondi logistics. Tamil-first, offline-first, fixed quote.',
+keywords: 'freelance mobile app developer in thiruvallur, app developer thiruvallur, app developer avadi, tiruttani app',
+h1: 'Freelance Mobile App Developer for Thiruvallur — Shops, Factories & Services',
+tagline: 'Avadi to Ponneri: Tamil-first iOS + Android apps that work in godowns and low network.',
+intro: ['Thiruvallur — Avadi, Tiruttani, Ponneri, Gummidipoondi — runs on Tamil, WhatsApp and field staff. I build apps to match: big buttons, Tamil voice, offline sync, WhatsApp orders.', 'Chennai-base with visits + remote: retail apps for Avadi, staff apps for factories, booking for Tiruttani services, delivery proof apps for logistics.'],
+forWho: ['Avadi / Thiruvallur retail & supermarkets', 'Tiruttani services & tourism shops', 'Ponneri / Gummidipoondi factories', 'Schools & skill centres', 'Traders needing dealer apps'],
+benefits: [{ title: 'Tamil-first UX', text: 'Big Tamil buttons, voice alerts, 3-tap ordering for non-English users.' }, { title: 'Offline-ready', text: 'Stock, attendance, delivery work without signal; auto-sync later.' }, { title: 'WhatsApp commerce', text: 'Catalogue to WhatsApp order to UPI — zero learning.' }, { title: 'Dealer + staff', text: 'Beat plans, photo proof, expenses in one field app.' }, { title: 'Nearby reachable', text: 'Same-day visit possible from Chennai; Tamil phone support.' }, { title: 'Fixed price', text: 'Single freelancer cost, milestone after demo.' }],
+features: ['Tamil + English catalogue & booking', 'Offline stock / attendance', 'WhatsApp + UPI + push offers', 'Dealer ordering + tracking', 'Owner dashboard + export', 'Store / APK launch + training'],
+faqs: [{ q: 'Poor network — will app work?', a: 'Yes — offline-first. Work continues, syncs when network returns. No data loss.' }, { q: 'Can elders use it?', a: 'Yes — senior mode with big text + Tamil voice + 3 buttons.' }, { q: 'Dealer app without Play Store?', a: 'Yes — private APK with auto-update; Play Store later if needed.' }, { q: 'Do you visit Thiruvallur?', a: 'Yes — quick visits for kickoff, training and launch from Chennai.' }],
+},
+{
+slug: 'freelance-mobile-app-developer-in-kanchipuram',
+icon: 'fas fa-temple',
+label: 'App Developer in Kanchipuram',
+metaTitle: 'Freelance Mobile App Developer in Kanchipuram | Silk, Temples — Gopi M',
+metaDescription: 'Hire app developer for Kanchipuram: silk saree online ordering, temple & tourism apps, retail catalogue, Tamil-first. Chennai-based, fixed quote, store launch.',
+keywords: 'freelance mobile app developer in kanchipuram, app developer kanchipuram, silk saree app, temple app kanchipuram',
+h1: 'Freelance Mobile App Developer for Kanchipuram — Silk Shops, Temples & Retail',
+tagline: 'Sell Kanchipuram silk worldwide + guide temple visitors — your own branded app.',
+intro: ['Kanchipuram silk deserves more than WhatsApp forwards. I build branded catalogue + order apps: saree photos, price, WhatsApp/UPI order, courier tracking — plus Tamil/English temple guide mode for tourists.', 'One codebase for iOS + Android, Tamil-first, offline photos, push for festival collections. Visits from Chennai + remote weekly demo.'],
+forWho: ['Silk saree shops & weavers', 'Temple trusts & tour operators', 'Kanchipuram retail & jewellery', 'Food & lodge owners', 'Coaching & tailoring institutes'],
+benefits: [{ title: 'Silk catalogue that sells', text: 'HD photos, filters, wishlist + WhatsApp order. Festival push = repeat sales.' }, { title: 'Tourist guide mode', text: 'Temple timings, Tamil/English audio, nearby shops — visitors stay longer, buy more.' }, { title: 'Zero commission', text: 'Direct UPI orders. No marketplace cut on your silk margin.' }, { title: 'Tamil trust', text: 'Tamil support + Tamil support call. Weavers and elders comfortable.' }, { title: 'Festival-ready', text: 'Diwali/Pongal offer banners + push in one tap.' }, { title: 'Own your brand', text: 'Your logo, your store listing, your customer list.' }],
+features: ['Photo catalogue + search + wishlist', 'WhatsApp order + UPI + courier', 'Festival offers + push', 'Tamil/English temple guide pages', 'Owner billing + stock panel', 'Store launch + training'],
+faqs: [{ q: 'We already sell on WhatsApp. Why app?', a: 'App keeps your catalogue searchable 24x7 + push reaches all at once. WhatsApp stays as order button inside.' }, { q: 'Photoshoot needed?', a: 'No — phone photos enough to start; I guide lighting + cropping. Upgrade later.' }, { q: 'Tourist English needed?', a: 'Yes — Tamil + English toggle; Hindi optional for north tourists.' }, { q: 'Cost for small shop?', a: 'Fixed affordable quote for catalogue apps; you pay milestone-wise after demo.' }],
+}];

@@ -1,0 +1,32 @@
+import type { MobileService } from './mobileServices';
+export const seoCompareB: MobileService[] = [
+{
+slug: 'react-vs-angular-which-is-better-for-app',
+icon: 'fas fa-code',
+label: 'React vs Angular',
+metaTitle: 'React vs Angular for Mobile & Web Apps: Which Is Better? — Gopi M',
+metaDescription: 'React vs Angular compared for apps + website: hiring, speed, cost, Tamil SMB fit. Chennai full-stack verdict with React Native + Expo path.',
+keywords: 'react vs angular, react vs angular which is better, angular vs react for web app, react vs angular difference',
+h1: 'React vs Angular: Which Should Run Your App + Website?',
+tagline: 'React = flexible + huge hiring pool. Angular = strict enterprise frame. Pick by team, not hype.',
+intro: ['React (Meta) powers React Native apps + fast websites; huge Chennai hiring pool, flexible, Expo makes iOS+Android+Web from one code. Angular (Google) powers strict enterprise portals; great for banks/large teams, heavier learning.', 'I ship React/React Native + Astro/Node for SMBs/startups; and ASP.NET/C# + SQL Server enterprise background — so I guide honestly: SMB/app-first = React; large regulated portal team = Angular ok.'],
+forWho: ['Shops/startups app + site (React)', 'Content + SEO sites (React + Astro)', 'Enterprise portal teams (Angular ok)', 'Hiring easily in Chennai (React)', 'Single dev full-stack (React)'],
+benefits: [{ title: 'Hiring', text: 'React devs everywhere in Chennai; Angular specialists costlier, fewer.' }, { title: 'App path', text: 'React → React Native app free leverage. Angular → Ionic wrapper compromise.' }, { title: 'Speed', text: 'React + Astro loads faster for SEO; Angular heavier initial bundle.' }, { title: 'Flexibility', text: 'React lets small team move fast; Angular process slows small team.' }, { title: 'Enterprise fit', text: 'Angular strictness helps 50-dev bank teams; overkill for 5-person shop.' }, { title: 'My stack', text: 'React + React Native + Expo + Node + Astro: one language JS/TS for app + site + backend.' }],
+features: ['React Native app + React web shared code', 'Astro SEO site + Node backend', 'Angular maintenance if you have one', 'Migration Angular to React path', 'Tamil support either stack', 'Handover docs + training'],
+faqs: [{ q: 'We have Angular website. Need app?', a: 'Keep site; build app in React Native sharing APIs. No need to rewrite site unless slow.' }, { q: 'Which is faster for SEO?', a: 'React + Astro static = fastest. Angular universal ok but heavier ops.' }, { q: 'Learning for my staff?', a: 'React easier for juniors; Angular steeper. I train either.' }, { q: 'Your recommendation?', a: 'New SMB app + site: React. Existing Angular enterprise: keep + extend.' }],
+},
+{
+slug: 'how-much-does-mobile-app-cost-in-chennai-india',
+icon: 'fas fa-rupee-sign',
+label: 'App Cost in Chennai',
+metaTitle: 'Mobile App Cost in Chennai, India (2026): Honest Price Guide — Gopi M',
+metaDescription: 'How much does mobile app cost in Chennai? Shop, booking, education, field apps price logic, timeline, hidden costs. Fixed quote in 24 hrs by freelance dev.',
+keywords: 'mobile app cost chennai, app development cost india, how much does app cost india, app price chennai, hire app developer cost',
+h1: 'How Much Does a Mobile App Cost in Chennai? Honest 2026 Price Logic',
+tagline: 'No “Rs.9999 app” scam. Real scope = real price. Here is the math.',
+intro: ['Agencies hide price; freelancers lowball then stall. Truth: catalogue + WhatsApp shop app < booking + payments < live video/classes < field + offline + roles. Biggest cost drivers: screens, payments, Tamil content, admin panel, store work.', 'I give fixed quote in 24 hrs after 20-min call: you know total, milestones, timeline. Pay only after seeing demo each stage. Below is the logic I use — copy it to compare any quote.'],
+forWho: ['Shops budgeting first app', 'Startups planning MVP', 'Schools/clinics comparing quotes', 'Factories costing field apps', 'Anyone fearing hidden costs'],
+benefits: [{ title: 'Price logic open', text: 'Screens x integrations x Tamil/admin = quote. No black box.' }, { title: 'One codebase saves', text: 'iOS + Android together = ~40% less than 2 native quotes.' }, { title: 'Milestone safety', text: 'Small advance, rest after demo. No 50% upfront trap.' }, { title: 'No hidden store fee surprise', text: 'Play $25 once + Apple $99/yr told upfront; ASO included.' }, { title: 'Growth in phases', text: 'Launch lean, add loyalty/AI later. No big-bang overspend.' }, { title: 'You own all', text: 'Code + designs + stores yours. No annual hostage fee.' }],
+features: ['Free 20-min scope call', 'Fixed written quote in 24 hrs', 'Phase 1 lean launch plan', 'Milestone-after-demo payments', 'Store + ASO included scope', '30-day free bug support'],
+faqs: [{ q: 'Cheapest workable app?', a: 'Single-brand catalogue + WhatsApp order + push is the lean start. Exact fixed quote after 20-min scope — no generic number games.' }, { q: 'Why do agency quotes vary 3x?', a: 'They pad PM + per-platform + AMC. Compare scope line-by-line; I give line-item quote you can match.' }, { q: 'Yearly costs after launch?', a: 'Only Apple $99/yr + server/SMS actuals. No fee to me unless you want AMC/updates.' }, { q: 'Can we phase payments?', a: 'Yes — design demo, beta, launch milestones. You hold money till you see build.' }],
+}];

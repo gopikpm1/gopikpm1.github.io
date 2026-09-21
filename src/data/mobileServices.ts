@@ -107,7 +107,7 @@ export const mobileServices: MobileService[] = [
       { title: 'Salary in one click', text: 'Late / overtime / leave auto-calculated. Export to Excel.' },
       { title: 'Works offline', text: 'Punch stored on phone, uploaded when network returns. No data loss.' },
       { title: 'Private & secure', text: 'Your data on your server. Owner sees all, supervisor sees his team.' },
-      { title: 'Simple Tamil UI', text: 'Big Punch-In button, works on Rs.7000 phones. 10-min training.' },
+      { title: 'Simple Tamil design', text: 'Big Punch-In button, works on Rs.7000 phones. 10-min training.' },
     ],
     features: ['GPS + selfie punch with geo-fence', 'Leave & overtime approvals', 'Live tracking & job dispatch', 'Salary & shift master + Excel export', 'Late / SOS push alerts', 'Admin web dashboard'],
     faqs: [
@@ -175,7 +175,7 @@ export const mobileServices: MobileService[] = [
     faqs: [
       { q: 'Can I upload my YouTube videos?', a: 'Yes — we migrate them into paid courses with access control and offline mode.' },
       { q: 'Live class limit?', a: '100 to 10,000 viewers with Zego/Agora. Chat, hand-raise, recording included.' },
-      { q: 'Tamil medium support?', a: 'Yes. Tamil + English UI, Tamil video titles, WhatsApp parent updates.' },
+      { q: 'Tamil medium support?', a: 'Yes. Tamil + English support, Tamil video titles, WhatsApp parent updates.' },
       { q: 'Fees online?', a: 'UPI, cards, EMI links + auto receipts and defaulter list.' },
     ],
   },

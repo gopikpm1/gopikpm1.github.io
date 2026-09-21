@@ -1,4 +1,5 @@
 import { mobileServices } from '../data/mobileServices';
+import { seoPages } from '../data/seoPages';
 
 const site = 'https://gopim.dev';
 const today = new Date().toISOString().split('T')[0];
@@ -7,6 +8,8 @@ const urls: string[] = [
   `${site}/`,
   `${site}/mobile-app-development/`,
   ...mobileServices.map((s) => `${site}/mobile-app-development/${s.slug}/`),
+  `${site}/guides/`,
+  ...seoPages.map((s) => `${site}/guides/${s.slug}/`),
 ];
 
 export async function GET() {

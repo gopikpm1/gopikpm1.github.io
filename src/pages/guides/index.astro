@@ -1,0 +1,84 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+import { seoPages, guidesHub, moreMenuGroups } from '../../data/seoPages';
+
+const hubSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: guidesHub.metaTitle,
+  description: guidesHub.metaDescription,
+  url: 'https://gopim.dev/guides/',
+};
+const itemSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Mobile App Guides & Local Developer Pages',
+  itemListElement: seoPages.map((s, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    url: `https://gopim.dev/guides/${s.slug}/`,
+    name: s.label,
+  })),
+};
+
+const bySlug = new Map(seoPages.map((s) => [s.slug, s]));
+---
+<Layout
+  title={guidesHub.metaTitle}
+  description={guidesHub.metaDescription}
+  keywords={guidesHub.keywords}
+  ogType="website"
+  canonicalPath="/guides/"
+>
+  <Navbar />
+  <nav class="svc-crumb container" aria-label="Breadcrumb">
+    <a href="/">Home</a> <span>›</span> <span>More Guides</span>
+  </nav>
+  <header class="svc-hero">
+    <div class="container">
+      <p class="svc-kicker"><i class="fas fa-compass" aria-hidden="true"></i> More Guides · Chennai, Tamil Nadu, India</p>
+      <h1>More Guides: Local Developer, Comparisons & Growth</h1>
+      <p class="svc-tag">Hire local (Chennai, Vellore, Thiruvallur, Kanchipuram), Tamil support, Hybrid vs Native, Ionic vs React Native, React vs Angular, cost, why app & growth.</p>
+      <div class="svc-cta-row">
+        <a class="btn btn-primary" href="/#contact">Contact Me — Get Free Quote in 24 Hrs</a>
+      </div>
+      <p class="svc-trust">13+ yrs · 52+ apps · 1M+ users · Fixed quote · Tamil + English</p>
+    </div>
+  </header>
+  <main class="container svc-main">
+    {
+      moreMenuGroups.map((g) => (
+        <section class="svc-block">
+          <h2>{g.heading}</h2>
+          <div class="svc-grid">
+            {g.links.map((slug) => {
+              const s = bySlug.get(slug);
+              if (!s) return null;
+              return (
+                <article class="svc-item">
+                  <p class="svc-card-icon"><i class={s.icon} aria-hidden="true" /></p>
+                  <h3><a href={`/guides/${s.slug}/`}>{s.label}</a></h3>
+                  <p>{s.tagline}</p>
+                  <p><a href={`/guides/${s.slug}/`}>Read full guide →</a></p>
+                </article>
+              );
+            })}
+          </div>
+        </section>
+      ))
+    }
+    <section class="svc-block svc-final">
+      <h2>Not sure which guide fits? Ask free.</h2>
+      <p>Tell me your city + idea in Tamil or English — get the right guide + fixed quote in 24 hours.</p>
+      <div class="svc-cta-row">
+        <a class="btn btn-primary" href="/#contact">Contact Me — Ask Free</a>
+        <a class="btn btn-secondary" href="/mobile-app-development/">See Mobile Apps</a>
+      </div>
+    </section>
+  </main>
+  <Footer />
+  <script type="application/ld+json" set:html={JSON.stringify(hubSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(itemSchema)} />
+</Layout>

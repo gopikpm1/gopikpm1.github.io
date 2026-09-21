@@ -1,0 +1,32 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+import ServiceLayout from '../../components/ServiceLayout.astro';
+import { seoPages, guidesHub } from '../../data/seoPages';
+
+export async function getStaticPaths() {
+  return seoPages.map((s) => ({ params: { slug: s.slug }, props: { slug: s.slug } }));
+}
+
+const { slug } = Astro.params;
+const service = seoPages.find((s) => s.slug === slug);
+if (!service) throw new Error(`Unknown guide: ${slug}`);
+---
+<Layout
+  title={service.metaTitle}
+  description={service.metaDescription}
+  keywords={service.keywords}
+  ogType="article"
+  canonicalPath={`/guides/${service.slug}/`}
+>
+  <Navbar />
+  <ServiceLayout
+    service={service}
+    basePath="/guides"
+    hubPath="/guides/"
+    hubLabel="More Guides"
+    hubDescription={guidesHub.metaDescription}
+  />
+  <Footer />
+</Layout>

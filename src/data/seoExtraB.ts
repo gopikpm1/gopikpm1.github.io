@@ -1,0 +1,32 @@
+import type { MobileService } from './mobileServices';
+export const seoExtraB: MobileService[] = [
+{
+slug: 'react-native-app-developer-in-chennai-india',
+icon: 'fab fa-react',
+label: 'React Native Developer',
+metaTitle: 'React Native App Developer in Chennai, India | Expo iOS + Android — Gopi M',
+metaDescription: 'Hire React Native developer in Chennai: Expo iOS + Android one codebase, OTA updates, UPI, Tamil support. 13+ yrs, 52+ apps, MService & AstroVed proof.',
+keywords: 'react native developer chennai, react native developer india, expo developer, hire react native developer',
+h1: 'React Native Developer in Chennai — One Codebase, iOS + Android + Web',
+tagline: 'Expo-powered: build once, run on Play Store, App Store and Web.',
+intro: ['React Native + Expo is my core: single TypeScript codebase ships iOS, Android and Web. OTA pushes fixes tonight without store wait — critical during Diwali rush.', 'Proof: MService FSM offline scale 99.5% uptime, AstroVed live video + payments, Quant live charts + push. Your app reuses hardened modules.'],
+forWho: ['Startups wanting iOS + Android fast', 'Shops needing catalogue + UPI', 'Schools with live classes', 'Field teams needing offline', 'React website owners'],
+benefits: [{ title: 'One code, 3 stores', text: 'iOS + Android + Web from Expo. 40% saved.' }, { title: 'OTA superpower', text: 'Fix tonight, users get morning — no review wait.' }, { title: 'Native when needed', text: 'Java/C# plugins, camera, BLE embedded.' }, { title: 'Hiring easy', text: 'React talent abundant in Chennai.' }, { title: 'Proven modules', text: 'Auth, payments, chat, video, offline reused.' }, { title: 'Desktop bonus', text: 'Same JS extends to Electron + PWA.' }],
+features: ['Expo Router + TypeScript', 'OTP auth + roles', 'UPI/Razorpay + subscriptions', 'Offline SQLite + sync', 'OneSignal push + analytics', 'Store + OTA + training'],
+faqs: [{ q: 'Expo vs bare?', a: 'Expo managed for speed + OTA; eject only for exotic SDKs. I pick per hardware need.' }, { q: 'Video/payments?', a: 'Yes — AstroVed live video + UPI live in production.' }, { q: 'iOS review?', a: 'Handled: permissions, demo accounts, privacy labels.' }, { q: 'Handover?', a: 'Clean TS code + README + video. Any RN dev continues.' }],
+},
+{
+slug: 'custom-mobile-app-for-small-business-shops-startups',
+icon: 'fas fa-rocket',
+label: 'Apps for Small Business',
+metaTitle: 'Custom Mobile App for Small Business, Shops & Startups | Chennai — Gopi M',
+metaDescription: 'Custom app for small business: shops, startups, clinics, classes. Catalogue, booking, UPI, Tamil support, push growth. Fixed quote by Chennai freelancer.',
+keywords: 'custom mobile app small business, small business app developer, startup app development chennai, shop app india',
+h1: 'Custom Mobile App for Your Small Business — Your Brand, Not a Template',
+tagline: 'Template rents customers. Custom app owns them: logo, offers, list.',
+intro: ['Custom app OWNS customers: your colours, Tamil tone, coupon logic, customer list. Small budget can still look premium — clean custom beats clunky template.', 'Lean build: Phase 1 order/booking, Phase 2 loyalty/referral, Phase 3 AI/web/desktop — pay as you grow, never rebuild.'],
+forWho: ['Single shops & chains', 'Pre-seed startups (MVP)', 'Doctors, trainers, salons', 'Home bakers & kitchens', 'Distributors & service teams'],
+benefits: [{ title: 'Brand premium', text: 'Home-screen icon = bigger trust, higher price power.' }, { title: 'Lean MVP', text: 'Only must-have screens Phase 1. Prove sales, then scale.' }, { title: 'Tamil conversion', text: 'Tamil support + voice lifts non-English orders.' }, { title: 'Growth built-in', text: 'Coupons, referrals, push calendar day 1.' }, { title: 'No template limits', text: 'Any UPI, bill, role logic — custom fits.' }, { title: 'Own data', text: 'Phones + history stay with you for festivals.' }],
+features: ['Brand UI + Tamil/English', 'Catalogue/booking + UPI', 'Push + coupons + referral', 'Admin + bills + export', 'Phased MVP to scale', 'Store launch + training'],
+faqs: [{ q: 'Template vs custom?', a: 'Template cheap till commission + limits. Custom often pays back in 4-6 months via zero commission.' }, { q: 'MVP time?', a: 'Catalogue/booking MVP in weeks with weekly demo; exact in 24-hr quote.' }, { q: 'Pivot risk?', a: 'Modular code reuses auth/payments/push. Phase spend protects you.' }, { q: 'NDA?', a: 'Yes — idea + repo yours from day 1.' }],
+}];

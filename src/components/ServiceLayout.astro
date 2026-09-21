@@ -4,11 +4,21 @@ import { mobileServices, mobileHub } from '../data/mobileServices';
 
 interface Props {
   service: MobileService;
+  basePath?: string;
+  hubPath?: string;
+  hubLabel?: string;
+  hubDescription?: string;
 }
 
-const { service } = Astro.props as Props;
+const {
+  service,
+  basePath = '/mobile-app-development',
+  hubPath = '/mobile-app-development/',
+  hubLabel = 'Mobile App Development',
+  hubDescription = '',
+} = Astro.props as Props;
 const siteUrl = 'https://gopim.dev';
-const pageUrl = `${siteUrl}/mobile-app-development/${service.slug}/`;
+const pageUrl = `${siteUrl}${basePath}/${service.slug}/`;
 const others = mobileServices.filter((s) => s.slug !== service.slug);
 
 const serviceSchema = {
@@ -35,7 +45,7 @@ const crumbs = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: siteUrl + '/' },
-    { '@type': 'ListItem', position: 2, name: 'Mobile App Development', item: `${siteUrl}/mobile-app-development/` },
+    { '@type': 'ListItem', position: 2, name: hubLabel, item: `${siteUrl}${hubPath}` },
     { '@type': 'ListItem', position: 3, name: service.label, item: pageUrl },
   ],
 };
@@ -43,7 +53,7 @@ const crumbs = {
 
 <nav class="svc-crumb container" aria-label="Breadcrumb">
   <a href="/">Home</a> <span>›</span>
-  <a href="/mobile-app-development/">Mobile Apps</a> <span>›</span>
+  <a href={hubPath}>{hubLabel}</a> <span>›</span>
   <span>{service.label}</span>
 </nav>
 
@@ -123,20 +133,20 @@ const crumbs = {
     <p>Contact me below with your idea — get fixed quote + launch plan in 24 hours. Pilot offer: free store ASO + launch checklist with every mobile app this month.</p>
     <div class="svc-cta-row">
       <a class="btn btn-primary" href="/#contact">Contact Me — Start My App</a>
-      <a class="btn btn-secondary" href="/mobile-app-development/">See All Mobile Apps</a>
+      <a class="btn btn-secondary" href={hubPath}>See All {hubLabel}</a>
     </div>
   </section>
 
   <section class="svc-block">
-    <h2>Explore more mobile apps</h2>
+    <h2>Explore more</h2>
     <div class="svc-grid">
       <article class="svc-item svc-hub">
-        <h3><a href="/mobile-app-development/">All Mobile App Development</a></h3>
-        <p>{mobileHub.metaDescription.slice(0, 120)}…</p>
+        <h3><a href={hubPath}>All {hubLabel}</a></h3>
+        <p>{(hubDescription || mobileHub.metaDescription).slice(0, 120)}…</p>
       </article>
       {others.map((o) => (
         <article class="svc-item">
-          <h3><a href={`/mobile-app-development/${o.slug}/`}>{o.label}</a></h3>
+          <h3><a href={`${basePath}/${o.slug}/`}>{o.label}</a></h3>
           <p>{o.tagline}</p>
         </article>
       ))}

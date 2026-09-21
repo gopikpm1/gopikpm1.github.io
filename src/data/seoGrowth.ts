@@ -1,0 +1,32 @@
+import type { MobileService } from './mobileServices';
+export const seoGrowth: MobileService[] = [
+{
+slug: 'how-mobile-apps-help-business-growth',
+icon: 'fas fa-chart-line',
+label: 'How Apps Grow Business',
+metaTitle: 'How Mobile Apps Grow Business & Sales | SMB Growth Guide — Gopi M',
+metaDescription: 'How mobile apps grow business: repeat orders, push marketing, direct UPI sales, staff productivity. Real examples MService, AstroVed. Chennai developer guide.',
+keywords: 'how mobile apps help business growth, mobile app business growth, app increase sales, small business app benefits',
+h1: 'How Mobile Apps Grow Your Business: From One-Time Buyers to Lifetime Fans',
+tagline: 'Growth = repeat x referral x efficiency. A good app drives all three.',
+intro: ['Growth is not downloads — it is repeat orders + referrals + staff hours saved. My client pattern: shop app with festival push gets 25-40% repeat lift; clinic reminders cut no-shows half; field app saves 2 hrs/staff/day.', 'This page gives the exact playbook I implement: launch offer, push calendar, referral coupon, owner dashboard — so your app becomes sales staff working 24x7.'],
+forWho: ['Shops wanting repeat sales', 'Clinics/classes with no-shows', 'Services with field staff leakage', 'Startups needing retention', 'Traders wanting dealer reorder'],
+benefits: [{ title: 'Repeat on autopilot', text: 'Push + coupons bring buyers back monthly without ad spend.' }, { title: 'Referral engine', text: 'Share-coupon in app: customer brings friend, both get off.' }, { title: 'No-show killer', text: 'Auto reminders (Tamil voice) halve missed appointments/classes.' }, { title: 'Staff efficiency', text: 'Digital orders, attendance, delivery proof — no paper, no calls.' }, { title: 'Direct margin', text: 'Bypass aggregator 20% cut. 100 orders = 20 orders free profit.' }, { title: 'Decisions by data', text: 'Dashboard: best items, best hours, dormant buyers to win back.' }],
+features: ['Festival push calendar setup', 'Coupon + referral + loyalty', 'Auto reminders (push/SMS/WhatsApp)', 'Reorder + subscription mode', 'Staff + delivery tracking', 'Sales dashboard + export'],
+faqs: [{ q: 'How fast will sales grow?', a: 'Typical: repeat lift in 60-90 days with weekly push + launch coupon. I set realistic target on call, not hype.' }, { q: 'Do I need ads?', a: 'No — start with counter QR + WhatsApp invite + push. Ads only after retention works.' }, { q: 'How to keep users active?', a: 'Monthly offer, birthday coupon, reorder reminder. I configure first 3 months calendar free.' }, { q: 'Can you show proof?', a: 'Yes — MService 99.5% uptime field scale, AstroVed payments + live video, Quant subscriber retention patterns.' }],
+},
+{
+slug: 'hire-freelance-app-developer-vs-agency',
+icon: 'fas fa-user-tie',
+label: 'Freelance vs Agency',
+metaTitle: 'Hire Freelance App Developer vs Agency in India | Cost & Truth — Gopi M',
+metaDescription: 'Freelance vs agency for mobile apps: cost, speed, ownership compared. Why Chennai SMBs pick senior freelancer Gopi M — fixed quote, direct Tamil support, you own code.',
+keywords: 'hire freelance app developer vs agency, freelance vs agency app development, app development cost india',
+h1: 'Freelance Developer vs Agency: Honest Cost, Speed & Ownership Comparison',
+tagline: 'Agencies sell team. Freelancer gives ownership. Pick what fits your stage.',
+intro: ['Agency quote Rs.5-15 lakh, 3 managers, juniors coding, slow changes. Freelance senior quote 40-60% less, direct talk, faster fixes — but pick the RIGHT freelancer (13+ yrs, live apps, own publishing).', 'I work like your tech partner: fixed quote, weekly demo on your phone, code + stores in your name. No lock-in, no disappearing. This page helps you decide honestly.'],
+forWho: ['SMBs with fixed budget', 'Founders needing fast MVP', 'Shops needing direct Tamil talk', 'Enterprises needing FSM-grade reliability', 'Anyone burned by agency delays'],
+benefits: [{ title: 'Cost truth', text: 'Freelance single codebase = 1 cost for iOS+Android. Agency charges per platform + PM.' }, { title: 'Speed truth', text: 'Direct change tonight vs agency sprint next week.' }, { title: 'Quality truth', text: 'Senior codes all vs agency junior + QA ping-pong.' }, { title: 'Ownership truth', text: 'Your GitHub + stores day 1 vs agency hostage release fee.' }, { title: 'Support truth', text: 'Call me Tamil directly vs raise ticket.' }, { title: 'When agency wins', text: '50+ team parallel native builds — I tell you if you need that.' }],
+features: ['Fixed quote comparison sheet', 'Milestone-after-demo model', 'Code + stores in your name', 'Direct Tamil/English support', '30-day free bug support', 'AMC可选 after launch'],
+faqs: [{ q: 'Risk of freelancer leaving?', a: 'Mitigated: code on your GitHub weekly, docs + training video, stores yours. Any dev can continue.' }, { q: 'Can one person do iOS + Android + backend?', a: 'Yes — React Native + Expo + Node covers all from one codebase. 13 yrs + 52 apps proof.' }, { q: 'GST invoice?', a: 'Yes — proper invoice for your books.' }, { q: 'Start cost?', a: 'Small advance to start design demo; balance tied to visible builds. No big upfront.' }],
+}];

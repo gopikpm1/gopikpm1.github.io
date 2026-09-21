@@ -1,0 +1,32 @@
+import type { MobileService } from './mobileServices';
+export const seoCompareA: MobileService[] = [
+{
+slug: 'hybrid-vs-native-mobile-app-development',
+icon: 'fas fa-balance-scale',
+label: 'Hybrid vs Native Apps',
+metaTitle: 'Hybrid vs Native App Development: Which Is Right for You? — Gopi M',
+metaDescription: 'Hybrid vs native apps compared: cost, speed, performance, Tamil SMB fit. Chennai developer verdict: React Native hybrid wins for 90% shops & startups.',
+keywords: 'hybrid vs native app, hybrid vs native mobile app development, hybrid app vs native app difference, which is better hybrid or native',
+h1: 'Hybrid vs Native Apps: Honest Comparison for Owners (Not Developers)',
+tagline: 'Native = 2 apps, 2x cost. Hybrid = 1 app, both phones. Know when each wins.',
+intro: ['Native means separate Swift (iPhone) + Kotlin (Android) apps — best raw speed, double cost/time. Hybrid (React Native/Expo) means one codebase for both — 40% cheaper, perfectly smooth for shops, booking, education, field apps.', 'As 13-yr dev shipping both: 90% Tamil SMBs win with hybrid. Only heavy 3D games / Bluetooth hardware need full native. I build hybrid default, native module where needed — best of both.'],
+forWho: ['Shops, clinics, classes (hybrid wins)', 'Startups needing MVP fast', 'Field teams (offline hybrid)', 'Games / BLE hardware (native)', 'Anyone confused by agency jargon'],
+benefits: [{ title: 'Cost', text: 'Hybrid: 1 team, 1 code, both stores. Native: 2 teams, 2x cost + 2x bugs.' }, { title: 'Speed', text: 'Hybrid MVP in weeks + OTA updates without store wait. Native review each fix.' }, { title: 'Performance truth', text: 'Shop/booking/video apps feel identical. Only 120fps games differ — rare.' }, { title: 'Staff reality', text: 'One hybrid dev supports all. Native needs iOS + Android hires.' }, { title: 'Future-proof', text: 'Hybrid code reuses for Web + Desktop (Expo/Electron) — native cannot.' }, { title: 'My hybrid proof', text: 'MService, AstroVed live video, Quant charts — all hybrid at scale.' }],
+features: ['One codebase iOS + Android', 'Native modules for camera/BLE where needed', 'OTA updates without review', 'Offline-first + push', 'Store publishing both', 'Web + desktop reuse option'],
+faqs: [{ q: 'Is hybrid slow?', a: 'No for business apps — list, images, video, payments run 60fps. Slowness comes from bad code, not hybrid.' }, { q: 'Will Apple reject hybrid?', a: 'No — React Native/Expo apps pass App Store daily. Mine are live.' }, { q: 'When must I pick native?', a: 'Hardcore 3D, video editing, BLE hardware SDKs. I tell upfront if you are that 10%.' }, { q: 'Can we switch later?', a: 'Yes — hybrid screens can embed native code gradually. No rewrite needed.' }],
+},
+{
+slug: 'ionic-vs-react-native-which-is-better',
+icon: 'fas fa-atom',
+label: 'Ionic vs React Native',
+metaTitle: 'Ionic vs React Native: Which Is Better for Your App? — Gopi M',
+metaDescription: 'Ionic vs React Native compared by Chennai dev with both shipped: performance, Tamil support, camera, offline, cost. Verdict + when Ionic still wins.',
+keywords: 'ionic vs react native, react native vs ionic, ionic vs react native which is better, ionic vs react native performance',
+h1: 'Ionic vs React Native: Which Should Power YOUR App?',
+tagline: 'Ionic = website in app shell. React Native = real native UI. Difference matters daily.',
+intro: ['Ionic wraps your website (WebView) — fast to build, but lists lag, camera/push need plugins, feel slightly webby. React Native renders real native buttons/lists — smooth, better camera/offline, closer to native.', 'I shipped both (Ionic + Cordova/Capacitor plugins + React Native/Expo). For Tamil shops needing butter-smooth catalogue + UPI + push: React Native wins. For simple internal form apps on tight budget: Ionic still ok.'],
+forWho: ['Shops & consumer apps (React Native)', 'Simple staff forms (Ionic ok)', 'Camera/offline heavy (React Native)', 'Existing website to app fast (Ionic)', 'Long-term brand apps (React Native)'],
+benefits: [{ title: 'Feel', text: 'React Native scrolls like Swiggy; Ionic scrolls like website. Users feel it.' }, { title: 'Camera/scanner', text: 'React Native native modules = fast QR, photo proof. Ionic plugin lag.' }, { title: 'Offline', text: 'React Native SQLite/Watermelon flies offline; Ionic WebView storage limits.' }, { title: 'Hiring future', text: 'More React Native devs in Chennai = easier handover than Ionic niche.' }, { title: 'One skill reuse', text: 'React Native shares React with web; Ionic shares Angular/Vue web skills.' }, { title: 'Cost tie-break', text: 'Build cost similar — React Native saves support cost via fewer complaints.' }],
+features: ['React Native default for new apps', 'Ionic maintenance if you have one', 'Capacitor/Cordova plugins when needed', 'Native camera + offline modules', 'OTA updates', 'Migration Ionic to RN path'],
+faqs: [{ q: 'I have Ionic app. Keep or rebuild?', a: 'If complaints on speed/camera — migrate screen-by-screen to React Native. If simple forms working — keep + I maintain.' }, { q: 'Which is cheaper?', a: 'Similar build; React Native cheaper long-term (fewer perf fixes, easier hiring).' }, { q: 'Do you build Ionic too?', a: 'Yes — Ionic + Capacitor/Cordova plugins + maintenance. But new consumer apps I recommend RN.' }, { q: 'Web + app same code?', a: 'Both allow; React Native + Expo Web reuse is cleaner for app-first brands.' }],
+}];

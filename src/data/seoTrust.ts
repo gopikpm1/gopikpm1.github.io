@@ -1,0 +1,32 @@
+import type { MobileService } from './mobileServices';
+export const seoTrust: MobileService[] = [
+{
+slug: 'tamil-speaking-freelance-mobile-app-developer',
+icon: 'fas fa-language',
+label: 'Tamil Speaking Developer',
+metaTitle: 'Tamil Speaking Freelance Mobile App Developer | Tamil Support — Gopi M',
+metaDescription: 'Need Tamil speaking app developer? Gopi M explains in Tamil, builds Tamil + English apps, trains staff in Tamil. Chennai-based, 13+ yrs, React Native iOS + Android.',
+keywords: 'tamil speaking developer, tamil app developer, tamil speaking mobile app developer, tamil freelance developer chennai',
+h1: 'Need a Tamil Speaking Developer? Explain in Tamil, Get App in Tamil + English',
+tagline: 'No English pressure. Call in Tamil, demo in Tamil, training in Tamil.',
+intro: ['Many owners hesitate to build an app fearing English-only developers. I am Tamil-native, Chennai-based: you explain your shop, school or factory work in Tamil — I convert it to a simple app your staff and customers love.', 'Every app can have Tamil + English toggle, Tamil voice alerts, Tamil bills and Tamil training video. Support call? Tamil. Your comfort = faster launch, zero misunderstanding.'],
+forWho: ['Owners comfortable only in Tamil', 'Staff needing Tamil buttons + voice', 'Seniors & non-tech users', 'Shops with Tamil-only customers', 'Schools & temples with Tamil parents'],
+benefits: [{ title: 'Tamil discovery call', text: 'Explain in Spoken Tamil on phone/meet. I document scope simply.' }, { title: 'Tamil language option', text: 'Full Tamil screens + Tamil push + Tamil bills. English side-by-side if wanted.' }, { title: 'Tamil training', text: '2-min Tamil video + live Tamil demo for staff. No manual reading.' }, { title: 'Tamil support', text: 'Call and ask in Tamil — not ticket-English. Quick WhatsApp help.' }, { title: 'Senior-friendly', text: 'Big text, voice, 3 buttons. Elders order without help.' }, { title: 'No mis-scope', text: 'Tamil clarity avoids costly rework agencies cause via miscommunication.' }],
+features: ['Tamil discovery + Tamil quote', 'Tamil + English toggle UI', 'Tamil voice reminders + push', 'Tamil billing + receipts', 'Tamil training video', 'Tamil phone support 30 days'],
+faqs: [{ q: 'Enakku English theriyathu. App seiya mudiyuma?', a: 'Mudiyum! Tamil-il pesungal — naan Tamil-il app + training tharuven. English thevai illai.' }, { q: 'Staff Tamil only — can they use admin?', a: 'Yes — Tamil admin with big buttons. 2-min video is enough.' }, { q: 'Customers want English too?', a: 'Toggle gives both — Tamil default, English one tap.' }, { q: 'Support language?', a: 'Tamil on call/WhatsApp. English if you prefer.' }],
+},
+{
+slug: 'why-your-business-needs-a-mobile-app',
+icon: 'fas fa-bullseye',
+label: 'Why Need a Mobile App?',
+metaTitle: 'Why Your Business Needs a Mobile App in 2026 | 7 Reasons — Gopi M',
+metaDescription: 'Why need mobile app for small business? Repeat sales, zero commission, push offers, Tamil customers on home screen. Chennai freelance developer explains with cost logic.',
+keywords: 'why need mobile app, why small business needs mobile app, benefits of mobile app for business, mobile app importance',
+h1: 'Why Does Your Business Need a Mobile App? 7 Honest Reasons (Not Hype)',
+tagline: 'Not every business needs an app — but if repeat customers matter, this is your growth lever.',
+intro: ['You already have WhatsApp + walk-ins. Why an app? Because WhatsApp messages drown, walk-ins forget, and aggregators take 20-30%. Your own app puts your logo on their home screen + reaches all in one push for free.', 'I tell honestly when you DON’T need an app (one-time buyers). But for retail, food, clinics, classes, services with repeat orders — app pays back in months via repeat + direct orders.'],
+forWho: ['Retail, bakery, pharmacy with repeat buyers', 'Restaurants & cloud kitchens', 'Clinics with follow-ups', 'Tuition, gyms, salons (memberships)', 'Services with bookings & field staff'],
+benefits: [{ title: 'Home-screen presence', text: 'Logo daily visible = top-of-mind. Free billboard, no rent.' }, { title: 'Free repeat reach', text: 'Push offer to 1000 phones in seconds. No SMS cost, no algorithm.' }, { title: 'Zero commission', text: 'Direct UPI + WhatsApp orders. Keep full margin.' }, { title: 'Faster re-order', text: '2-tap reorder vs 10-min shop visit. Customers buy more often.' }, { title: 'Data you own', text: 'Who bought, when, what — run festival offers smartly.' }, { title: 'Trust + premium', text: 'Branded app + bills = bigger shop image, higher price power.' }],
+features: ['Push offers + coupons checklist', '2-tap reorder + UPI', 'Order history + bills', 'Tamil + English support', 'Ratings + referrals', 'Analytics: who buys what'],
+faqs: [{ q: 'Is WhatsApp enough?', a: 'For start yes; for scale no. WhatsApp broadcasts get blocked/lost; app push reaches all + catalogue stays searchable 24x7.' }, { q: 'Will customers install?', a: 'Yes with incentive: first-order coupon + QR at counter + staff ask. 30-50% regulars install in month 1.' }, { q: 'Small shop — worth it?', a: 'If 50+ repeat customers, yes. Catalogue app pays back via 2-3 extra orders/week. I give honest math on call.' }, { q: 'Website vs app?', a: 'Website for discovery (Google), app for repeat (home screen). Best: both from one codebase — I do that.' }],
+}];
