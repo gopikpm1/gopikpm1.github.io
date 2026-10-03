@@ -310,10 +310,10 @@ export const projects: Project[] = [
     links: [
       { kind: 'site', label: 'Website', href: 'https://www.commodityquant.com/', icon: 'fas fa-globe' },
       {
-        kind: 'drive',
-        label: 'Android APK',
-        href: 'https://drive.google.com/drive/folders/1gt-QyNgMa3356pXKfBsZhxIFV-KMvjsz?usp=sharing',
-        icon: 'fab fa-google-drive',
+        kind: 'android',
+        label: 'Android',
+        href: 'https://play.google.com/store/apps/details?id=com.commodityquant.mcxsignals',
+        icon: 'fab fa-google-play',
       },
     ],
   },
