@@ -1,0 +1,154 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+import { blogs, blogCategories } from '../../data/blogs';
+
+const hubSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Blog',
+  name: 'Blog — Mobile App Guides, Comparisons & Local Developer Info',
+  description:
+    'Practical guides on hiring local developers, tech comparisons (Hybrid vs Native, Ionic vs React Native, React vs Angular), app cost and business growth — by freelance developer Gopi M.',
+  url: 'https://gopim.dev/blog/',
+  blogPost: blogs.map((b) => ({
+    '@type': 'BlogPosting',
+    headline: b.title,
+    description: b.tagline,
+    url: `https://gopim.dev${b.url}`,
+  })),
+};
+---
+
+<Layout
+  title="Blog — Mobile App Guides, Comparisons & Hiring Tips | Gopi M"
+  description="Searchable blog of guides by freelance mobile app developer Gopi M: hire local developers, Hybrid vs Native, Ionic vs React Native, React vs Angular, app cost and business growth."
+  keywords="mobile app development blog, freelance developer guides, hybrid vs native, ionic vs react native, app cost chennai, why need mobile app"
+  ogType="website"
+  canonicalPath="/blog/"
+>
+  <Navbar />
+  <nav class="svc-crumb container" aria-label="Breadcrumb">
+    <a href="/">Home</a> <span>›</span> <span>Blog</span>
+  </nav>
+
+  <header class="svc-hero">
+    <div class="container">
+      <p class="svc-kicker"><i class="fas fa-rss" aria-hidden="true"></i> Blog · Guides, Comparisons & Hiring Tips</p>
+      <h1>Blog: Guides &amp; How-To for Your Mobile App</h1>
+      <p class="svc-tag">
+        Search {blogs.length} practical guides on hiring local developers, choosing the right
+        framework, understanding app cost and growing your business with an app.
+      </p>
+
+      <div class="blog-search">
+        <label class="blog-search-label" for="blog-search-input">
+          <i class="fas fa-search" aria-hidden="true"></i> Search guides
+        </label>
+        <input
+          id="blog-search-input"
+          class="blog-search-input"
+          type="search"
+          placeholder="Try “Hybrid vs Native”, “cost”, “Chennai”…"
+          autocomplete="off"
+        />
+      </div>
+
+      <div class="blog-filters" role="group" aria-label="Filter by category">
+        <button class="blog-chip is-active" type="button" data-category="all">All</button>
+        {blogCategories.map((c) => (
+          <button class="blog-chip" type="button" data-category={c}>{c}</button>
+        ))}
+      </div>
+
+      <p class="blog-count" id="blog-count" aria-live="polite">
+        Showing {blogs.length} of {blogs.length} guides
+      </p>
+    </div>
+  </header>
+
+  <main class="container svc-main">
+    <div class="svc-grid blog-grid" id="blog-grid">
+      {
+        blogs.map((b) => (
+          <article
+            class="svc-item blog-card"
+            data-category={b.category}
+            data-search={`${b.title} ${b.tagline} ${b.description} ${b.keywords}`.toLowerCase()}
+          >
+            <p class="svc-card-icon">
+              <i class={b.icon} aria-hidden="true" />
+            </p>
+            <p class="blog-card-cat">{b.category}</p>
+            <h3>
+              <a href={b.url}>{b.title}</a>
+            </h3>
+            <p>{b.tagline}</p>
+            <p><a href={b.url}>Read full guide →</a></p>
+          </article>
+        ))
+      }
+    </div>
+    <p class="blog-empty" id="blog-empty" hidden>
+      No guides match your search. Try a different keyword like “cost”, “Native” or “Chennai”.
+    </p>
+
+    <section class="svc-block svc-final">
+      <h2>Not sure which guide fits? Ask free.</h2>
+      <p>Tell me your idea in Tamil or English — get the right guidance + a fixed quote in 24 hours.</p>
+      <div class="svc-cta-row">
+        <a class="btn btn-primary" href="/#contact">Contact Me — Ask Free</a>
+        <a class="btn btn-secondary" href="/mobile-app-development/">See Mobile Apps</a>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+  <script type="application/ld+json" set:html={JSON.stringify(hubSchema)} />
+  <script>
+    const input = document.getElementById('blog-search-input') as HTMLInputElement | null;
+    const grid = document.getElementById('blog-grid');
+    const empty = document.getElementById('blog-empty');
+    const count = document.getElementById('blog-count');
+    const chips = Array.from(document.querySelectorAll<HTMLButtonElement>('.blog-chip'));
+
+    if (input && grid && empty && count) {
+      const cards = Array.from(grid.querySelectorAll<HTMLElement>('.blog-card'));
+      const total = cards.length;
+      let activeCategory = 'all';
+
+      const apply = () => {
+        const q = input.value.trim().toLowerCase();
+        let shown = 0;
+        for (const card of cards) {
+          const matchesQuery = !q || (card.dataset.search || '').includes(q);
+          const matchesCat =
+            activeCategory === 'all' || card.dataset.category === activeCategory;
+          const visible = matchesQuery && matchesCat;
+          card.hidden = !visible;
+          if (visible) shown += 1;
+        }
+        count.textContent = `Showing ${shown} of ${total} guides`;
+        empty.hidden = shown !== 0;
+      };
+
+      input.addEventListener('input', apply);
+
+      chips.forEach((chip) => {
+        chip.addEventListener('click', () => {
+          activeCategory = chip.dataset.category || 'all';
+          chips.forEach((c) => c.classList.toggle('is-active', c === chip));
+          apply();
+        });
+      });
+
+      // Support ?q= deep links (e.g. from the navbar search).
+      const params = new URLSearchParams(window.location.search);
+      const initial = params.get('q');
+      if (initial) {
+        input.value = initial;
+      }
+      apply();
+    }
+  </script>
+</Layout>

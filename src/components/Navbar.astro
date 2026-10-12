@@ -23,7 +23,7 @@ const bySlug = new Map(seoPages.map((s) => [s.slug, s]));
     <ul class="nav-menu" id="nav-menu">
       {
         navLinks.map((link, index) => (
-          link.label === 'More' ? (
+          link.label === 'Blog' ? (
             <li class="nav-item nav-dropdown">
               <button
                 type="button"
@@ -31,9 +31,26 @@ const bySlug = new Map(seoPages.map((s) => [s.slug, s]));
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                More <span class="nav-caret" aria-hidden="true">▾</span>
+                Blog <span class="nav-caret" aria-hidden="true">▾</span>
               </button>
-              <div class="nav-drop-panel" role="menu" aria-label="More guides">
+              <div class="nav-drop-panel" role="menu" aria-label="Blog & guides">
+                <div class="nav-drop-search">
+                  <label class="nav-drop-search-label" for="nav-blog-search">
+                    <i class="fas fa-search" aria-hidden="true"></i>
+                    <span class="sr-only">Search blog guides</span>
+                  </label>
+                  <input
+                    id="nav-blog-search"
+                    class="nav-drop-search-input"
+                    type="search"
+                    placeholder="Search guides…"
+                    autocomplete="off"
+                  />
+                  <a class="nav-drop-search-go" href="/blog/" title="Open full blog with search">
+                    View all <span aria-hidden="true">→</span>
+                  </a>
+                </div>
+                <p class="nav-drop-empty" id="nav-blog-empty" hidden>No guides match that search.</p>
                 <div class="nav-drop-grid">
                   {moreMenuGroups.map((g) => (
                     <div class="nav-drop-group">
@@ -43,14 +60,18 @@ const bySlug = new Map(seoPages.map((s) => [s.slug, s]));
                           const s = bySlug.get(slug);
                           if (!s) return null;
                           return (
-                            <li><a class="nav-drop-link" role="menuitem" href={`/guides/${s.slug}/`}>{s.label}</a></li>
+                            <li
+                              data-search={`${s.label} ${s.tagline} ${s.keywords}`.toLowerCase()}
+                            >
+                              <a class="nav-drop-link" role="menuitem" href={`/blog/${s.slug}/`}>{s.label}</a>
+                            </li>
                           );
                         })}
                       </ul>
                     </div>
                   ))}
                 </div>
-                <p class="nav-drop-all"><a href="/guides/">See all More guides →</a></p>
+                <p class="nav-drop-all"><a href="/blog/">See all blog guides →</a></p>
               </div>
             </li>
           ) : (
@@ -68,4 +89,39 @@ const bySlug = new Map(seoPages.map((s) => [s.slug, s]));
     </ul>
   </div>
 </nav>
+
+<script>
+  // Live filter for the Blog dropdown search box.
+  const navSearch = document.getElementById('nav-blog-search') as HTMLInputElement | null;
+  if (navSearch) {
+    const panel = navSearch.closest('.nav-drop-panel');
+    const emptyMsg = panel?.querySelector('.nav-drop-empty') as HTMLElement | null;
+    const items = Array.from(panel?.querySelectorAll<HTMLElement>('.nav-drop-group li') ?? []);
+
+    const filter = () => {
+      const q = navSearch.value.trim().toLowerCase();
+      let shown = 0;
+      for (const li of items) {
+        const match = !q || (li.dataset.search || '').includes(q);
+        li.hidden = !match;
+        if (match) shown += 1;
+      }
+      if (emptyMsg) emptyMsg.hidden = shown !== 0 || items.length === 0;
+    };
+
+    navSearch.addEventListener('input', filter);
+
+    // Enter jumps to the full blog search results page.
+    navSearch.addEventListener('keydown', (e) => {
+      if ((e as KeyboardEvent).key === 'Enter') {
+        e.preventDefault();
+        const q = navSearch.value.trim();
+        window.location.href = q ? `/blog/?q=${encodeURIComponent(q)}` : '/blog/';
+      }
+    });
+
+    // Don't let typing in the box close the dropdown via the outside-click handler.
+    navSearch.addEventListener('click', (e) => e.stopPropagation());
+  }
+</script>
 
