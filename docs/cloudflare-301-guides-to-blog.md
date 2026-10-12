@@ -24,21 +24,28 @@ Create these rules **in this order** (first match wins):
 | Then | Type: **Static** · URL: `https://gopim.dev/blog/` |
 | Status code | **301** |
 
-### Rule 2 — hub `/guides/` and every article `/guides/<slug>/`
-| Setting | Value |
+### Rule 2 — hub `/guides/` and every article `/guides/<slug>/` (Free-plan safe)
+Use the **Wildcard pattern** option (no functions, no Business plan needed):
+
+| Field | Value |
 |---|---|
-| Rule name | `guides-to-blog` |
-| If incoming requests match | Type: **Custom filter expression** → `starts_with(http.request.uri.path, "/guides/")` |
-| Then | Type: **Dynamic** → Expression: `concat("https://gopim.dev/blog", regex_replace(http.request.uri.path, "^/guides/", "/blog/"))` |
+| When incoming requests match | **Wildcard pattern** → Request URL: `https://gopim.dev/guides/*` |
+| Then → Target URL | `https://gopim.dev/blog/${1}` |
 | Status code | **301** |
 
-> ⚠️ **Do NOT use the wildcard `$1` syntax** (`gopim.dev/guides/*` → `…/blogs/$1`).
-> In the newer Single Redirects UI, `$1` is emitted as a **literal string** unless it's inside a
-> `concat("…", "${1}")` expression, producing broken URLs like `https://gopim.dev/blogs/$1`.
-> The `regex_replace` expression above is unambiguous and avoids that pitfall.
+> ⚠️ Two things that broke the first attempt:
+> 1. The capture must be **`${1}`** (curly braces), **not** `$1`. Plain `$1` is emitted as a
+>    literal string. The wildcard pattern mode uses the built-in `wildcard_replace()`, so it is
+>    **available on the Free plan** — unlike `regex_replace()`, which needs Business/WAF Advanced.
+> 2. Watch the path: it's `/blog/`, not `/blogs/`.
 
-`regex_replace(http.request.uri.path, "^/guides/", "/blog/")` turns `/guides/<slug>/` into
-`/blog/<slug>/` — no index math, no wildcard backreferences. Query strings are preserved by default.
+The `*` matches zero-or-more characters, so `/guides/` (empty tail) → `/blog/` too. Rule 1
+still covers the slash-less `/guides`.
+
+**How the pieces map:** the match pattern is `https://gopim.dev/guides/*` and the target is
+`https://gopim.dev/blog/${1}`. `${1}` is substituted with whatever the `*` captured (the
+`<slug>/` part), so `/guides/foo/` → `/blog/foo/`.
+
 
 
 ## Option B — Expression editor (same result)
