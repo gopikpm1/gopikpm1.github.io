@@ -28,15 +28,18 @@ Create these rules **in this order** (first match wins):
 | Setting | Value |
 |---|---|
 | Rule name | `guides-to-blog` |
-| If incoming requests match | Wildcard match: `gopim.dev/guides/*` |
-| Then | Type: **Dynamic** · Expression: `concat("https://gopim.dev/blog", regex_replace(http.request.uri.path, "^/guides/", "/blog/"))` |
+| If incoming requests match | Type: **Custom filter expression** → `starts_with(http.request.uri.path, "/guides/")` |
+| Then | Type: **Dynamic** → Expression: `concat("https://gopim.dev/blog", regex_replace(http.request.uri.path, "^/guides/", "/blog/"))` |
 | Status code | **301** |
 
-> The wildcard `*` matches zero-or-more characters, so `/guides/` (empty tail) also maps
-> cleanly to `/blog/`. Rule 1 covers the slash-less `/guides` case.
+> ⚠️ **Do NOT use the wildcard `$1` syntax** (`gopim.dev/guides/*` → `…/blogs/$1`).
+> In the newer Single Redirects UI, `$1` is emitted as a **literal string** unless it's inside a
+> `concat("…", "${1}")` expression, producing broken URLs like `https://gopim.dev/blogs/$1`.
+> The `regex_replace` expression above is unambiguous and avoids that pitfall.
 
 `regex_replace(http.request.uri.path, "^/guides/", "/blog/")` turns `/guides/<slug>/` into
-`/blog/<slug>/` — unambiguous, no index math. Query strings are preserved by default.
+`/blog/<slug>/` — no index math, no wildcard backreferences. Query strings are preserved by default.
+
 
 ## Option B — Expression editor (same result)
 
