@@ -49,6 +49,9 @@
 - React Native developer Chennai: https://gopim.dev/blog/react-native-app-developer-in-chennai-india/
 - Ionic developer Chennai: https://gopim.dev/blog/ionic-app-developer-in-chennai-india/
 - Cordova developer Chennai: https://gopim.dev/blog/cordova-app-developer-in-chennai-india/
+- Need dedicated developer: https://gopim.dev/blog/need-dedicated-developer/
+- Developer near me: https://gopim.dev/blog/developer-near-me/
+- Need mobile app trainer: https://gopim.dev/blog/need-mobile-app-trainer/
 - Hybrid vs Native: https://gopim.dev/blog/hybrid-vs-native-mobile-app-development/
 - Ionic vs React Native: https://gopim.dev/blog/ionic-vs-react-native-which-is-better/
 - React vs Angular: https://gopim.dev/blog/react-vs-angular-which-is-better-for-app/

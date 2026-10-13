@@ -28,5 +28,148 @@ intro: ['Cordova powers thousands of field apps — including MService I built (
 forWho: ['Cordova app owners with bugs', 'Field teams with offline needs', 'Printer/BLE/hardware integrators', 'Enterprises on Kendo/Cordova stack', 'Teams migrating Cordova to RN/Capacitor'],
 benefits: [{ title: 'MService proof', text: 'Real field scale: offline queue, photo proof, sync — 99.5% uptime pattern reused.' }, { title: 'Java plugins custom', text: 'Printer, scanner, BLE, background sync — custom Java bridge built for you.' }, { title: 'Rescue + update', text: 'White screen, splash hang, API 34 target, push fix — old apps revived in days.' }, { title: 'Offline-first', text: 'Works in godown/highway, syncs later. No data loss — field proven.' }, { title: 'Migrate path', text: 'Cordova to Capacitor or React Native without losing data/users.' }, { title: 'Tamil support', text: 'Explain in Tamil, get Tamil training + direct phone help.' }],
 features: ['Cordova fix + target API update', 'Custom Java plugin dev', 'Offline queue + sync + SQLite', 'Push + camera + file + printer', 'Migrate to Capacitor/RN', 'Store republish + training'],
-faqs: [{ q: 'Is Cordova dead? Keep it?', a: 'Not dead for internal/field apps. If stable, keep + I maintain. If consumer-facing lag, migrate gradually. Honest advice free.' }, { q: 'Play Store target API rejection?', a: 'Yes fixed — I upgrade Cordova-Android, plugins, permissions + republish with ASO.' }, { q: 'Custom hardware needed?', a: 'Yes — Bluetooth printer/scanner, serial, kiosk lockdown via Java plugin + tested on your device.' }, { q: 'Cost?', a: 'Fixes at small fixed price; plugins/MVP fixed quote in 24 hrs after 20-min Tamil/English call.' }],
-}];
+    faqs: [{ q: 'Is Cordova dead? Keep it?', a: 'Not dead for internal/field apps. If stable, keep + I maintain. If consumer-facing lag, migrate gradually. Honest advice free.' }, { q: 'Play Store target API rejection?', a: 'Yes fixed — I upgrade Cordova-Android, plugins, permissions + republish with ASO.' }, { q: 'Custom hardware needed?', a: 'Yes — Bluetooth printer/scanner, serial, kiosk lockdown via Java plugin + tested on your device.' }, { q: 'Cost?', a: 'Fixes at small fixed price; plugins/MVP fixed quote in 24 hrs after 20-min Tamil/English call.' }],
+  },
+  {
+    slug: 'need-dedicated-developer',
+    icon: 'fas fa-user-tie',
+    label: 'Need Dedicated Developer',
+    metaTitle: 'Need Dedicated Developer? Ionic, React Native, Cordova, Angular, Node.js, MongoDB & Express.js — Gopi M',
+    metaDescription:
+      'Need dedicated developer for your app or backend? Hire one senior freelance developer for Ionic, React Native, Cordova, Angular, Node.js, MongoDB and Express.js with fixed quote, clean handover and fast delivery.',
+    keywords:
+      'need dedicated developer, dedicated developer, hire dedicated developer, ionic developer, react native developer, cordova developer, angular developer, nodejs developer, mongodb developer, expressjs developer',
+    h1: 'Need Dedicated Developer for Ionic, React Native, Cordova, Angular, Node.js, MongoDB & Express.js?',
+    tagline:
+      'One dedicated developer for your product: mobile app, web app and backend — without hiring a full team.',
+    intro: [
+      'If you search for need dedicated developer, you usually want one reliable person who can own the work end-to-end. I provide that: product thinking, UI, app development, backend APIs, deployment and post-launch support.',
+      'Technology fit: Ionic and Cordova for hybrid apps, React Native for cross-platform mobile, Angular for web frontends, and Node.js + MongoDB + Express.js for APIs and databases. That gives you one developer who can ship the whole stack.',
+    ],
+    forWho: [
+      'Startups needing a dedicated developer',
+      'Businesses hiring one senior freelancer instead of an agency',
+      'Teams with Ionic, React Native or Cordova work',
+      'Apps needing Angular frontend plus Node.js backend',
+      'Projects needing MongoDB and Express.js APIs',
+    ],
+    benefits: [
+      { title: 'Exact search intent', text: 'Built around the phrase need dedicated developer so buyers and search engines understand the page instantly.' },
+      { title: 'Full-stack coverage', text: 'Ionic, React Native, Cordova, Angular, Node.js, MongoDB and Express.js in one delivery lane.' },
+      { title: 'No agency overhead', text: 'One senior developer, faster decisions, fewer handoffs and lower cost.' },
+      { title: 'Fast start', text: 'Fixed quote, clear scope and quick onboarding so work can begin immediately.' },
+      { title: 'Clean handover', text: 'Source code, docs and deployment notes included so your team can continue easily.' },
+      { title: 'Long-term support', text: 'Ideal for maintenance, feature work, rescue jobs and ongoing product growth.' },
+    ],
+    features: [
+      'Dedicated developer for mobile + web + backend',
+      'Ionic, React Native and Cordova app delivery',
+      'Angular frontends and Node.js APIs',
+      'MongoDB data modeling and Express.js services',
+      'Fixed quote and direct communication',
+      'Hand-off docs and post-launch support',
+    ],
+    faqs: [
+      { q: 'What does need dedicated developer mean?', a: 'It usually means you want one committed developer who can focus on your project instead of splitting attention across many clients.' },
+      { q: 'Can you handle mobile and backend together?', a: 'Yes — I can build the app, the admin panel and the backend APIs in one stack.' },
+      { q: 'Do you work with Ionic, React Native and Cordova?', a: 'Yes — those are core mobile technologies I support depending on the project fit.' },
+      { q: 'Can you support Angular, Node.js, MongoDB and Express.js?', a: 'Yes — I can work on the web frontend, API layer and database together.' },
+    ],
+  },
+  {
+    slug: 'developer-near-me',
+    icon: 'fas fa-map-marker-alt',
+    label: 'Developer Near Me',
+    metaTitle: 'Need a Developer Near Me? Hire Dedicated App Developer in Chennai — Gopi M',
+    metaDescription:
+      'Searching for a developer near me? Hire a dedicated freelance developer in Chennai for Ionic, React Native, Cordova, Angular, Node.js, MongoDB and Express.js with local support, fixed quote and fast delivery.',
+    keywords:
+      'developer near me, app developer near me, dedicated developer near me, mobile app developer near me, hire developer near me, ionic developer near me, react native developer near me, cordova developer near me, angular developer near me, nodejs developer near me, mongodb developer near me, expressjs developer near me',
+    h1: 'Need a Developer Near Me? Hire a Dedicated Developer in Chennai',
+    tagline:
+      'If you want a developer near you, I provide local-style support, direct communication and fast delivery from Chennai.',
+    intro: [
+      'When people search for developer near me, they usually want speed, trust and someone who can start quickly without confusion. This page is built for that exact local-intent search.',
+      'I help clients who need a nearby developer for app, web and backend work: Ionic, React Native, Cordova, Angular, Node.js, MongoDB and Express.js — all in one stack.',
+    ],
+    forWho: [
+      'People searching for developer near me',
+      'Businesses wanting local support in Chennai',
+      'Startups needing a fast freelance developer',
+      'Teams needing app + backend help',
+      'Anyone wanting direct communication and fixed quote',
+    ],
+    benefits: [
+      { title: 'Local search intent', text: 'Targets developer near me and nearby hire intent so users can find a fast local developer option.' },
+      { title: 'Direct support', text: 'No middleman — talk directly, get answers fast and move faster.' },
+      { title: 'Stack coverage', text: 'Mobile, web and backend coverage in one place: Ionic, React Native, Cordova, Angular, Node.js, MongoDB, Express.js.' },
+      { title: 'Fast quoting', text: 'Get a fixed quote quickly instead of waiting for agency back-and-forth.' },
+      { title: 'Local trust', text: 'Chennai-based support with clear communication and easy follow-up.' },
+      { title: 'Search-friendly', text: 'Optimized for users typing near me variations in search.', },
+    ],
+    features: [
+      'Developer near me local-intent SEO',
+      'Chennai-based direct support',
+      'Ionic, React Native and Cordova apps',
+      'Angular frontend and Node.js backend',
+      'MongoDB + Express.js API development',
+      'Fixed quote and quick onboarding',
+    ],
+    faqs: [
+      { q: 'Does near me mean my city exactly?', a: 'Search engines show nearby and local providers based on the user location, not just the exact phrase.' },
+      { q: 'Can you help with app and backend?', a: 'Yes — I handle mobile, web and backend development together.' },
+      { q: 'Do you support remote and local clients?', a: 'Yes — I work remotely and can support clients looking for a local-style developer relationship.' },
+      { q: 'Is this page good for near me searches?', a: 'Yes — it uses the phrase naturally in title, description, headings and content.' },
+    ],
+  },
+  {
+    slug: 'need-mobile-app-trainer',
+    icon: 'fas fa-chalkboard-teacher',
+    label: 'Need Mobile App Trainer',
+    metaTitle: 'Need Mobile App Trainer? Train in Ionic, React Native, Cordova, Angular, Node.js, MongoDB & Express.js — Gopi M',
+    metaDescription:
+      'Need mobile app trainer for your team or students? Get training in Ionic, React Native, Cordova, Angular, Node.js, MongoDB and Express.js with practical project-based sessions, Tamil support and real-world app examples.',
+    keywords:
+      'need mobile app trainer, mobile app trainer, app trainer, react native training, ionic training, cordova training, angular training, nodejs training, mongodb training, expressjs training',
+    h1: 'Need Mobile App Trainer for Ionic, React Native, Cordova, Angular, Node.js, MongoDB & Express.js?',
+    tagline:
+      'Practical app training for teams, students and founders — learn by building real apps, not theory alone.',
+    intro: [
+      'If you need mobile app trainer support, I teach with a hands-on approach: planning, UI, app architecture, API integration, debugging and release flow. The goal is to make your team productive fast.',
+      'Training covers Ionic, React Native and Cordova for mobile apps, Angular for frontends, and Node.js + MongoDB + Express.js for backend APIs and databases. I can tailor the sessions for beginners, intermediates or product teams.',
+    ],
+    forWho: [
+      'Teams needing mobile app training',
+      'Students learning app development',
+      'Founders hiring a trainer for their product team',
+      'Companies upskilling in Ionic or React Native',
+      'Groups wanting backend training with Node.js and MongoDB',
+    ],
+    benefits: [
+      { title: 'Project-based learning', text: 'Learn by building real screens, APIs and flows instead of only reading slides.' },
+      { title: 'Multi-stack coverage', text: 'Training includes Ionic, React Native, Cordova, Angular, Node.js, MongoDB and Express.js.' },
+      { title: 'Practical debugging', text: 'Learn how to fix errors, handle builds and ship apps confidently.' },
+      { title: 'Tamil support', text: 'Explain in Tamil or English based on your team’s comfort level.' },
+      { title: 'Team productivity', text: 'Good for onboarding developers faster and improving project delivery.' },
+      { title: 'Real-world examples', text: 'I teach using production-style patterns, not toy examples only.' },
+    ],
+    features: [
+      'Mobile app trainer for teams and students',
+      'Ionic, React Native and Cordova sessions',
+      'Angular frontend training',
+      'Node.js, MongoDB and Express.js backend training',
+      'Tamil or English mentoring',
+      'Project-based exercises and code reviews',
+    ],
+    faqs: [
+      { q: 'Do you provide mobile app training for beginners?', a: 'Yes — I can start from basics and build up to real project work.' },
+      { q: 'Can training cover both app and backend?', a: 'Yes — I teach the full flow from UI to APIs to database.' },
+      { q: 'Is this useful for teams?', a: 'Yes — it helps teams ramp up faster and work with a common development standard.' },
+      { q: 'Can you train in Tamil?', a: 'Yes — Tamil support is available for clearer understanding.' },
+      { q: 'Do you provide project-based app training?', a: 'Yes — the sessions use real project examples so learners understand how to build production-ready apps.' },
+      { q: 'Can you train React Native, Ionic and Cordova together?', a: 'Yes — I compare them and show when each stack is the best fit.' },
+      { q: 'Will the training include code review and debugging?', a: 'Yes — I cover debugging, build issues, app structure and code review as part of the mentoring.' },
+      { q: 'Can you train founders or non-technical teams?', a: 'Yes — I can keep it simple for founders, product managers and non-technical stakeholders.' },
+    ],
+  },
+];
