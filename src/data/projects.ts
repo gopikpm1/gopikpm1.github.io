@@ -1,5 +1,5 @@
 export interface ProjectLink {
-  kind: 'site' | 'android' | 'ios' | 'drive';
+  kind: 'site' | 'android' | 'ios' | 'drive' | 'plugin';
   label: string;
   href: string;
   icon: string;
@@ -286,7 +286,10 @@ export const projects: Project[] = [
       'Life predictions: career, marriage, health, wealth, education &amp; foreign settlement',
       'Astro framework + Zod v4 validation + JSON-LD structured data for SEO',
     ],
-    links: [{ kind: 'site', label: 'Website', href: 'http://planets360.in/', icon: 'fas fa-globe' }],
+    links: [
+      { kind: 'site', label: 'Website', href: 'http://planets360.in/', icon: 'fas fa-globe' },
+      { kind: 'plugin', label: 'OpenAI Plugin', href: 'https://chatgpt.com/plugins/plugin_asdk_app_6ad9c6962cd48191acc48338c242dc20', icon: 'fas fa-brain' },
+    ],
   },
   {
     id: 'proj-commodity-quant',

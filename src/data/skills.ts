@@ -255,6 +255,39 @@ const skillCategories: SkillCategory[] = [
     appliedIn: [{ label: 'QuantumGPT', href: '#proj-quantumgpt' }],
   },
   {
+    icon: 'fas fa-hand-pointer',
+    category: 'MCP Creation (Model Context Protocol)',
+    tags: [
+      'MCP Server Development',
+      'MCP Client Integration',
+      'LLM Tool Creation',
+      'Contextual AI Tools',
+      'Model Context Protocol',
+      'Prompt-Based Tools',
+      'AI Agent Workflows',
+    ],
+    appliedIn: [
+      { label: 'QuantumGPT', href: '#proj-quantumgpt' },
+      { label: 'Planets360', href: '#proj-planets360' },
+    ],
+  },
+  {
+    icon: 'fas fa-code',
+    category: 'Open AI Plugin Making',
+    tags: [
+      'OpenAI Plugin Development',
+      'ChatGPT Plugin SDK',
+      'Custom ChatGPT Plugins',
+      'Plugin Manifest Configuration',
+      'Plugin API Integration',
+      'OpenAI Actions',
+      'Plugin Distribution',
+    ],
+    appliedIn: [
+      { label: 'Planets360', href: '#proj-planets360' },
+    ],
+  },
+  {
     icon: 'fas fa-wrench',
     category: 'DevOps, CI/CD & App Deployment',
     tags: [
