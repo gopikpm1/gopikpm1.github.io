@@ -1,13 +1,10 @@
 export const navLinks = [
-  { href: '/#home', label: 'Home' },
   { href: '/#about', label: 'About' },
-  { href: '/mobile-app-development/', label: 'Mobile Apps' },
-  { href: '/blog/', label: 'Blog' },
   { href: '/#services', label: 'Services' },
-  { href: '/#skills', label: 'Skills' },
+  { href: '/#projects', label: 'Work' },
   { href: '/#experience', label: 'Experience' },
-  { href: '/#projects', label: 'Projects' },
-  { href: '/#contact', label: 'Contact' },
+  { href: '/blog/', label: 'Blog' },
+  { href: '/#contact', label: "Let's talk ↗" },
 ];
 
 export const hero = {

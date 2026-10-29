@@ -5,21 +5,22 @@ import { about } from '../data/site';
 <!-- About Section -->
 <section id="about" class="about">
   <div class="container">
-    <h2 class="section-title">About Me</h2>
+    <p class="eyebrow">THE PERSON BEHIND THE CODE</p>
+    <h2 class="section-title">A builder, from start to finish.</h2>
     <div class="about-content">
       <div class="about-text">
         {about.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
-        <div class="contact-info">
-          {about.info.map((item) => (
-            <div class="info-item">
-              <i class={item.icon} />
-              <span>{item.text}</span>
-            </div>
-          ))}
-          <div class="info-item freelance-badge">
-            <i class={about.freelanceBadge.icon} />
-            <span>{about.freelanceBadge.text}</span>
+      </div>
+      <div class="contact-info">
+        {about.info.map((item) => (
+          <div class="info-item">
+            <i class={item.icon} aria-hidden="true" />
+            <span>{item.text}</span>
           </div>
+        ))}
+        <div class="info-item freelance-badge">
+          <i class={about.freelanceBadge.icon} aria-hidden="true" />
+          <span>{about.freelanceBadge.text}</span>
         </div>
       </div>
     </div>

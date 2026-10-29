@@ -6,9 +6,9 @@ const bySlug = new Map(seoPages.map((s) => [s.slug, s]));
 ---
 
 <!-- Navigation -->
-<nav class="navbar">
+<nav class="navbar" aria-label="Main navigation">
   <div class="container">
-    <div class="nav-brand"><a href="/#home" class="nav-brand-link">Gopi M</a></div>
+    <div class="nav-brand"><a href="/#home" class="nav-brand-link" aria-label="Gopi M — home"><span class="brand-mark" aria-hidden="true">g.</span> gopi<span class="brand-dot">m.</span></a></div>
     <button
       class="nav-toggle"
       type="button"
@@ -22,18 +22,18 @@ const bySlug = new Map(seoPages.map((s) => [s.slug, s]));
     </button>
     <ul class="nav-menu" id="nav-menu">
       {
-        navLinks.map((link, index) => (
+        navLinks.map((link) => (
           link.label === 'Blog' ? (
             <li class="nav-item nav-dropdown">
               <button
                 type="button"
                 class="nav-link nav-drop-btn"
-                aria-haspopup="true"
                 aria-expanded="false"
+                aria-controls="nav-blog-panel"
               >
                 Blog <span class="nav-caret" aria-hidden="true">▾</span>
               </button>
-              <div class="nav-drop-panel" role="menu" aria-label="Blog & guides">
+              <div class="nav-drop-panel" id="nav-blog-panel">
                 <div class="nav-drop-search">
                   <label class="nav-drop-search-label" for="nav-blog-search">
                     <i class="fas fa-search" aria-hidden="true"></i>
@@ -63,7 +63,7 @@ const bySlug = new Map(seoPages.map((s) => [s.slug, s]));
                             <li
                               data-search={`${s.label} ${s.tagline} ${s.keywords}`.toLowerCase()}
                             >
-                              <a class="nav-drop-link" role="menuitem" href={`/blog/${s.slug}/`}>{s.label}</a>
+                              <a class="nav-drop-link" href={`/blog/${s.slug}/`}>{s.label}</a>
                             </li>
                           );
                         })}
@@ -78,7 +78,7 @@ const bySlug = new Map(seoPages.map((s) => [s.slug, s]));
             <li class="nav-item">
               <a
                 href={link.href}
-                class:list={['nav-link', index === 0 && 'active']}
+                class:list={['nav-link', link.href === '/#contact' && 'nav-contact']}
               >
                 {link.label}
               </a>

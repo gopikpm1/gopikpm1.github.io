@@ -2,27 +2,36 @@
 import { hero } from '../data/site';
 ---
 
-<!-- Hero Section -->
 <header id="home" class="hero">
-  <div class="hero-content">
-    <img
-      src="/images/profile.jpg"
-      alt="Gopi M — Senior Cross-Platform Mobile, Web & Desktop Developer"
-      class="hero-avatar"
-      width="140"
-      height="140"
-      loading="eager"
-      onerror="var d=document.createElement('div');d.className='hero-avatar hero-avatar--missing';d.setAttribute('aria-hidden','true');d.textContent='G';this.replaceWith(d)"
-    />
+  <div class="container hero-content">
     <div class="hero-text">
-      <h1 class="hero-title">{hero.name}</h1>
+      <p class="availability"><span aria-hidden="true"></span> Available for freelance projects</p>
+      <p class="hero-intro">Hello, I'm {hero.name} <span aria-hidden="true">↗</span></p>
+      <h1 class="hero-title">Ideas to apps.<br /><span>Built to matter.</span></h1>
       <p class="hero-subtitle">{hero.subtitle}</p>
       <p class="hero-description">{hero.description}</p>
-      <p class="hero-location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Chennai, Tamil Nadu, India</p>
       <div class="hero-buttons">
-        <a href={hero.primaryCta.href} class="btn btn-primary">{hero.primaryCta.label}</a>
-        <a href={hero.secondaryCta.href} class="btn btn-secondary">{hero.secondaryCta.label}</a>
+        <a href={hero.primaryCta.href} class="btn btn-primary">Let's build something <span aria-hidden="true">↗</span></a>
+        <a href="/#projects" class="btn btn-secondary">Explore my work <span aria-hidden="true">↓</span></a>
       </div>
+      <p class="hero-location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Based in Chennai, India <span aria-hidden="true">·</span> Working worldwide</p>
+    </div>
+    <div class="build-card" aria-label="Development expertise: mobile, web, desktop, and AI">
+      <div class="build-card-top"><span class="window-dots" aria-hidden="true"><b></b><b></b><b></b></span><span>FROM CONCEPT TO LAUNCH</span><span aria-hidden="true">↗</span></div>
+      <div class="build-card-body">
+        <p class="eyebrow">One developer. Every platform.</p>
+        <div class="platform-orbit" aria-hidden="true">
+          <div class="orbit-ring"></div><div class="orbit-core">&lt;/&gt;</div>
+          <span class="orbit-node node-mobile"><i class="fas fa-mobile-alt"></i></span>
+          <span class="orbit-node node-web"><i class="fas fa-globe"></i></span>
+          <span class="orbit-node node-desktop"><i class="fas fa-desktop"></i></span>
+          <span class="orbit-node node-ai"><i class="fas fa-code"></i></span>
+        </div>
+        <div class="platform-labels"><span>Mobile</span><span>Web</span><span>Desktop</span><span>AI</span></div>
+        <div class="build-code"><span class="code-muted">const</span> yourNextIdea = <span>'something great'</span>;<br /><span class="code-muted">await</span> build(yourNextIdea);</div>
+      </div>
+      <div class="build-card-bottom"><span><span class="status-dot" aria-hidden="true"></span> Thoughtful code. Real-world impact.</span><span aria-hidden="true">✦</span></div>
     </div>
   </div>
+  <div class="container hero-stack"><span>MY EVERYDAY TOOLKIT</span><ul aria-label="Core technologies"><li>React Native</li><li>Expo</li><li>Electron</li><li>TypeScript</li><li>Node.js</li><li>.NET / C#</li></ul></div>
 </header>

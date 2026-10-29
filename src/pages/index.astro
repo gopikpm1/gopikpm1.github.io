@@ -15,17 +15,23 @@ import { mobileServices } from '../data/mobileServices';
 
 <Layout title="Gopi M — Freelance Mobile, Web & Desktop Developer | React Native, Expo, Electron, .NET / C#, AI Apps, PWA">
   <Navbar />
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <main id="main-content" tabindex="-1">
   <Hero />
+  <Stats />
+  <Services />
+  <Projects />
   <About />
   <section id="mobile-apps" class="services">
     <div class="container">
-      <h2 class="section-title">Mobile Apps for Shops, Startups & Teams</h2>
+      <p class="eyebrow">BUILT FOR YOUR BUSINESS</p>
+      <h2 class="section-title">Your business. Your next app.</h2>
       <p class="section-description">
         Need mobile for your business? Pick your category — each page has pricing logic, features & FAQs.
       </p>
       <div class="svc-grid">
         {
-          mobileServices.map((s) => (
+          mobileServices.slice(0, 6).map((s) => (
             <article class="svc-item">
               <p class="svc-card-icon">
                 <i class={s.icon} aria-hidden="true" />
@@ -43,11 +49,9 @@ import { mobileServices } from '../data/mobileServices';
       </p>
     </div>
   </section>
-  <Services />
   <Skills />
   <Experience />
-  <Projects />
-  <Stats />
   <Contact />
+  </main>
   <Footer />
 </Layout>
