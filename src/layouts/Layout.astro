@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import '../styles/portfolio.css';
+import WhatsAppChat from '../components/WhatsAppChat.astro';
 
 interface Props {
   title: string;
@@ -260,6 +261,7 @@ const projectsSchema = {
   </head>
   <body>
     <slot />
+    <WhatsAppChat />
 
     <script>
       // Native anchors preserve URL hashes, browser history and keyboard focus.

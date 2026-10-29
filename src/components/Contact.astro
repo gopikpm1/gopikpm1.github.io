@@ -20,8 +20,9 @@ import { contacts } from '../data/site';
             class="contact-card"
             target={contact.external ? '_blank' : undefined}
             rel={contact.external ? 'noopener noreferrer' : undefined}
+            aria-label={contact.external ? `${contact.title}: ${contact.detail} (opens in a new tab)` : undefined}
           >
-            <i class={contact.icon} />
+            <i class={contact.icon} aria-hidden="true" />
             <h3>{contact.title}</h3>
             <p>{contact.detail}</p>
           </a>

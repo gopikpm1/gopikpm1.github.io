@@ -38,7 +38,22 @@ export const stats = [
   { number: '99.5%', label: 'App Availability Rate' },
 ];
 
+export const whatsapp = {
+  phone: '919952104427',
+  displayPhone: '+91 99521 04427',
+  message: 'Hi Gopi, I visited your website and would like to discuss a project.',
+};
+
+export const whatsappUrl = `https://wa.me/${whatsapp.phone}?text=${encodeURIComponent(whatsapp.message)}`;
+
 export const contacts = [
+  {
+    href: whatsappUrl,
+    icon: 'fab fa-whatsapp',
+    title: 'WhatsApp',
+    detail: whatsapp.displayPhone,
+    external: true,
+  },
   {
     href: 'mailto:contact@gopim.dev',
     icon: 'fas fa-envelope',
